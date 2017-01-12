@@ -45,6 +45,11 @@
     {% endif %}
     </div>
     <br>
+    {% if include.person.referral %}
+    <div style="font-size: 14px; padding: 20px;">
+        {{include.person.referral}}
+    </div>
+    {% endif %}
     {% if include.person.bio %}
     <div style="font-size: 14px; padding: 20px;">
         {{include.person.bio}}
