@@ -52,29 +52,6 @@
     </nav>
 <!-- End of Navigation Bar -->
 
-<!-- Slider -->
-    <div class="slider-container" id="welcome">
-      <div class="ism-slider" data-play_type="loop" data-image_fx="zoompan" data-transition_type="fade" id="my-slider">
-        <ol>
-          {% for slide in site.data.slides %}
-          <li>
-            <img src="images/{{slide.img}}">
-            <div class="ism-caption ism-caption-0">{{slide.caption}}</div>
-            <div class="ism-caption ism-caption-1" data-delay="0">
-                {{slide.exp-1}}<br>
-                {{slide.exp-2}}<br>
-                {{slide.exp-3}}
-                {% if slide.action %}
-                    <a href="{{slide.actionURL}}">{{slide.action}}</a>
-                {% endif %}
-            </div>
-          </li>
-          {% endfor %}
-        </ol>
-      </div>
-    </div>
-<!-- End of Slider -->
-
 <!-- Main Content -->
     <section class="main-content">
             <!-- Mentors Section -->
@@ -157,78 +134,7 @@
                 </div>
             </section>
             <!-- End of Student Section -->
-            <!-- Projects (including student projects, blog, logo, issues, loklak) -->
-            <div id="projects" href="#projects">
-            <!-- Student Projects Section -->
-            <section class="projects-sec" id="stprojects" href="#stprojects">
-                <div class="row projects-wrapper">
-                    <!-- Start ignoring BootLintBear -->
-                    <h2>STUDENT PROJECTS</h2>
-                    <!-- Stop ignoring -->
-                    {% for project in site.data.projects %}
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card">
-                            <div class="avatar">
-                                {% if project.image %}
-                                <img src="images/projects/{{project.image}}"
-                                alt="{{project.name}}"
-                                width="200px" height="200px">
-                                {% else %}
-                                <img src="images/projects/default.png"
-                                alt="{{project.name}}"
-                                width="200px" height="200px">
-                                {% endif %}
-                                <div class="links">
-                                    <a href="{{project.link}}" target="_blank">
-                                        <i class="fa fa-link"></i>
-                                    </a>
-                                    <a href="{{project.source}}" target="_blank">
-                                        <i class="fa fa-code"></i>
-                                    </a>
-                                </div>
-                                <p style="padding-top:3px;width:200px;display:inline-block;margin-top:9px;">
-                                    <i class="fa fa-code"></i>
-                                    &nbsp;
-                                    <span title="{{project.name}} by {{project.owner}}" class="stu-name card-text">
-                                        {{project.name}} by {{project.owner}}
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </section>
-            <!-- End of Student Projects Section -->
-            <!-- Stop ignoring -->
 
-            <!-- Latest Issues Section -->
-            <section class="latest-issues" id="issues">
-                <div class="issues-wrapper">
-                    <!-- Start ignoring BootLintBear -->
-                    <h2>LATEST ISSUES</h2>
-                    <!-- Stop ignoring -->
-                    <div id="issues-categories-wrapper">
-                        <div class="issues-category" id="unlabeled-category">
-                            <div class="button"><a href="//github.com/fossiiita/issues?q=is%3Aopen+is%3Aissue">Unlabeled</a></div>
-                        </div>
-                        <!-- <div class="button">
-                            <a href="//github.com/fossasia/gci16.fossasia.org/issues">
-                                See all issues on&nbsp;<i class="fa fa-github"></i>github
-                            </a>
-                        </div> -->
-                    </div>
-                    <a class="btn btn-success btn-lg"
-                    style="margin-left: 40%; color: #fff;"
-                    href="//github.com/fossiiita/opencode/issues">
-                        See all issues on &nbsp;<i class="fa fa-github"></i>
-                    </a>
-                </div>
-            </section>
-            <!-- End of Latest Issues Section -->
-
-            </div>
-            <!-- End of Projects (including student projects, blog, logo, issues, loklak) -->
 
         </div> <!-- End of .container inside the main-wrapper section -->
 
@@ -293,9 +199,11 @@
                 <p>FOSS IIITA is an open source organization under Geekhaven of
                   IIIT Allahabad.
                 </p>
-                <p>Opencode is involved in Google Code-In, which serves as a great introduction
-                to the world of open source collaboration and an excellent mediator to involve
-                the next generation of digital collaborators.
+                <p>Opencode is a month-long open source event starting on January 17, 2017,
+                  in which all undergraduates and postgraduates around the world can participate
+                  in developing open sourced projects and contributing in them. Opencode aims to
+                  raise awareness about open source software development among the students and
+                  developers around the world.
                 </p>
             </div>
         </div>
