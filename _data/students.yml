@@ -3,7 +3,7 @@
 
 
 - name: Vamsi Sangam
-  image: images/students/vamsisangam.jpg
+  image: vamsisangam.jpg
   github: https://github.com/VamsiSangam
   facebook: https://www.facebook.com/vamsi.sangam
   bio: Hi! I am 3 year old developer who converts food to code!
