@@ -2,12 +2,8 @@
 # This is to remove conflicts with other people adding their credentials.
 
 
-- name: 
-  image: 
-  github: 
-  twitter: 
-  facebook: 
-  blog: 
-  referral: 
-  bio: 
-
+- name: Vamsi Sangam
+  image: vamsisangam.jpg
+  github: https://github.com/VamsiSangam
+  facebook: https://www.facebook.com/vamsi.sangam
+  bio: Hi! I am 3 year old developer who converts food to code!
