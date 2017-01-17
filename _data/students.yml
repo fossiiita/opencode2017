@@ -26,7 +26,21 @@
   github: https://github.com/aswinzz
   facebook: https://www.facebook.com/aswinvb
   bio: I am new in github ^-^
- 
+
+- name: Neha
+  image: neha.jpg
+  github: https://github.com/13nehu
+  facebook: https://www.facebook.com/neha.kandpal.3511
+  bio: Still learning !!
+  
+- name: Nabeel
+  github: nab331
+  image: nabeel.jpg
+  twitter: nab331j
+  facebook: nab331
+  referral: gauthamzz
+  bio: I like sleep
+
 - name: Tarun Singhal
   image: tarun.jpg
   github: https://github.com/tarunsinghal97
@@ -40,3 +54,18 @@
    facebook: https://www.facebook.com/utkarsh.chaurasia2
    bio: I like to learn and develop and develop.
    referral: gauthamzz
+
+- name: Bhanu Bhandari
+  image: bhanu.jpg
+  github: https://github.com/bhanu1911
+  facebook: https://www.facebook.com/bhanubhandari99
+  bio: Newbie open source developer, hope to learn a lot!
+  
+- name: Aditya Goel
+  github: https://github.com/Ellusionists
+  image: aditya710.jpg
+  facebook: https://www.facebook.com/aditya.goel.311
+  bio: I come here to build.
+
+
+
