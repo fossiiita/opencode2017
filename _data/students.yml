@@ -27,11 +27,17 @@
   facebook: https://www.facebook.com/aswinvb
   bio: I am new in github ^-^
 
-
 - name: Nabeel
-  github: @nab331
+  github: nab331
   image: nabeel.jpg
-  twitter: @nab331j
-  facebook: @nab331
-  referral: @gauthamzz
+  twitter: nab331j
+  facebook: nab331
+  referral: gauthamzz
   bio: I like sleep
+
+- name: Tarun Singhal
+  image: tarun.jpg
+  github: https://github.com/tarunsinghal97
+  facebook: https://www.facebook.com/tarun.singhal.148
+  referral: Symphoria
+  bio: Hi! I have started learning opensource!! 
