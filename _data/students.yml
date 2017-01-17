@@ -12,6 +12,7 @@
   image: aswanth.jpg
   github: https://github.com/aswanthkoleri
   facebook: https://www.facebook.com/aswanth9495
+  referral: aswinzz
   bio: Hi! I am a beginner to coding !!
 
 - name: Harshit Jain
@@ -19,3 +20,9 @@
   github: https://github.com/Symphoria
   facebook: https://www.facebook.com/harshit.jain.37604303
   bio: Just started developing! Hope to learn many things!
+  
+- name: AswinVB
+  image: aswinvb.jpg
+  github: https://github.com/aswinzz
+  facebook: https://www.facebook.com/aswinvb
+  bio: I am new in github ^-^
