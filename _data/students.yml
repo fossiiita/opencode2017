@@ -27,7 +27,6 @@
   facebook: https://www.facebook.com/aswinvb
   bio: I am new in github ^-^
 
-
 - name: Neha
   image: neha.jpg
   github: https://github.com/13nehu
@@ -49,9 +48,16 @@
   referral: Symphoria
   bio: Hi! I have started learning opensource!! 
   
-  name: Aditya Goel
+- name: Bhanu Bhandari
+  image: bhanu.jpg
+  github: https://github.com/bhanu1911
+  facebook: https://www.facebook.com/bhanubhandari99
+  bio: Newbie open source developer, hope to learn a lot!
+  
+- name: Aditya Goel
   github: https://github.com/Ellusionists
   image: aditya710.jpg
   facebook: https://www.facebook.com/aditya.goel.311
   bio: I come here to build.
+
 
