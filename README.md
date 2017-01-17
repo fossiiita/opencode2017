@@ -3,6 +3,8 @@
 
 [![Join the chat at https://gitter.im/Cloud-CV/EvalAI](https://badges.gitter.im/opencode2017.svg)](https://gitter.im/opencode2017?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[Facebook Group](https://www.facebook.com/Opencode-1038106262984513)
+
 # Adding a mentor
 
 To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
