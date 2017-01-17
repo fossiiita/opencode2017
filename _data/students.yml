@@ -47,7 +47,14 @@
   facebook: https://www.facebook.com/tarun.singhal.148
   referral: Symphoria
   bio: Hi! I have started learning opensource!! 
-  
+ 
+- name: Utkarsh Chaurasia
+  image: utkarsh.jpg
+  github: https://github.com/utkarshchaurasia28
+  facebook: https://www.facebook.com/utkarsh.chaurasia2
+  bio: I like to learn and develop and develop.
+  referral: gauthamzz
+
 - name: Bhanu Bhandari
   image: bhanu.jpg
   github: https://github.com/bhanu1911
@@ -66,5 +73,17 @@
   facebook: https://www.facebook.com/ravi.charan.5680
   referral: aswanthkoleri
   bio: Optimist | Bibiliophile | TV series addict
+  
+- name: Gagan Ganapathy
+  github: https://github.com/CodHeK
+  image: gagan.jpg
+  facebook: https://www.facebook.com/GaganGanapathyAs
+  referral: Ellusionists
+  bio: First Contribution here...hoping for more !
 
-
+- name: Agam Dwivedi
+  github: https://github.com/agam98
+  image: agam.jpg
+  facebook: https://www.facebook.com/profile.php?id=100007152586385
+  referral: CodHeK
+  bio: Can not talk. Gitter only.
