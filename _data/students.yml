@@ -48,12 +48,12 @@
   referral: Symphoria
   bio: Hi! I have started learning opensource!! 
  
- - name: Utkarsh Chaurasia
-   image: utkarsh.jpg
-   github: https://github.com/utkarshchaurasia28
-   facebook: https://www.facebook.com/utkarsh.chaurasia2
-   bio: I like to learn and develop and develop.
-   referral: gauthamzz
+- name: Utkarsh Chaurasia
+  image: utkarsh.jpg
+  github: https://github.com/utkarshchaurasia28
+  facebook: https://www.facebook.com/utkarsh.chaurasia2
+  bio: I like to learn and develop and develop.
+  referral: gauthamzz
 
 - name: Bhanu Bhandari
   image: bhanu.jpg
@@ -67,7 +67,7 @@
   facebook: https://www.facebook.com/aditya.goel.311
   bio: I come here to build.
 
-  name: Gagan Ganapathy
+- name: Gagan Ganapathy
   github: https://github.com/CodHeK
   image: gagan.jpg
   facebook: https://www.facebook.com/GaganGanapathyAs
