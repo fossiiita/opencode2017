@@ -1,10 +1,10 @@
 # Details of opencode projects
 
 
-- name: opencodecollab
+  name: opencodecollab
   image: opencodecollab.jpg
   github: https://github.com/fossiiita/opencodecollab
   
- - name: HumbleFoolCup
+  name: HumbleFoolCup
   image: humblefoolcup.jpg
   github: https://github.com/fossiiita/humblefoolcup
