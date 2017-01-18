@@ -107,6 +107,8 @@
   image: Saic.jpg
   facebook: https://www.facebook.com/saicharan.reddy.927
   bio: New to github!
+<<<<<<< HEAD
+=======
 
 
 - name: Pradeep Gangwar
@@ -115,4 +117,12 @@
   facebook: https://www.facebook.com/pradeep.gangwar.391
   bio: Exploring and loving computer science.
 
+>>>>>>> upstream/master
+
+
+- name: Pradeep Gangwar
+  github: https://github.com/pradeepgangwar
+  image: pradeep.jpg
+  facebook: https://www.facebook.com/pradeep.gangwar.391
+  bio: Exploring and loving computer science.
 
