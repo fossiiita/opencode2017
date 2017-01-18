@@ -32,7 +32,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="">
+          <a class="navbar-brand" href="https://fossiiita.github.io/opencode/">
             <img src="./images/opencode.png" height=35>
           </a>
         </div>
@@ -40,6 +40,7 @@
           <ul class="nav navbar-nav" id="menu">
             <li><a class="menu-item" href="#mentors">Mentors</a></li>
             <li><a class="menu-item" href="#students">Participants</a></li>
+            <li><a class="menu-item" href="#projects">Projects</a></li>
             <li><a class="menu-item" href="https://gitter.im/opencode2017">Chat With Us</a></li>
             <li><a class="menu-item" href="https://www.facebook.com/Opencode-1038106262984513/">Facebook</a></li>
           </ul>
@@ -107,6 +108,40 @@
                 </div>
             </section>
             <!-- End of Student Section -->
+
+            <!-- Projects Section -->
+            <section class="projects-sec" id="projects" href="#projects">
+                <div class="row projects-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>Projects</h2>
+                    <!-- Stop ignoring -->
+                    {% for project in site.data.projects %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="avatar">
+                                {% if project.image %}
+                                <img src="images/projects/{{project.image}}"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% else %}
+                                <img src="images/projects/octocat.jpg"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% endif %}
+                                <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                    <i class="fa fa-file-text"></i>
+                                    &nbsp;
+                                    <span class="stu-name card-text" title="{{project.name}}">
+                                        {{project.name}}
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- End of Projects Section -->
 
 
         </div> <!-- End of .container inside the main-wrapper section -->

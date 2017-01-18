@@ -110,6 +110,10 @@
     background: #dcd0c0;
 }
 
+.projects-sec .projects-wrapper {
+    background: #87ceeb;
+}
+
 .title {
     padding-top: 30px;
     text-align: center;
