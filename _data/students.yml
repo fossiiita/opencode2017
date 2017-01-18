@@ -1,6 +1,13 @@
 # New members please add your credentials to a random position in the file.
 # This is to remove conflicts with other people adding their credentials.
 
+- name: Vipul Sharma
+  github: vsvipul555
+  image: vipul.jpg
+  twitter: VSVipul
+  facebook: https://www.facebook.com/vsvipul555
+  referral: aswinzz
+  bio: Still learning...
 
 - name: Vamsi Sangam
   image: vamsisangam.jpg
@@ -127,3 +134,14 @@
   referral: agam98
   bio: New to Open Source. Hope to learn a lot!!
 
+- name: Aseem Shrey
+  github: https://github.com/LuD1161
+  image: aseemshrey.jpg
+  facebook: https://www.facebook.com/AseemShrey
+  bio: New to open source , learning a lot
+  
+- name: Pushpender Yadav
+  github: https://github.com/DreadedLama
+  image: Pushpender.jpg
+  facebook: https://www.facebook.com/profile.php?id=100011438206757
+  bio: New to Github!!
