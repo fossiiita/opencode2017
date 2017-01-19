@@ -184,26 +184,26 @@
                     <!-- Stop ignoring -->
                     {% for project in site.data.projects %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <a href="{{project.name}}" target="_tab">
-                            <div class="card">
-                                <div class="avatar">
-                                    {% if project.image %}
-                                    <img src="images/projects/{{project.image}}"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% else %}
-                                    <img src="images/projects/octocat.jpg"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% endif %}
-                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
-                                        <i class="fa fa-file-text"></i>
-                                        &nbsp;
-                                        <span class="stu-name card-text" title="{{project.name}}">
-                                            {{project.name}}
-                                        </span>
-                                    </p>
-                                </div>
+
+                        <div class="card">
+                          <a href="{{project.github}}">
+                            <div class="avatar">
+                                {% if project.image %}
+                                <img src="images/projects/{{project.image}}"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% else %}
+                                <img src="images/projects/octocat.jpg"
+                                alt="{{project.name}}"
+                                width="200px" height="200px">
+                                {% endif %}
+                                <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                    <i class="fa fa-file-text"></i>
+                                    &nbsp;
+                                    <span class="stu-name card-text" title="{{project.name}}">
+                                        {{project.name}}
+                                    </span>
+                              </p>
                             </div>
                         </a>
                     </div>
