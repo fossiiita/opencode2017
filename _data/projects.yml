@@ -4,9 +4,7 @@
 - name: opencodecollab
   image: opencodecollab.jpg
   github: https://github.com/fossiiita/opencodecollab
-  link: https://github.com/fossiiita/opencodecollab
   
 - name: HumbleFoolCup
   image: humblefoolcup.jpg
   github: https://github.com/fossiiita/humblefoolcup
-  link: https://github.com/fossiiita/humblefoolcup
