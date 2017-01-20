@@ -49,7 +49,13 @@
   github: 13nehu
   facebook: neha.kandpal.3511
   bio: Still learning !!
-  
+
+- name: Kadambari
+  github: https://github.com/Aotoge
+  image: kadambari.jpg
+  facebook: https://www.facebook.com/kadambari.kaveri
+  bio: Apprentice to Doctor Schnabel
+
 - name: Nabeel
   github: nab331
   image: nabeel.jpg
@@ -148,4 +154,11 @@
   image: Pushpender.jpg
   facebook: 100011438206757
   bio: New to Github!!
+
+- name: Akshat Jain
+  github: dabbler011
+  image: akshat.jpg
+  facebook: akshatj011
+  referral: agbilotia1998
+  bio: First time on github.
 

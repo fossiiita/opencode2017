@@ -11,6 +11,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/footer-distributed.css">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -41,6 +42,7 @@
             <li><a class="menu-item" href="#mentors">Mentors</a></li>
             <li><a class="menu-item" href="#students">Participants</a></li>
             <li><a class="menu-item" href="#projects">Projects</a></li>
+            <li><a class="menu-item" href="#issues">Issues</a></li>
             <li><a class="menu-item" href="https://gitter.im/opencode2017">Chat With Us</a></li>
             <li><a class="menu-item" href="https://www.facebook.com/Opencode-1038106262984513/">Facebook</a></li>
           </ul>
@@ -180,11 +182,11 @@
             <section class="projects-sec" id="projects" href="#projects">
                 <div class="row projects-wrapper">
                     <!-- Start ignoring BootLintBear -->
-                    <h2>Projects</h2>
+                    <h2>Projects Currently in OpenCode</h2>
                     <!-- Stop ignoring -->
                     {% for project in site.data.projects %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <a href="{{project.name}}" target="_tab">
+                        <a href="{{project.github}}" target="_tab">
                             <div class="card">
                                 <div class="avatar">
                                     {% if project.image %}
@@ -212,8 +214,61 @@
             </section>
             <!-- End of Projects Section -->
 
+            <!-- Issues Section -->
+            <section class="issues-sec" id="issues" href="#issues">
+                <div class="row issues-wrapper" style="height:auto;">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>Issues</h2>
+                    <!-- Stop ignoring -->
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div id="issues-content">
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination" id="issues-pagination">
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Issues Section -->
+
 
         </div> <!-- End of .container inside the main-wrapper section -->
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+
+                <a href="https://www.facebook.com/Opencode-1038106262984513"><i class="fa fa-facebook"></i></a>
+                <a href="https://fossiiita.github.io/opencode/"><i class="fa fa-github"></i></a>
+                <a href="https://geekhaven.iiita.ac.in"><img src = "images/logo.png" height="30px" width = "30px">
+<!--                 <a href="https://gitter.im/opencode2017/"><img src = "images/gitter.png" height="35px" width = "35px">
+ -->            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a href="https://fossiiita.github.io/opencode/">Home</a>
+                    ·
+                    <a href="https://fossiiita.github.io/humblefoolcup/">Humblefool Cup</a>
+                    ·
+                    <a href="https://github.com/gauthamzz/Django-EventPlatform">Django-EventPlatform</a>
+                    ·
+                    <a href="https://fossiiita.github.io/opencode/faq">FAQ</a>
+                    ·
+                    <a href="https://gitter.im/opencode2017">Gitter!</a>
+                </p>
+
+                <p >OpenCode 2017</p>
+            </div>
+
+        </footer>
+
 
 
 <!-- End of Main Content -->
@@ -224,5 +279,6 @@
     <script src="javascripts/main.js"></script>
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
+    <script src="javascripts/issues-loader.js"></script>
 </body>
 </html>

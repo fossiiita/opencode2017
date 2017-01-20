@@ -8,3 +8,7 @@
 - name: HumbleFoolCup
   image: humblefoolcup.jpg
   github: https://github.com/fossiiita/humblefoolcup
+  
+- name: Django Event Manangement Platform
+  image: django.jpg
+  github: https://github.com/gauthamzz/Django-EventPlatform
