@@ -19,7 +19,7 @@
     height: 80px;
 }
 
-.mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .designs-sec .designs-wrapper, .contributors, #contributors-thanks{
+.mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .issues-sec .issues-wrapper, .designs-sec .designs-wrapper, .contributors, #contributors-thanks{
     width: 100%;
     height: 100%;
     margin: auto;
@@ -114,6 +114,10 @@
     background: #87ceeb;
 }
 
+.issues-sec .issues-wrapper {
+    background: #D5D8DC;
+}
+
 .title {
     padding-top: 30px;
     text-align: center;
@@ -181,7 +185,7 @@ hr {
     padding: 2em;
 }
 
-.social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .mentors {
+.social-media, .latest-issues, .logos, .blog, .projects-sec, .students-sec, .issues-sec, .mentors {
     margin-top: 100px;
 }
 .social-media {
