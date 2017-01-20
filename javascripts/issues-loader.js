@@ -39,6 +39,6 @@ function loadIssues(data) {
                                 '</div>' +
                             '</div>';
         
-        $('#issues').append(issue_markup);
+        $('#issues-content').append(issue_markup);
     });
 }
