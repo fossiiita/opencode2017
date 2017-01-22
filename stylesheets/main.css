@@ -1,10 +1,10 @@
-    .bs-example{
-        margin: 20px;
-    }
-    .modal-content iframe{
-        margin: 0 auto;
-        display: block;
-    }
+.bs-example{
+margin: 20px;
+}
+.modal-content iframe{
+margin: 0 auto;
+display: block;
+}
 .main-content {
     background-color: #f4f4f4;
 }
