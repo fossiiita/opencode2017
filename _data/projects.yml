@@ -12,3 +12,12 @@
 - name: Django Event Manangement Platform
   image: django.jpg
   github: https://github.com/gauthamzz/Django-EventPlatform
+
+- name: Proxy Man
+  image: proxyman.png
+  github: https://github.com/himanshub16/ProxyMan
+  
+- name: Cool Practise Programs
+  image: proxyman.png
+  github: https://github.com/faheemzunjani/Cool-Practice-Programs
+
