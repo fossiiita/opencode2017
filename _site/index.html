@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:url" content="https://fossiiita.github.io/opencodecollab/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Opencode" />
+    <meta property="og:description" content="A mini GSoC like Open Source event. Join now and start solving issues on GitHub to win amazing cash prizes and cool t-shirts!" />
+    <meta property="og:image" content="https://fossiiita.github.io/opencodecollab/images/opencode-og.jpg" />
+    <link rel="icon" sizes="20x20" href="images/icons/favicon.png">
+    <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/main.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/footer-distributed.css">
+    <script type="text/javascript">
+    $(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#cartoonVideo").attr('src');
+    
+    /* Remove iframe src attribute on page load to
+    prevent autoplay in background */
+    $("#cartoonVideo").attr('src', '');
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed */
+    $("#myModal").on('shown.bs.modal', function(){
+        $("#cartoonVideo").attr('src', url);
+    });
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModal").on('hide.bs.modal', function(){
+        $("#cartoonVideo").attr('src', '');
+    });
+});
+    </script>
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>OpenCode</title>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <a href="https://github.com/fossiiita/opencodecollab" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" id="sidebar"
+            data-toggle="collapse" data-target="#collapse"
+            aria-expanded="false">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://fossiiita.github.io/opencode/">
+            <img src="./images/opencode.png" height=35>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse">
+          <ul class="nav navbar-nav" id="menu">
+            <li><a class="menu-item" href="#mentors">Mentors</a></li>
+            <li><a class="menu-item" href="#students">Participants</a></li>
+            <li><a class="menu-item" href="#projects">Projects</a></li>
+            <li><a class="menu-item" href="#issues">Issues</a></li>
+            <li><a class="menu-item" href="https://gitter.im/opencode2017">Chat With Us</a></li>
+            <li><a class="menu-item" href="https://www.facebook.com/Opencode-1038106262984513/">Facebook</a></li>
+            <li><a href="#myModal" data-toggle="modal">Watch Trailer</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- End of Navigation Bar -->
+<!-- Main Content -->
+<div class="bs-example">
+    
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Trailer of OpenCode</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/qkt9vMKYHAM" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                                                                      
+    <section class="main-content">
+            <!-- Mentors Section -->
+            <section class="mentors" id="mentors" href="#mentors">
+                <div class="row mentors-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>MENTORS</h2>
+                    <!-- Stop ignoring -->
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="card">
+                                            <div class="avatar">
+                                                
+                                                <img src="images/mentors/shubham-padia.jpg" alt="Shubham Padia">
+                                                
+                                                <p style="display: inline-block;">Shubham Padia</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="card">
+                                            <p style="padding:15px;">Connect with this mentor!</p>
+                                            <hr>
+                                            <center>
+                                                
+                                                <a href="https://github.com/shubham-padia"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="http://shubhamp.in"><i class="fa fa-2x fa-rss-square"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://twitter.com/shubham_p98"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://www.facebook.com/padiashubham"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                                
+                                            </center>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="card">
+                                            <div class="avatar">
+                                                
+                                                <img src="images/mentors/Gautham-Santhosh.jpg" alt="Gautham Santhosh">
+                                                
+                                                <p style="display: inline-block;">Gautham Santhosh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="card">
+                                            <p style="padding:15px;">Connect with this mentor!</p>
+                                            <hr>
+                                            <center>
+                                                
+                                                <a href="https://github.com/gauthamzz"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://gauthamzz.github.io/"><i class="fa fa-2x fa-rss-square"></i></a> &nbsp;
+                                                
+                                                
+                                                
+                                                <a href="https://www.facebook.com/gauthamzz"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                                
+                                            </center>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="card">
+                                            <div class="avatar">
+                                                
+                                                <img src="images/mentors/abhinav.jpg" alt="Abhinav Khare">
+                                                
+                                                <p style="display: inline-block;">Abhinav Khare</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="card">
+                                            <p style="padding:15px;">Connect with this mentor!</p>
+                                            <hr>
+                                            <center>
+                                                
+                                                <a href="https://github.com/CosmicCoder96"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="http://cosmiccoder96.github.io"><i class="fa fa-2x fa-rss-square"></i></a> &nbsp;
+                                                
+                                                
+                                                
+                                                <a href="https://www.facebook.com/akhare"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                                
+                                            </center>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="card">
+                                            <div class="avatar">
+                                                
+                                                <img src="images/mentors/mubaris-hassan.jpg" alt="Mubaris Hassan">
+                                                
+                                                <p style="display: inline-block;">Mubaris Hassan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="card">
+                                            <p style="padding:15px;">Connect with this mentor!</p>
+                                            <hr>
+                                            <center>
+                                                
+                                                <a href="https://github.com/mubaris"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="http://mubaris.me/"><i class="fa fa-2x fa-rss-square"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://twitter.com/MubarisHassan"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://www.facebook.com/Mubaris.Hassan.7"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                                
+                                            </center>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="card">
+                                            <div class="avatar">
+                                                
+                                                <img src="images/mentors/diwakar.jpg" alt="Diwakar Moturu">
+                                                
+                                                <p style="display: inline-block;">Diwakar Moturu</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="card">
+                                            <p style="padding:15px;">Connect with this mentor!</p>
+                                            <hr>
+                                            <center>
+                                                
+                                                <a href="https://github.com/magician03"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://magician03.github.io/blog"><i class="fa fa-2x fa-rss-square"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://twitter.com/magician_03"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://www.facebook.com/magician03"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                                
+                                            </center>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="card">
+                                            <div class="avatar">
+                                                
+                                                <img src="images/mentors/faheem-zunjani.jpeg" alt="Faheem Zunjani">
+                                                
+                                                <p style="display: inline-block;">Faheem Zunjani</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="card">
+                                            <p style="padding:15px;">Connect with this mentor!</p>
+                                            <hr>
+                                            <center>
+                                                
+                                                <a href="https://github.com/faheemzunjani"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                                
+                                                
+                                                
+                                                <a href="https://twitter.com/faheemzunjani"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://www.facebook.com/faheemzunjani"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                                
+                                            </center>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="card">
+                                            <div class="avatar">
+                                                
+                                                <img src="images/mentors/himanshub16.jpg" alt="Himanshu Shekhar">
+                                                
+                                                <p style="display: inline-block;">Himanshu Shekhar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="card">
+                                            <p style="padding:15px;">Connect with this mentor!</p>
+                                            <hr>
+                                            <center>
+                                                
+                                                <a href="https://github.com/himanshub16"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                                
+                                                
+                                                
+                                                <a href="https://twitter.com/himanshub16"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
+                                                
+                                                
+                                                <a href="https://www.facebook.com/himanshub16"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                                
+                                            </center>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- End of Mentor Section -->
+
+            <!-- Student Section -->
+            <section class="students-sec" id="students" href="#students">
+                <div class="row students-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>Participants</h2>
+                    <!-- Stop ignoring -->
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/vipul.jpg"
+                                                    alt="Vipul Sharma"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Vipul Sharma">
+                                                            Vipul Sharma
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Still learning...
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/vsvipul555"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/vsvipul555"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://twitter.com/VSVipul"><i class="fa fa-3x fa-twitter"></i></a> &nbsp;
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/vamsisangam.jpg"
+                                                    alt="Vamsi Sangam"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Vamsi Sangam">
+                                                            Vamsi Sangam
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Hi! I am 3 year old developer who converts food to code!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/VamsiSangam"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/vamsi.sangam"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/aswanth.jpg"
+                                                    alt="Aswanth.K"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Aswanth.K">
+                                                            Aswanth.K
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Hi! I am a beginner to coding !!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/aswanthkoleri"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/aswanth9495"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/harshitjain.jpg"
+                                                    alt="Harshit Jain"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Harshit Jain">
+                                                            Harshit Jain
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Just started developing! Hope to learn many things!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/Symphoria"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/harshit.jain.37604303"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/aswinvb.jpg"
+                                                    alt="AswinVB"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="AswinVB">
+                                                            AswinVB
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    I am new in github ^-^
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/aswinzz"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/aswinvb"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/donny.jpg"
+                                                    alt="Jayesh Patil"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Jayesh Patil">
+                                                            Jayesh Patil
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Connect with this participant!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/https://github.com/Donny97"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/Abhey.jpg"
+                                                    alt="Abhey Rana"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Abhey Rana">
+                                                            Abhey Rana
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    I am a developer who loves opensource and pizza
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/Abhey"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/Abhey.Rana.Useless"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/neha.jpg"
+                                                    alt="Neha"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Neha">
+                                                            Neha
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Still learning !!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/13nehu"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/neha.kandpal.3511"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/kadambari.jpg"
+                                                    alt="Kadambari"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Kadambari">
+                                                            Kadambari
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Apprentice to Doctor Schnabel
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/https://github.com/Aotoge"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/https://www.facebook.com/kadambari.kaveri"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/nabeel.jpg"
+                                                    alt="Nabeel"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Nabeel">
+                                                            Nabeel
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    I like sleep
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/nab331"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/nab331"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://twitter.com/nab331j"><i class="fa fa-3x fa-twitter"></i></a> &nbsp;
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/tarun.jpg"
+                                                    alt="Tarun Singhal"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Tarun Singhal">
+                                                            Tarun Singhal
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Hi! I have started learning opensource!!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/tarunsinghal97"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/tarun.singhal.148"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/utkarsh.jpg"
+                                                    alt="Utkarsh Chaurasia"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Utkarsh Chaurasia">
+                                                            Utkarsh Chaurasia
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    I like to learn and develop and develop.
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/utkarshchaurasia28"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/utkarsh.chaurasia2"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/bhanu.jpg"
+                                                    alt="Bhanu Bhandari"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Bhanu Bhandari">
+                                                            Bhanu Bhandari
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Newbie open source developer, hope to learn a lot!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/bhanu1911"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/bhanubhandari99"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/aditya710.jpg"
+                                                    alt="Aditya Goel"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Aditya Goel">
+                                                            Aditya Goel
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    I come here to build.
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/Ellusionists"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/aditya.goel.311"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/RavicharanN.jpg"
+                                                    alt="Ravi charan"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Ravi charan">
+                                                            Ravi charan
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Optimist | Bibiliophile | TV series addict
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/RavicharanN"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/ravi.charan.5680"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/gagan.jpg"
+                                                    alt="Gagan Ganapathy"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Gagan Ganapathy">
+                                                            Gagan Ganapathy
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    First Contribution here...hoping for more !
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/CodHeK"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/GaganGanapathyAs"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/agam.jpg"
+                                                    alt="Agam Dwivedi"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Agam Dwivedi">
+                                                            Agam Dwivedi
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Can not talk. Gitter only.
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/agam98"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/100007152586385"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/Anupam.jpg"
+                                                    alt="Anupam Dagar"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Anupam Dagar">
+                                                            Anupam Dagar
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Getting started with open-sourcing.A new path.
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/Anupam-dagar"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/invincible.anupam"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://twitter.com/anupam_dagar"><i class="fa fa-3x fa-twitter"></i></a> &nbsp;
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/Saic.jpg"
+                                                    alt="Saicharan Reddy"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Saicharan Reddy">
+                                                            Saicharan Reddy
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    New to github!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/mrsaicharan1"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/saicharan.reddy.927"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/pradeep.jpg"
+                                                    alt="Pradeep Gangwar"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Pradeep Gangwar">
+                                                            Pradeep Gangwar
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    Exploring and loving computer science.
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/pradeepgangwar"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/pradeep.gangwar.391"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/sashank.jpg"
+                                                    alt="Sashank Mishra"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Sashank Mishra">
+                                                            Sashank Mishra
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    New to Open Source. Hope to learn a lot!!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/sashank27"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/100000179816805"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/aseemshrey.jpg"
+                                                    alt="Aseem Shrey"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Aseem Shrey">
+                                                            Aseem Shrey
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    New to open source , learning a lot
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/LuD1161"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/AseemShrey"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/Pushpender.jpg"
+                                                    alt="Pushpender Yadav"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Pushpender Yadav">
+                                                            Pushpender Yadav
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    New to Github!!
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/DreadedLama"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/100011438206757"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/akshat.jpg"
+                                                    alt="Akshat Jain"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Akshat Jain">
+                                                            Akshat Jain
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    First time on github.
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/dabbler011"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/akshatj011"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                    <img src="images/students/vinit.jpg"
+                                                    alt="Vinit Man"
+                                                    width="200px" height="200px">
+                                                    
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Vinit Man">
+                                                            Vinit Man
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    newtgihubd
+                                                </p>
+                                                
+                                                <br><hr>
+                                                <center>
+                                                    
+                                                    <a href="https://github.com/vin_man"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    
+                                                    
+                                                    <a href="https://www.facebook.com/vinitmankar"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    
+                                                    
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- End of Student Section -->
+
+            <!-- Projects Section -->
+            <section class="projects-sec" id="projects" href="#projects">
+                <div class="row projects-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>Projects Currently in OpenCode</h2>
+                    <!-- Stop ignoring -->
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper github-project" data-user="fossiiita" data-repo="opencodecollab">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                    <img src="images/projects/opencodecollab.jpg"
+                                                    alt="opencodecollab"
+                                                    width="200px" height="200px">
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-file-text"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="opencodecollab">
+                                                            opencodecollab
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a style="text-decoration: none;" class="fa-2x" href="https://github.com/fossiiita/opencodecollab" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                                <br><hr>
+                                                <center class="fa-2x">
+                                                    <i class="fa fa-code"></i> <span id="fossiiita-opencodecollab-language">HTML</span><br>
+                                                    <a href="" id="fossiiita-opencodecollab-stars" style="text-decoration: none;"><i class="fa fa-star"></i> <span>0</span></a><br>
+                                                    <a href="" id="fossiiita-opencodecollab-forks" style="text-decoration: none;"><i class="fa fa-code-fork"></i> <span>0</span></a><br>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper github-project" data-user="fossiiita" data-repo="humblefoolcup">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                    <img src="images/projects/humblefoolcup.jpg"
+                                                    alt="HumbleFoolCup"
+                                                    width="200px" height="200px">
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-file-text"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="HumbleFoolCup">
+                                                            HumbleFoolCup
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a style="text-decoration: none;" class="fa-2x" href="https://github.com/fossiiita/humblefoolcup" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                                <br><hr>
+                                                <center class="fa-2x">
+                                                    <i class="fa fa-code"></i> <span id="fossiiita-humblefoolcup-language">HTML</span><br>
+                                                    <a href="" id="fossiiita-humblefoolcup-stars" style="text-decoration: none;"><i class="fa fa-star"></i> <span>0</span></a><br>
+                                                    <a href="" id="fossiiita-humblefoolcup-forks" style="text-decoration: none;"><i class="fa fa-code-fork"></i> <span>0</span></a><br>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper github-project" data-user="gauthamzz" data-repo="Django-EventPlatform">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                    <img src="images/projects/django.jpg"
+                                                    alt="Django Event Manangement Platform"
+                                                    width="200px" height="200px">
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-file-text"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Django Event Manangement Platform">
+                                                            Django Event Manangement Platform
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a style="text-decoration: none;" class="fa-2x" href="https://github.com/gauthamzz/Django-EventPlatform" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                                <br><hr>
+                                                <center class="fa-2x">
+                                                    <i class="fa fa-code"></i> <span id="gauthamzz-Django-EventPlatform-language">HTML</span><br>
+                                                    <a href="" id="gauthamzz-Django-EventPlatform-stars" style="text-decoration: none;"><i class="fa fa-star"></i> <span>0</span></a><br>
+                                                    <a href="" id="gauthamzz-Django-EventPlatform-forks" style="text-decoration: none;"><i class="fa fa-code-fork"></i> <span>0</span></a><br>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper github-project" data-user="himanshub16" data-repo="ProxyMan">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                    <img src="images/projects/proxyman.png"
+                                                    alt="Proxy Man"
+                                                    width="200px" height="200px">
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-file-text"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Proxy Man">
+                                                            Proxy Man
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a style="text-decoration: none;" class="fa-2x" href="https://github.com/himanshub16/ProxyMan" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                                <br><hr>
+                                                <center class="fa-2x">
+                                                    <i class="fa fa-code"></i> <span id="himanshub16-ProxyMan-language">HTML</span><br>
+                                                    <a href="" id="himanshub16-ProxyMan-stars" style="text-decoration: none;"><i class="fa fa-star"></i> <span>0</span></a><br>
+                                                    <a href="" id="himanshub16-ProxyMan-forks" style="text-decoration: none;"><i class="fa fa-code-fork"></i> <span>0</span></a><br>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper github-project" data-user="faheemzunjani" data-repo="Cool-Practice-Programs">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                    <img src="images/projects/proxyman.png"
+                                                    alt="Cool Practise Programs"
+                                                    width="200px" height="200px">
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-file-text"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="Cool Practise Programs">
+                                                            Cool Practise Programs
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a style="text-decoration: none;" class="fa-2x" href="https://github.com/faheemzunjani/Cool-Practice-Programs" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                                <br><hr>
+                                                <center class="fa-2x">
+                                                    <i class="fa fa-code"></i> <span id="faheemzunjani-Cool-Practice-Programs-language">HTML</span><br>
+                                                    <a href="" id="faheemzunjani-Cool-Practice-Programs-stars" style="text-decoration: none;"><i class="fa fa-star"></i> <span>0</span></a><br>
+                                                    <a href="" id="faheemzunjani-Cool-Practice-Programs-forks" style="text-decoration: none;"><i class="fa fa-code-fork"></i> <span>0</span></a><br>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- End of Projects Section -->
+
+            <!-- Issues Section -->
+            <section class="issues-sec" id="issues" href="#issues">
+                <div class="row issues-wrapper" style="height:auto;">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>Issues</h2>
+                    <!-- Stop ignoring -->
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div id="issues-content">
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination" id="issues-pagination">
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Issues Section -->
+
+
+        </div> <!-- End of .container inside the main-wrapper section -->
+
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+
+                <a href="https://www.facebook.com/Opencode-1038106262984513"><i class="fa fa-facebook"></i></a>
+                <a href="https://fossiiita.github.io/opencode/"><i class="fa fa-github"></i></a>
+                <a href="https://geekhaven.iiita.ac.in"><img src = "images/logo.png" height="30px" width = "30px">
+<!--                 <a href="https://gitter.im/opencode2017/"><img src = "images/gitter.png" height="35px" width = "35px">
+ -->            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a href="https://fossiiita.github.io/opencode/">Home</a>
+                    ·
+                    <a href="https://fossiiita.github.io/humblefoolcup/">Humblefool Cup</a>
+                    ·
+                    <a href="https://github.com/gauthamzz/Django-EventPlatform">Django-EventPlatform</a>
+                    ·
+                    <a href="https://fossiiita.github.io/opencode/faq">FAQ</a>
+                    ·
+                    <a href="https://gitter.im/opencode2017">Gitter!</a>
+                </p>
+
+                <p >OpenCode 2017</p>
+            </div>
+
+        </footer>
+
+
+
+<!-- End of Main Content -->
+
+<!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="javascripts/js-yaml.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
+    <script src="javascripts/issues-loader.js"></script>
+    <script src="javascripts/repo-stats-loader.js"></script>
+</body>
+</html>
