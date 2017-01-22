@@ -1,3 +1,16 @@
+.iframe_container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.iframe_container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .main-content {
     background-color: #f4f4f4;
 }
@@ -309,6 +322,8 @@ body {
 #issues-content .panel:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 #sidebar{
 float:left;
 }
+
