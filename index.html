@@ -55,7 +55,6 @@
       </div>
     </nav>
 <!-- End of Navigation Bar -->
-
 <!-- Main Content -->
     <section class="main-content">
             <!-- Mentors Section -->
@@ -191,28 +190,46 @@
                     <!-- Stop ignoring -->
                     {% for project in site.data.projects %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <a href="{{project.github}}" target="_tab">
-                            <div class="card">
-                                <div class="avatar">
-                                    {% if project.image %}
-                                    <img src="images/projects/{{project.image}}"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% else %}
-                                    <img src="images/projects/octocat.jpg"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% endif %}
-                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
-                                        <i class="fa fa-file-text"></i>
-                                        &nbsp;
-                                        <span class="stu-name card-text" title="{{project.name}}">
-                                            {{project.name}}
-                                        </span>
-                                    </p>
+                        <div class="card-wrapper github-project" data-user="{{project.user}}" data-repo="{{project.repo}}">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                    <img src="images/projects/{{project.image}}"
+                                                    alt="{{project.name}}"
+                                                    width="200px" height="200px">
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-file-text"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="{{project.name}}">
+                                                            {{project.name}}
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a style="text-decoration: none;" class="fa-2x" href="{{project.github}}" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                                <br><hr>
+                                                <center class="fa-2x">
+                                                    <i class="fa fa-code"></i> <span id="{{project.user}}-{{project.repo}}-language">HTML</span><br>
+                                                    <a href="" id="{{project.user}}-{{project.repo}}-stars" style="text-decoration: none;"><i class="fa fa-star"></i> <span>0</span></a><br>
+                                                    <a href="" id="{{project.user}}-{{project.repo}}-forks" style="text-decoration: none;"><i class="fa fa-code-fork"></i> <span>0</span></a><br>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
+                        <br><br>
                     </div>
                     {% endfor %}
                 </div>
@@ -285,5 +302,6 @@
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
     <script src="javascripts/issues-loader.js"></script>
+    <script src="javascripts/repo-stats-loader.js"></script>
 </body>
 </html>
