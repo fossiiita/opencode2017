@@ -191,28 +191,48 @@
                     <!-- Stop ignoring -->
                     {% for project in site.data.projects %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <a href="{{project.github}}" target="_tab">
-                            <div class="card">
-                                <div class="avatar">
-                                    {% if project.image %}
-                                    <img src="images/projects/{{project.image}}"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% else %}
-                                    <img src="images/projects/octocat.jpg"
-                                    alt="{{project.name}}"
-                                    width="200px" height="200px">
-                                    {% endif %}
-                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
-                                        <i class="fa fa-file-text"></i>
-                                        &nbsp;
-                                        <span class="stu-name card-text" title="{{project.name}}">
-                                            {{project.name}}
-                                        </span>
-                                    </p>
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                    <img src="images/projects/{{project.image}}"
+                                                    alt="{{project.name}}"
+                                                    width="200px" height="200px">
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-file-text"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="{{project.name}}">
+                                                            {{project.name}}
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a href="{{project.github}}" target="_tab">View on GitHub</a>
+                                                </p>
+                                                <br><hr>
+                                                <center>
+                                                    <a class="github-button" href="{{project.github}}" data-icon="octicon-star" data-style="mega" data-count-href="/{{project.user}}/{{project.repo}}/stargazers" data-count-api="/repos/{{project.user}}/{{project.repo}}#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star fossiiita/opencodecollab on GitHub">Star</a>
+                                                    <br><br>
+                                                    <a class="github-button" href="{{project.github}}/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/{{project.user}}/{{project.repo}}/network" data-count-api="/repos/{{project.user}}/{{project.repo}}#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork fossiiita/opencodecollab on GitHub">Fork</a>
+                                                    <br><br>
+                                                    <a class="github-button" href="{{project.github}}/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/{{project.user}}/{{project.repo}}#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue {{project.user}}/{{project.repo}} on GitHub">Issue</a>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
+                        <br><br>
                     </div>
                     {% endfor %}
                 </div>
@@ -285,5 +305,6 @@
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
     <script src="javascripts/issues-loader.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
