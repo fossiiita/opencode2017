@@ -2,13 +2,32 @@
 
 
 - name: opencodecollab
+  user: fossiiita
+  repo: opencodecollab
   image: opencodecollab.jpg
   github: https://github.com/fossiiita/opencodecollab
   
 - name: HumbleFoolCup
+  user: fossiiita
+  repo: humblefoolcup
   image: humblefoolcup.jpg
   github: https://github.com/fossiiita/humblefoolcup
   
 - name: Django Event Manangement Platform
+  user: gauthamzz
+  repo: Django-EventPlatform
   image: django.jpg
   github: https://github.com/gauthamzz/Django-EventPlatform
+
+- name: Proxy Man
+  user: himanshub16
+  repo: ProxyMan
+  image: proxyman.png
+  github: https://github.com/himanshub16/ProxyMan
+  
+- name: Cool Practise Programs
+  user: faheemzunjani
+  repo: Cool-Practice-Programs
+  image: proxyman.png
+  github: https://github.com/faheemzunjani/Cool-Practice-Programs
+
