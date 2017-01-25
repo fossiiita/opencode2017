@@ -1,0 +1,140 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:url" content="https://fossiiita.github.io/opencodecollab/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Opencode" />
+    <meta property="og:description" content="A mini GSoC like Open Source event. Join now and start solving issues on GitHub to win amazing cash prizes and cool t-shirts!" />
+    <meta property="og:image" content="https://fossiiita.github.io/opencodecollab/images/opencode-og.jpg" />
+    <link rel="icon" sizes="20x20" href="images/icons/favicon.png">
+    <link href="//fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/main.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/loader.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/footer-distributed.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/scoreboard.css">
+    <script type="text/javascript">
+    $(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#cartoonVideo").attr('src');
+    
+    /* Remove iframe src attribute on page load to
+    prevent autoplay in background */
+    $("#cartoonVideo").attr('src', '');
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed */
+    $("#myModal").on('shown.bs.modal', function(){
+        $("#cartoonVideo").attr('src', url);
+    });
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModal").on('hide.bs.modal', function(){
+        $("#cartoonVideo").attr('src', '');
+    });
+});
+    </script>
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>OpenCode</title>
+</head>
+<body>
+   
+
+{% include navbar.html %}
+
+<!-- Main Content -->
+
+
+    <section class="main-content">
+        <section class="scoreboard" id="scoreboard" href="#scoreboard">
+            <h2>Scoreboard</h2>
+            <div class="container-fluid">
+                <br>
+                <div class="panel-group" id="scoreboard-accordion" role="tablist" aria-multiselectable="true">
+                    {% assign counter = 1 %}
+                    {% assign student_scores = site.data.scores | sort: 'total' | reverse %}
+                    {% for student in student_scores %}
+                        {% if student.contributions %}
+                            {% for student_info in site.data.students %}
+                                {% if student_info.github == student.github %}
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading clearfix" role="tab" id="heading-{{ student.github }}">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#scoreboard-accordion" href="#collapse-{{ student.github }}" aria-expanded="false" aria-controls="collapse-{{ student.github }}">
+                                                {{ counter }} | {{ student_info.name }}
+                                                {% assign counter = counter | plus: 1 %}
+                                                <span class="pull-right">Score : {{ student.total }}</span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse-{{ student.github }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ student.github }}">
+                                            <div class="panel-body">
+                                                <div class="col-sm-12">
+                                                    <h4 style="margin-top: 0px;"><i class="fa fa-code text-danger"></i> &nbsp; Contributions</h4>
+                                                    
+                                                    {% for contribution in student.contributions %}
+                                                    <i class="fa fa-check text-success"></i> &nbsp; 
+                                                    <a href="{{ contribution.link }}">{{ contribution.name }}</a> 
+                                                    <span class="pull-right">{{ contribution.score }}</span>
+                                                    <br>
+                                                    {% endfor %}
+
+                                                    <br>
+                                                    <hr>
+                                                    <center>
+                                                        <a href="https://github.com/{{ student.github }}"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                                        {% if student_info.facebook %}
+                                                        <a href="https://www.facebook.com/{{ student_info.facebook }}"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                                        {% endif %}
+                                                        {% if student_info.twitter %}
+                                                        <a href="https://twitter.com/{{ student_info.twitter }}"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
+                                                        {% endif %}
+                                                        {% if student_info.blog %}
+                                                        <a href="{{ student_info.blog }}"><i class="fa fa-2x fa-rss-square"></i></a> &nbsp;
+                                                        {% endif %}
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </section> <!-- End of .container inside the main-wrapper section -->
+
+       {% include footer.html %}
+
+<!-- End of Main Content -->
+
+    <!-- Scripts -->
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="javascripts/js-yaml.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/index.js"></script>       
+    <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
+    <script src="javascripts/loader.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#scoreboard-accordion div a').first().click();
+        });
+    </script>
+</body>
+</html>

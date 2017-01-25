@@ -1,0 +1,367 @@
+# Every student must give details regarding every contribution they made
+# and the score allocated to the contribution. Give links as a proof of
+# your contribution. Please follow format strictly.
+
+- github: VamsiSangam
+  contributions:
+    - name: Added scoreboard.html
+      link: https://github.com/fossiiita/opencodecollab/pull/174
+      score: 20
+    - name: Move all relevant code to navbar.html (issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/170
+      score: 10
+    - name: Created separate pages for projects and issues
+      link: https://github.com/fossiiita/opencodecollab/pull/169
+      score: 10
+    - name: Implemented separate issues for each project
+      link: https://github.com/fossiiita/opencodecollab/pull/150
+      score: 30
+    - name: Added fb like button
+      link: https://github.com/fossiiita/opencodecollab/pull/135
+      score: 10
+    - name: Modified README and added PR template
+      link: https://github.com/fossiiita/opencodecollab/pull/133
+      score: 20
+    - name: Added personal website to students.yml
+      link: https://github.com/fossiiita/opencodecollab/pull/118
+      score: 10
+    - name: Added repo names in issues section
+      link: https://github.com/fossiiita/opencodecollab/pull/117
+      score: 10
+    - name: Added project stars and forks
+      link: https://github.com/fossiiita/opencodecollab/pull/98
+      score: 30
+    - name: Open graph images
+      link: https://github.com/fossiiita/opencodecollab/issues/88
+      score: 10
+    - name: Added OG tags and data
+      link: https://github.com/fossiiita/opencodecollab/pull/89
+      score: 20
+    - name: Modified issues section
+      link: https://github.com/fossiiita/opencodecollab/pull/85
+      score: 30
+    - name: Implemented issues section
+      link: https://github.com/fossiiita/opencodecollab/pull/80
+      score: 30
+    - name: Discrepancy in students.yml
+      link: https://github.com/fossiiita/opencodecollab/issues/68
+      score: 10
+    - name: Corrected records in students.yml
+      link: https://github.com/fossiiita/opencodecollab/pull/69
+      score: 10
+    - name: Added flip cards to show all info
+      link: https://github.com/fossiiita/opencodecollab/pull/62
+      score: 30
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87#issuecomment-274195961
+      score: 20
+    - name: Added sponsors section and images
+      link: https://github.com/fossiiita/humblefoolcup/pull/20
+      score: 20
+    - name: Projects section
+      link: https://github.com/fossiiita/opencodecollab/pull/40
+      score: 30
+    - name: Linked logo to main website
+      link: https://github.com/fossiiita/opencodecollab/pull/37
+      score: 20  
+    - name: Enable gh-pages on your fork
+      link: https://github.com/fossiiita/opencodecollab/issues/15#issuecomment-273281903
+      score: 30
+    - name: Added profile to students
+      link: https://github.com/fossiiita/opencodecollab/pull/7
+      score: 30
+  total: 440
+  
+- github: vsvipul555
+  
+- github: aswanthkoleri
+  contributions:
+    - name: add student details
+      link: https://github.com/fossiiita/opencodecollab/pull/11
+      score: 30
+    - name: referred me
+      link: https://github.com/fossiiita/opencodecollab/pull/14
+      score: 20
+    - name: referred me
+      link: https://github.com/fossiiita/opencodecollab/pull/38
+      score: 20      
+    - name: install on your system
+      link: https://github.com/fossiiita/opencodecollab/issues/9
+      score: 30
+    - name: enable gh-pages on your fork
+      link: https://github.com/fossiiita/opencodecollab/issues/15
+      score: 30
+    - name: add django event platform
+      link: https://github.com/fossiiita/opencodecollab/pull/79
+      score: 10      
+    - name: add gitignore
+      link: https://github.com/fossiiita/opencodecollab/pull/112
+      score: 10        
+    - name: change background
+      link: https://github.com/fossiiita/opencodecollab/pull/122
+      score: 20
+    - name: general task
+      link: https://github.com/fossiiita/opencodecollab/issues/87
+      score: 20      
+    - name: make your own personal page
+      link: https://github.com/fossiiita/opencodecollab/issues/108
+      score: 10      
+    - name: add change in footer
+      link: https://github.com/fossiiita/humblefoolcup/pull/32
+      score: 20      
+    - name: add link
+      link: https://github.com/fossiiita/humblefoolcup/pull/43
+      score: 20      
+    - name: added issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/44
+      score: 10      
+    - name: added issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/48
+      score: 10      
+    - name: added issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/49
+      score: 10      
+    - name: added preloader
+      link: https://github.com/fossiiita/humblefoolcup/pull/52
+      score: 20     
+    - name: change background
+      link: https://github.com/fossiiita/humblefoolcup/pull/54
+      score: 20
+  total: 310
+
+- github: Symphoria
+
+- github: aswinzz
+  contributions:
+    - name: Add humble fool in projects section
+      link: https://github.com/fossiiita/opencodecollab/pull/45
+      score: 20
+    - name: refferal
+      link: https://github.com/fossiiita/opencodecollab/pull/13
+      score: 20
+    - name: Add A Facebook like bar (made an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/101
+      score: 10    
+    - name: Loader
+      link: https://github.com/fossiiita/opencodecollab/pull/131
+      score: 20  
+    - name: Make Navbar Sticky(made an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/144
+      score: 10  
+    - name: Make Navbar Sticky
+      link: https://github.com/fossiiita/opencodecollab/pull/143
+      score: 20  
+    - name: Make _includes folder; move header and footer to there
+      link: https://github.com/fossiiita/opencodecollab/pull/166
+      score: 10 
+    - name: Install On Your System (django)
+      link: https://cloud.githubusercontent.com/assets/25057819/22864434/67a7b422-f177-11e6-84fb-4802ee8ec2ae.png
+      score: 30    
+    - name: Move all relevant code to navbar.html
+      link: https://github.com/fossiiita/opencodecollab/pull/179
+      score: 10
+    - name: Add your name in the students section 
+      link: https://github.com/fossiiita/opencodecollab/pull/14
+      score: 30
+    - name: Install on your system
+      link: https://cloud.githubusercontent.com/assets/25057819/22172471/aaec884a-dfcd-11e6-87b8-b5176c3aa368.png
+      score: 30
+    - name: Enable gh-pages
+      link: https://aswinzz.github.io/opencodecollab/
+      score: 30
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87
+      score: 20
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/185
+      score: 20  
+    - name: Make your own personal page- For Everyone
+      link: https://aswinzz.github.io/
+      score: 10
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/184
+      score: 20    
+    - name: add gitter chatbox(made an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/165
+      score: 10
+    - name: add close button for gitter chatbox(made an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/191
+      score: 10    
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/188
+      score: 20  
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/187
+      score: 20 
+    - name: Add a Header to the page
+      link: https://github.com/fossiiita/humblefoolcup/pull/50
+      score: 20  
+    - name: Add about section
+      link: https://github.com/fossiiita/humblefoolcup/pull/30
+      score: 20  
+    - name: Merge Opencode website with opencodecollab website
+      link: https://github.com/fossiiita/humblefoolcup/pull/30
+      score: 10  
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/183
+      score: 20
+    - name: chat with us option not working when we are using the issues and projects page 
+      link: https://github.com/fossiiita/opencodecollab/pull/199
+      score: 30
+    - name: Add more solutions to Codechef problems(*2)
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/12
+      score: 40
+  total: 510
+
+- github: Donny97
+
+- github: Abhey
+
+- github: 13nehu
+
+- github: Aotoge
+  
+- github: nab331
+  
+- github: tarunsinghal97
+
+- github: utkarshchaurasia28
+
+- github: bhanu1911
+
+- github: Ellusionists
+  
+- github: RavicharanN
+  
+- github: CodHeK
+  
+- github: agam98
+  
+- github: Anupam-dagar
+  contributions:
+    - name: Added profile to students.
+      link: https://github.com/fossiiita/opencodecollab/pull/48
+      score: 30
+    - name: Reffer someone else.(vinit mankar refered me)
+      link: https://github.com/fossiiita/opencodecollab/pull/102
+      score: 20
+    - name: Install on your system.
+      link: https://github.com/fossiiita/opencodecollab/issues/9
+      score: 30
+    - name: Enable gh-pages on your fork.
+      link: https://github.com/fossiiita/opencodecollab/issues/15
+      score: 30
+    - name: Create more issues(issue 1)
+      link: https://github.com/fossiiita/opencodecollab/issues/107
+      score: 10
+    - name: Create more issues(issue 2)
+      link: https://github.com/fossiiita/opencodecollab/issues/119
+      score: 10
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87
+      score: 20
+    - name: Add to projects(proxy man and cool practice programs)
+      link: https://github.com/fossiiita/opencodecollab/pull/92
+      score: 10
+    - name: Add trailer in website
+      link: https://github.com/fossiiita/opencodecollab/pull/100
+      score: 10
+    - name: Added event timeline.
+      link: https://github.com/fossiiita/humblefoolcup/pull/18
+      score: 20
+    - name: Added events section.
+      link: https://github.com/fossiiita/humblefoolcup/pull/24
+      score: 20
+    - name: Added topcoder as platform
+      link: https://github.com/fossiiita/humblefoolcup/pull/36
+      score: 10
+    - name: Added FAQ section.
+      link: https://github.com/fossiiita/humblefoolcup/pull/37
+      score: 20
+    - name: Create more issues.(issue 3)
+      link: https://github.com/fossiiita/humblefoolcup/issues/39
+      score: 10
+    - name: Fix Footer.
+      link: https://github.com/fossiiita/humblefoolcup/pull/47
+      score: 10
+    - name: Personal Page.
+      link: https://github.com/fossiiita/opencodecollab/issues/108
+      score: 10
+    - name: Added login page.
+      link: https://github.com/Trailblazerr1/FaceMe-test/pull/6
+      score: 10
+    - name: Added 10 codechef programs.
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/9
+      score: 40
+    - name: Added 7 codechef programs.
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/10
+      score: 20
+    - name: Added 3 codechef programs.
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/11
+      score: 20
+    - name: Added gitter chatbox.
+      link: https://github.com/fossiiita/opencodecollab/pull/189
+      score: 20
+  total: 380
+
+- github: mrsaicharan1
+  
+- github: pradeepgangwar
+  contributions:
+    - name: Added profile to students
+      link: https://github.com/fossiiita/opencodecollab/pull/54
+      score: 30
+    - name: Enable gh-pages on your fork
+      link: https://github.com/fossiiita/opencodecollab/issues/15#issuecomment-273431819
+      score: 30
+    - name: Humblefool webpage made for humblefoolcup
+      link: https://github.com/fossiiita/humblefoolcup/pull/40
+      score: 30
+    - name: Install jekyll and have website running
+      link: https://github.com/fossiiita/opencodecollab/issues/9#issuecomment-273290564
+      score: 30
+    - name: Added new style faq to humblefoolcup
+      link: https://github.com/fossiiita/humblefoolcup/pull/46
+      score: 20
+  total: 140
+  
+- github: agbilotia1998
+  contributions:
+    - name: Added profile to students
+      link: https://github.com/fossiiita/opencodecollab/pull/56
+      score: 30
+    - name: Enable gh-pages on your fork
+      link: https://github.com/fossiiita/opencodecollab/issues/15#issuecomment-273297718
+      score: 30
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87#issuecomment-274348441
+      score: 20
+    - name: Refferal(Akshat Jain Reffered me)
+      link: https://github.com/fossiiita/opencodecollab/blob/master/_data/students.yml
+      score: 20
+    - name: Linked project
+      link: https://github.com/fossiiita/opencodecollab/pull/59
+      score: 10
+    - name: Fixed mobile view
+      link: https://github.com/fossiiita/opencodecollab/pull/95
+      score: 10
+    - name: Made title appealing
+      link: https://github.com/fossiiita/opencodecollab/pull/145
+      score: 10
+    - name: Raised Issue
+      link: https://github.com/fossiiita/opencodecollab/issues/111
+      score: 10
+  total: 140
+  
+- github: sashank27
+  
+- github: LuD1161
+  
+- github: DreadedLama
+  
+- github: dabbler011
+  
+- github: vin-man
+  
+- github: anu-007
+  

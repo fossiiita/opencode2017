@@ -34,6 +34,7 @@
   github: aswinzz
   facebook: aswinvb
   bio: I am new in github ^-^
+  blog: https://aswinzz.github.io/
 
 - name: Jayesh Patil
   image: donny.jpg
@@ -72,6 +73,14 @@
   referral: Symphoria
   bio: Hi! I have started learning opensource!!
 
+- name: Utpal Aman
+  github: Utpal007
+  image: utpal.jpg
+  twitter: utpal007
+  facebook: utpal007
+  referral: aswinzz
+  bio: Still learning... 
+
 - name: Utkarsh Chaurasia
   image: utkarsh.jpg
   github: utkarshchaurasia28
@@ -90,6 +99,30 @@
   image: aditya710.jpg
   facebook: aditya.goel.311
   bio: I come here to build.
+  
+- name: Sourav Mitra
+  github: snipecoder1
+  image: sourav.jpg
+  twitter: sourav111
+  facebook: sourav.mitra.iiita
+  referral: aswinzz
+  bio: beginner
+  
+- name: Aashutosh Mundra
+  github: QWERTY2101997
+  image: aashutosh.jpg
+  twitter: mundraashutosh
+  facebook: aashutosh.mundra.37
+  referral: aswinzz
+  bio: Love Github
+
+- name: Druval CR
+  github: druvalcr77
+  image: druval.jpg
+  twitter: druval77
+  facebook: druval77
+  referral: aswinzz
+  bio: beginner
 
 - name: Ravi charan
   github: RavicharanN
@@ -97,6 +130,7 @@
   facebook: ravi.charan.5680
   referral: aswanthkoleri
   bio: Optimist | Bibiliophile | TV series addict
+  blog: ravicharann.github.io
 
 - name: Gagan Ganapathy
   github: CodHeK
@@ -119,6 +153,7 @@
   twitter: anupam_dagar
   facebook: invincible.anupam
   bio: Getting started with open-sourcing.A new path.
+  blog: https://anupam-dagar.github.io/
 
 - name: Saicharan Reddy
   github: mrsaicharan1
@@ -176,3 +211,50 @@
   facebook: anubhutiv1
   bio: Open source enthusiast
   
+
+- name: Anmol Singh Sethi
+  image: anmol.jpg
+  github: xanmolx
+  facebook: anmolsingh.sethi
+  bio: Beginner and explorer..!! 
+  
+- name: Sarath Chandra
+  github: KingBizzleLord
+  image: KBL.jpg
+  facebook: SarathNandimandalam
+  bio: AI maniac.
+  
+- name: Sunil Bansiwal  
+  github: Sunil-IIITA
+  facebook: sunil.banshal.71
+  image: Sunil.jpg
+  bio: Beginner and explorer..!!
+
+- name: Gauri Kesarwani
+  github: Gaurik936
+  image: Gauri.jpg
+  facebook: gauri.kesarwani.3
+  bio: A Novice.
+
+- name: vejendla sunil
+  github: vejendlasunil
+  image: vejendla.jpg
+  facebook: vejendlasunil
+  referral: aswanthkoleri
+  bio: I am busy
+
+- name: bhuvanesh
+  github: bhuvanesh9996
+  image: bhuvi.jpg
+  facebook: bhuvanesh gouda
+  referral: aswanthkoleri
+  bio: A beginner
+  
+- name: nidhish
+  github: pashanidhish
+  image: nidhish.jpg
+  facebook: Nidhish Kumar Reddy
+  referral: aswanthkoleri
+  bio: A Newbie
+  
+

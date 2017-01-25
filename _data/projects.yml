@@ -1,33 +1,58 @@
 # Details of opencode projects
 
 
-- name: opencodecollab
+- name: OpenCodeCollab
   user: fossiiita
   repo: opencodecollab
   image: opencodecollab.jpg
   github: https://github.com/fossiiita/opencodecollab
+  stack: html, css, js, jeykll
   
 - name: HumbleFoolCup
   user: fossiiita
   repo: humblefoolcup
   image: humblefoolcup.jpg
   github: https://github.com/fossiiita/humblefoolcup
+  stack: html, css, js, materializecss
   
 - name: Django Event Manangement Platform
   user: gauthamzz
   repo: Django-EventPlatform
   image: django.jpg
   github: https://github.com/gauthamzz/Django-EventPlatform
+  stack: python, django, materializecss
+
+- name: Zap Tap
+  user: betterclever
+  repo: ZapTap
+  image: ZapTap.png
+  github: https://github.com/betterclever/ZapTap
+  stack: java, libGDX, android
 
 - name: Proxy Man
   user: himanshub16
   repo: ProxyMan
   image: proxyman.png
   github: https://github.com/himanshub16/ProxyMan
-  
-- name: Cool Practise Programs
+  stack: bash
+
+- name: Cool Practice Programs
   user: faheemzunjani
   repo: Cool-Practice-Programs
   image: proxyman.png
   github: https://github.com/faheemzunjani/Cool-Practice-Programs
+  stack: C, C++
 
+- name: FaceMe
+  user: trailblazerr1
+  repo: FaceMe-test
+  image: faceme.png
+  github: https://github.com/Trailblazerr1/FaceMe-test
+  stack: python, django, d3.js
+    
+- name: Theory of Programming
+  user: VamsiSangam
+  repo: theoryofprogramming
+  image: theoryofprogramming.jpg
+  github: https://github.com/VamsiSangam/theoryofprogramming
+  stack: C, C++, Java, Python   
