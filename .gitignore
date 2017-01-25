@@ -1,0 +1,4 @@
+#jekyll_files
+*.vendor 
+*.bundle
+            
