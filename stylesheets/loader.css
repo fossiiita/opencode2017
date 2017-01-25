@@ -35,6 +35,7 @@ body{
   width:100%;
   background:rgba(0, 0, 0, 1);
   position:fixed;
+  z-index: 10;
   left:0;
   top:0;
  }
