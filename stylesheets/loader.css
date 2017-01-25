@@ -5,11 +5,11 @@ body{
 }
 
 .spinner{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     
-    border: 2px solid #f3f3f3;
-    border-top:3px solid #f25a41;
+    border: 2px solid #7FFF00;
+    border-top:3px solid #7CFC00;
     border-radius: 100%;
     
     position: absolute;
