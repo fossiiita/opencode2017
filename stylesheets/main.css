@@ -125,7 +125,7 @@ display: block;
 }
 .mentors .mentors-wrapper {
  background-color: #7e9400;
-background-image: asfalt-dark.png;
+background-image: url("asfalt-dark.png");
 
 }
 
