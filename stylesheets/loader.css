@@ -32,8 +32,8 @@ body{
 
 #overlay{
   height:100%;
-  width:100%;
-  background:rgba(0,255, 0, .6);
+  width:100%
+  background:rgba(0,255, 0, .9);
   position:fixed;
   z-index: 99;
   left:0;
