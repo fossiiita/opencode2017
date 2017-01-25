@@ -1,10 +1,8 @@
 # Every student must give details regarding every contribution they made
 # and the score allocated to the contribution. Give links as a proof of
-# your contribution.
+# your contribution. Please follow format strictly.
 
-- name: Vamsi Sangam
-  image: vamsisangam.jpg
-  github: VamsiSangam
+- github: VamsiSangam
   contributions:
     - name: Added profile to students
       link: https://github.com/fossiiita/opencodecollab/pull/7
@@ -14,106 +12,55 @@
       score: 30
   total: 60
 
-- name: Vipul Sharma
-  github: vsvipul555
-  image: vipul.jpg
+- github: vsvipul555
+  
+- github: aswanthkoleri
 
-- name: Aswanth.K
-  image: aswanth.jpg
-  github: aswanthkoleri
+- github: Symphoria
 
-- name: Harshit Jain
-  image: harshitjain.jpg
-  github: Symphoria
+- github: aswinzz
 
-- name: AswinVB
-  image: aswinvb.jpg
-  github: aswinzz
+- github: Donny97
 
-- name: Jayesh Patil
-  image: donny.jpg
-  github: Donny97
+- github: Abhey
 
-- name: Abhey Rana
-  image: Abhey.jpg
-  github: Abhey
+- github: 13nehu
 
-- name: Neha
-  image: neha.jpg
-  github: 13nehu
+- github: Aotoge
+  
+- github: nab331
+  
+- github: tarunsinghal97
 
-- name: Kadambari
-  github: Aotoge
-  image: kadambari.jpg
+- github: utkarshchaurasia28
 
-- name: Nabeel
-  github: nab331
-  image: nabeel.jpg
+- github: bhanu1911
 
-- name: Tarun Singhal
-  image: tarun.jpg
-  github: tarunsinghal97
-
-- name: Utkarsh Chaurasia
-  image: utkarsh.jpg
-  github: utkarshchaurasia28
-
-- name: Bhanu Bhandari
-  image: bhanu.jpg
-  github: bhanu1911
-
-- name: Aditya Goel
-  github: Ellusionists
-  image: aditya710.jpg
-
-- name: Ravi charan
-  github: RavicharanN
-  image: RavicharanN.jpg
-
-- name: Gagan Ganapathy
-  github: CodHeK
-  image: gagan.jpg
-
-- name: Agam Dwivedi
-  github: agam98
-  image: agam.jpg
-
-- name: Anupam Dagar
-  github: Anupam-dagar
-  image: Anupam.jpg
-
-- name: Saicharan Reddy
-  github: mrsaicharan1
-  image: Saic.jpg
-
-- name: Pradeep Gangwar
-  github: pradeepgangwar
-  image: pradeep.jpg
-
-- name: Ayush Gupta
-  github: agbilotia1998
-  image: ayushgupta.jpg
-
-- name: Sashank Mishra
-  github: sashank27
-  image: sashank.jpg
-
-- name: Aseem Shrey
-  github: LuD1161
-  image: aseemshrey.jpg
-
-- name: Pushpender Yadav
-  github: DreadedLama
-  image: Pushpender.jpg
-
-- name: Akshat Jain
-  github: dabbler011
-  image: akshat.jpg
-
-- name: Vinit Mankar
-  github: vin-man
-  image: vinit.jpg
-
-- name: Anubhuti verma
-  github: anu-007
-  image: anu.jpg
+- github: Ellusionists
+  
+- github: RavicharanN
+  
+- github: CodHeK
+  
+- github: agam98
+  
+- github: Anupam-dagar
+  
+- github: mrsaicharan1
+  
+- github: pradeepgangwar
+  
+- github: agbilotia1998
+  
+- github: sashank27
+  
+- github: LuD1161
+  
+- github: DreadedLama
+  
+- github: dabbler011
+  
+- github: vin-man
+  
+- github: anu-007
+  
