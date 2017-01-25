@@ -38,6 +38,8 @@ function loadIssuesCallback(data) {
         var labels = "";
         var comments = this.comments;
         var issue_type = '<a href="' + issue_url + '" target="_tab"><i class="pull-right fa fa-2x fa-exclamation-circle"></i></a>';
+        var repo_url = this.html_url.substring(0, getPosition(this.html_url, '/', 5));
+        var repo_name = repo_url.substring(repo_url.lastIndexOf('/') + 1);
 
         $(this.labels).each(function(index) {
             var link = 'https://github.com/fossiiita/opencodecollab/issues?q=is:issue is:open label:"' + this.name + '"';
@@ -50,7 +52,7 @@ function loadIssuesCallback(data) {
                                         issue_type +
                                         '<blockquote>' +
                                             '<p>' + title + '</p>' +
-                                            '<footer><a href="' + author_url +'">' + author + '</a></footer>' +
+                                            '<footer><a href="' + author_url +'">' + author + '</a> in <a href="' + repo_url + '">' + repo_name + '</a></footer>' +
                                         '</blockquote>' +
                                         labels +
                                         '<a href="' + issue_url +'" target="_tab" class="btn btn-success">' +
@@ -62,4 +64,8 @@ function loadIssuesCallback(data) {
         
         $('#issues-content').append(issue_markup);
     });
+}
+
+function getPosition(string, subString, index) {
+   return string.split(subString, index).join(subString).length;
 }
