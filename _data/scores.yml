@@ -49,6 +49,20 @@
 - github: mrsaicharan1
   
 - github: pradeepgangwar
+  contributions:
+      - name: Added profile to students
+        link: https://github.com/fossiiita/opencodecollab/pull/54
+        score: 30
+      - name: Enable gh-pages on your fork
+        link: https://github.com/fossiiita/opencodecollab/issues/15#issuecomment-273431819
+        score: 30
+      - name: Humblefool webpage made for humblefoolcup
+        link: https://github.com/fossiiita/humblefoolcup/pull/40
+        score: 30
+      - name: Install jekyll and have website running
+        link: https://github.com/fossiiita/opencodecollab/issues/9#issuecomment-273290564
+        score: 30
+    total: 120
   
 - github: agbilotia1998
   
