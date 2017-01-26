@@ -70,6 +70,28 @@ We want to focus on the code quality more than on managing pull request ethics.
 
 Also, we have a team of maintainers to whom you can write if your pull-request goes unnoticed. They may have time.
 
+## After each contribution
+
+After your awesome contribution, add your contribution details to [scores.yml](https://github.com/fossiiita/opencodecollab/blob/master/_data/scores.yml). Please maintain the following format EXACTLY (replacing values where indicated):
+
+```
+- github: your_username
+  contributions:
+    - name: short_title_for_contribution
+      link: url_to_contribution_as_proof
+      score: 10
+    - name: other_contribution_if_any
+      link: url_to_other_contribution_as_proof
+      score: 20
+  total: 30
+```
+
+**IMPORTANT:**
+
+-  If you don't have a record in ```scores.yml``` you can create yours at the bottom or in any order. You can refer to [this](http://docs.ansible.com/ansible/YAMLSyntax.html) if you want help with YAML syntax, but if you follow the above format strictly you wont be needing it!
+
+- For your future contributions, please create a short PR to update your contributions and total score in ```scores.yml```. This helps us to track your contributions effectively.
+
 ## Tutorials
 
 ### Command Line Tutorials
