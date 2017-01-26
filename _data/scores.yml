@@ -3,6 +3,7 @@
 # your contribution. Please follow format strictly.
 
 - github: VamsiSangam
+  contributions:
     - name: Added fb like button
       link: https://github.com/fossiiita/opencodecollab/pull/135
       score: 10
