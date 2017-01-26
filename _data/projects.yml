@@ -22,6 +22,13 @@
   github: https://github.com/gauthamzz/Django-EventPlatform
   stack: python, django, materializecss
 
+- name: Zap Tap
+  user: betterclever
+  repo: ZapTap
+  image: ZapTap.png
+  github: https://github.com/betterclever/ZapTap
+  stack: java, libGDX, android
+
 - name: Proxy Man
   user: himanshub16
   repo: ProxyMan
@@ -29,7 +36,7 @@
   github: https://github.com/himanshub16/ProxyMan
   stack: bash
 
-- name: Cool Practise Programs
+- name: Cool Practice Programs
   user: faheemzunjani
   repo: Cool-Practice-Programs
   image: proxyman.png
