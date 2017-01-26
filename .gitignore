@@ -1,0 +1,5 @@
+#jekyll_files
+*.vendor 
+*.bundle
+_site/
+*.swp            

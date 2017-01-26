@@ -14,6 +14,7 @@
   github: VamsiSangam
   facebook: vamsi.sangam
   bio: Hi! I am 3 year old developer who converts food to code!
+  blog: https://vamsisangam.github.io/
 
 - name: Aswanth.K
   image: aswanth.jpg
@@ -33,6 +34,7 @@
   github: aswinzz
   facebook: aswinvb
   bio: I am new in github ^-^
+  blog: https://aswinzz.github.io/
 
 - name: Jayesh Patil
   image: donny.jpg
@@ -136,7 +138,7 @@
   image: ayushgupta.jpg
   bio: I come here to build.
 
-  name: Sashank Mishra
+- name: Sashank Mishra
   github: sashank27
   image: sashank.jpg
   facebook: 100000179816805
