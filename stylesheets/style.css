@@ -1,0 +1,90 @@
+/**not a responsive header
+viewport needs to be at least 1000px*/
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+.clearfix {
+  clear: both;
+}
+/*mixins & variables*/
+.full-width {
+  width: 100%;
+}
+.container-width {
+  width: 1000px;
+}
+.margin-auto {
+  margin: auto;
+}
+.ease {
+  transition: all 0.3s ease-in-out;
+}
+/*sticky*/
+.sticky {
+  position: fixed;
+  top: 0;
+}
+/*slider*/
+.slider {
+  height: 400px;
+  background: url(http://fc09.deviantart.net/fs13/f/2006/360/2/a/Winter_Treehouse_by_AlexKaiser.jpg) no-repeat fixed 0 -350px / cover;
+}
+/*header*/
+header {
+  width: 100%;
+  background: #34495E;
+}
+header > h1 {
+  float: left;
+  margin-left: 25px;
+  display: block;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+header > h1 a {
+  display: block;
+  padding: 7px 0;
+  color: #1ABC9C;
+  text-decoration: none;
+}
+header.sticky h1 {
+  opacity: 1;
+}
+header nav {
+  width: 1000px;
+  margin: auto;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  float: left;
+  width: 250px;
+}
+header nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #2C3E50;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+  background: #2b3c4e;
+}
+/*content*/
+.content {
+  width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+  color: #34495E;
+}
+.content p {
+  font-size: 14px;
+  margin: 5px 0 10px;
+}
