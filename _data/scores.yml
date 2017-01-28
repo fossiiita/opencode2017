@@ -93,6 +93,50 @@
 - github: agam98
   
 - github: Anupam-dagar
+  contributions:
+    - name: Added profile to students.
+      link: https://github.com/fossiiita/opencodecollab/pull/48
+      score: 30
+    - name: Reffer someone else.(vinit mankar refered me)
+      link: https://github.com/fossiiita/opencodecollab/pull/102
+      score: 20
+    - name: Install on your system.
+      link: https://github.com/fossiiita/opencodecollab/issues/9
+      score: 30
+    - name: Enable gh-pages on your fork.
+      link: https://github.com/fossiiita/opencodecollab/issues/15
+      score: 30
+    - name: Create more issues(issue 1)
+      link: https://github.com/fossiiita/opencodecollab/issues/107
+      score: 10
+    - name: Create more issues(issue 2)
+      link: https://github.com/fossiiita/opencodecollab/issues/119
+      score: 10
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87
+      score: 20
+    - name: Add to projects(proxy man and cool practice programs)
+      link: https://github.com/fossiiita/opencodecollab/pull/92
+      score: 10
+    - name: Add trailer in website
+      link: https://github.com/fossiiita/opencodecollab/pull/100
+      score: 10
+    - name: Added event timeline.
+      link: https://github.com/fossiiita/humblefoolcup/pull/18
+      score: 20
+    - name: Added events section.
+      link: https://github.com/fossiiita/humblefoolcup/pull/24
+      score: 20
+    - name: Added topcoder as platform
+      link: https://github.com/fossiiita/humblefoolcup/pull/36
+      score: 10
+    - name: Added FAQ section.
+      link: https://github.com/fossiiita/humblefoolcup/pull/37
+      score: 20
+    - name: Create more issues.(issue 3)
+      link: https://github.com/fossiiita/humblefoolcup/issues/39
+      score: 10
+    total: 250                            
   
 - github: mrsaicharan1
   
