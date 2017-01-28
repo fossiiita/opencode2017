@@ -14,6 +14,7 @@
   github: VamsiSangam
   facebook: vamsi.sangam
   bio: Hi! I am 3 year old developer who converts food to code!
+  blog: https://vamsisangam.github.io/
 
 - name: Aswanth.K
   image: aswanth.jpg
@@ -27,17 +28,18 @@
   github: Symphoria
   facebook: harshit.jain.37604303
   bio: Just started developing! Hope to learn many things!
-  
+
 - name: AswinVB
   image: aswinvb.jpg
   github: aswinzz
   facebook: aswinvb
   bio: I am new in github ^-^
+  blog: https://aswinzz.github.io/
 
 - name: Jayesh Patil
   image: donny.jpg
   github: https://github.com/Donny97
-  
+
 - name: Abhey Rana
   image: Abhey.jpg
   github: Abhey
@@ -69,8 +71,8 @@
   github: tarunsinghal97
   facebook: tarun.singhal.148
   referral: Symphoria
-  bio: Hi! I have started learning opensource!! 
- 
+  bio: Hi! I have started learning opensource!!
+
 - name: Utkarsh Chaurasia
   image: utkarsh.jpg
   github: utkarshchaurasia28
@@ -83,7 +85,7 @@
   github: bhanu1911
   facebook: bhanubhandari99
   bio: Newbie open source developer, hope to learn a lot!
-  
+
 - name: Aditya Goel
   github: Ellusionists
   image: aditya710.jpg
@@ -96,7 +98,8 @@
   facebook: ravi.charan.5680
   referral: aswanthkoleri
   bio: Optimist | Bibiliophile | TV series addict
-  
+  blog: ravicharann.github.io
+
 - name: Gagan Ganapathy
   github: CodHeK
   image: gagan.jpg
@@ -110,7 +113,7 @@
   facebook: 100007152586385
   referral: CodHeK
   bio: Can not talk. Gitter only.
-  
+
 
 - name: Anupam Dagar
   github: Anupam-dagar
@@ -135,8 +138,8 @@
   github: agbilotia1998
   image: ayushgupta.jpg
   bio: I come here to build.
-  
-  name: Sashank Mishra
+
+- name: Sashank Mishra
   github: sashank27
   image: sashank.jpg
   facebook: 100000179816805
@@ -148,7 +151,7 @@
   image: aseemshrey.jpg
   facebook: AseemShrey
   bio: New to open source , learning a lot
-  
+
 - name: Pushpender Yadav
   github: DreadedLama
   image: Pushpender.jpg
@@ -162,10 +165,27 @@
   referral: agbilotia1998
   bio: First time on github.
 
-- name: Vinit Man
-  github: vin_man
+- name: Vinit Mankar
+  github: vin-man
   image: vinit.jpg
   facebook: vinitmankar
-  referral: agbilotia1998
-  bio: newtgihubd
+  referral: Anupam-dagar
+  bio: New to Github.
 
+- name: Anubhuti verma
+  github: anu-007
+  image: anu.jpg
+  facebook: anubhutiv1
+  bio: Open source enthusiast
+  
+- name: Anmol Singh Sethi
+  image: anmol.jpg
+  github: xanmolx
+  facebook: anmolsingh.sethi
+  bio: Beginner and explorer..!! 
+  
+- name: Sarath Chandra
+  github: KingBizzleLord
+  image: KBL.jpg
+  facebook: SarathNandimandalam
+  bio: AI maniac.
