@@ -17,28 +17,64 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
     <link rel="stylesheet" href="stylesheets/footer-distributed.css">
+    <link rel="stylesheet" href="bower_components/material-cards/dist/material-cards.css" >
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/material-cards/js/jquery.material-cards.min.js"></script>
+    <link rel="bower_components/material-cards/less/material-cards.less" >
+    <link rel="bower_components/material-cards/less/gm-variables.less" >
+    <link rel="bower_components/material-cards/less/material-color.less" >
     <script type="text/javascript">
     $(document).ready(function(){
     /* Get iframe src attribute value i.e. YouTube video url
     and store it in a variable */
     var url = $("#cartoonVideo").attr('src');
-    
+
     /* Remove iframe src attribute on page load to
     prevent autoplay in background */
     $("#cartoonVideo").attr('src', '');
-    
+
     /* Assign the initially stored url back to the iframe src
     attribute when modal is displayed */
     $("#myModal").on('shown.bs.modal', function(){
         $("#cartoonVideo").attr('src', url);
     });
-    
+
     /* Assign empty url value to the iframe src attribute when
     modal hide, which stop the video playing */
     $("#myModal").on('hide.bs.modal', function(){
         $("#cartoonVideo").attr('src', '');
     });
 });
+
+$(function() {
+        $('.material-card > .mc-btn-action').click(function () {
+            var card = $(this).parent('.material-card');
+            var icon = $(this).children('i');
+            icon.addClass('fa-spin-fast');
+
+            if (card.hasClass('mc-active')) {
+                card.removeClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-arrow-left')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-bars');
+
+                }, 800);
+            } else {
+                card.addClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-bars')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-arrow-left');
+
+                }, 800);
+            }
+        });
+    });
     </script>
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -81,7 +117,7 @@
 <!-- End of Navigation Bar -->
 <!-- Main Content -->
 <div class="bs-example">
-    
+
     <div id="Trailer" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -95,10 +131,11 @@
             </div>
         </div>
     </div>
-                                                                 
+
 </div>
 
     <section class="main-content">
+
             <!-- Mentors Section -->
             <section class="mentors" id="mentors" href="#mentors">
                 <div class="row mentors-wrapper">
@@ -106,47 +143,48 @@
                     <h2>MENTORS</h2>
                     <!-- Stop ignoring -->
                     {% for mentor in site.data.mentors %}
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card-wrapper">
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper">
-                                    <div class="front">
-                                        <div class="card">
-                                            <div class="avatar">
-                                                {% if mentor.image %}
-                                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
-                                                {% else %}
-                                                <img src="images/mentors/member.png" alt="{{ mentor.name }}">
-                                                {% endif %}
-                                                <p style="display: inline-block;">{{mentor.name}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="back">
-                                        <div class="card">
-                                            <p style="padding:15px;">Connect with this mentor!</p>
-                                            <hr>
-                                            <center>
-                                                {% if mentor.github %}
-                                                <a href="https://github.com/{{ mentor.github }}"><i class="fa fa-2x fa-github"></i></a> &nbsp;
-                                                {% endif %}
-                                                {% if mentor.blog %}
-                                                <a href="{{ mentor.blog }}"><i class="fa fa-2x fa-rss-square"></i></a> &nbsp;
-                                                {% endif %}
-                                                {% if mentor.twitter %}
-                                                <a href="https://twitter.com/{{ mentor.twitter }}"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
-                                                {% endif %}
-                                                {% if mentor.facebook %}
-                                                <a href="https://www.facebook.com/{{ mentor.facebook }}"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
-                                                {% endif %}
-                                            </center>
-                                        </div>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br><br>
-                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
+                         <article class="material-card Green">
+                             <h2>
+                                 <span>{{ mentor.name }}</span>
+                                 <strong>
+                                     <i class="fa fa-fw fa-star"></i>
+                                     Mentor
+                                 </strong>
+                             </h2>
+                             <div class="mc-content">
+                                 <div class="img-container">
+                                   {% if mentor.image %}
+                                   <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}" style="height:100%; width:100%">
+                                   {% else %}
+                                   <img src="images/mentors/member.png" alt="{{ mentor.name }}" style="height:100%; width:100%">
+                                   {% endif %}                                 </div>
+                                 <div class="mc-description">
+                                  Connect with this mentor
+                                 </div>
+                             </div>
+                             <a class="mc-btn-action">
+                                 <i class="fa fa-bars"></i>
+                             </a>
+                             <div class="mc-footer">
+                                 <h4>
+                                     Social
+                                 </h4>
+                                 {% if mentor.github %}
+                                 <a href="https://github.com/{{ mentor.github }}"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                 {% endif %}
+                                 {% if mentor.blog %}
+                                 <a href="{{ mentor.blog }}"><i class="fa fa-2x fa-rss-square"></i></a> &nbsp;
+                                 {% endif %}
+                                 {% if mentor.twitter %}
+                                 <a href="https://twitter.com/{{ mentor.twitter }}"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
+                                 {% endif %}
+                                 {% if mentor.facebook %}
+                                 <a href="https://www.facebook.com/{{ mentor.facebook }}"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                 {% endif %}
+                             </div>
+                         </article>
+                     </div>
                     {% endfor %}
                 </div>
             </section>
@@ -159,66 +197,58 @@
                     <h2>Participants</h2>
                     <!-- Stop ignoring -->
                     {% for student in site.data.students %}
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card-wrapper">
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper">
-                                    <div class="front">
-                                        <!-- front content -->
-                                        <div class="card stu-card">
-                                            <div class="avatar">
-                                                {% if student.image %}
-                                                    <img src="images/students/{{student.image}}"
-                                                    alt="{{student.name}}"
-                                                    width="200px" height="200px">
-                                                    {% else %}
-                                                    <img src="images/mentors/member.png"
-                                                    alt="{{student.name}}"
-                                                    width="200px" height="200px">
-                                                    {% endif %}
-                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                        <i class="fa fa-code"></i>
-                                                        &nbsp;
-                                                        <span class="stu-name card-text" title="{{student.name}}">
-                                                            {{student.name}}
-                                                        </span>
-                                                    </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="back">
-                                        <!-- back content -->
-                                        <div class="card stu-card">
-                                            <div class="avatar">
-                                                {% if student.bio %}
-                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                    {{student.bio}}
-                                                </p>
-                                                {% else %}
-                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                    Connect with this participant!
-                                                </p>
-                                                {% endif %}
-                                                <br><hr>
-                                                <center>
-                                                    {% if student.github %}
-                                                    <a href="https://github.com/{{student.github}}"><i class="fa fa-3x fa-github"></i></a> &nbsp;
-                                                    {% endif %}
-                                                    {% if student.facebook %}
-                                                    <a href="https://www.facebook.com/{{student.facebook}}"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
-                                                    {% endif %}
-                                                    {% if student.twitter %}
-                                                    <a href="https://twitter.com/{{student.twitter}}"><i class="fa fa-3x fa-twitter"></i></a> &nbsp;
-                                                    {% endif %}
-                                                </center>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br><br>
-                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
+                         <article class="material-card Red">
+                             <h2>
+                                 <span>{{student.name}}</span>
+                                 <strong>
+                                     <i class="fa fa-fw fa-star"></i>
+                                     Participant
+                                 </strong>
+                             </h2>
+                             <div class="mc-content">
+                                 <div class="img-container">
+                                   {% if student.image %}
+                                   <img src="images/students/{{student.image}}"
+                                   alt="{{student.name}}"
+                                   width="100%" height="100%">
+                                   {% else %}
+                                   <img src="images/mentors/member.png"
+                                   alt="{{student.name}}"
+                                   width="100%" height="100%">
+                                   {% endif %}
+                                                                 </div>
+                                 <div class="mc-description">
+                                   {% if student.bio %}
+                                   <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                       {{student.bio}}
+                                   </p>
+                                   {% else %}
+                                   <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                       Connect with this participant!
+                                   </p>
+                                   {% endif %}
+                                 </div>
+                             </div>
+                             <a class="mc-btn-action">
+                                 <i class="fa fa-bars"></i>
+                             </a>
+                             <div class="mc-footer">
+                                 <h4>
+                                     Social
+                                 </h4>
+                                 {% if student.github %}
+                                 <a href="https://github.com/{{student.github}}"><i class="fa fa-2x fa-github"></i></a> &nbsp;
+                                 {% endif %}
+                                 {% if student.facebook %}
+                                 <a href="https://www.facebook.com/{{student.facebook}}"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
+                                 {% endif %}
+                                 {% if student.twitter %}
+                                 <a href="https://twitter.com/{{student.twitter}}"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
+                                 {% endif %}
+                             </div>
+                         </article>
+                     </div>
                     {% endfor %}
                 </div>
             </section>
@@ -231,48 +261,39 @@
                     <h2>Projects Currently in OpenCode</h2>
                     <!-- Stop ignoring -->
                     {% for project in site.data.projects %}
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card-wrapper github-project" data-user="{{project.user}}" data-repo="{{project.repo}}">
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper">
-                                    <div class="front">
-                                        <!-- front content -->
-                                        <div class="card stu-card">
-                                            <div class="avatar">
-                                                    <img src="images/projects/{{project.image}}"
-                                                    alt="{{project.name}}"
-                                                    width="200px" height="200px">
-                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                        <i class="fa fa-file-text"></i>
-                                                        &nbsp;
-                                                        <span class="stu-name card-text" title="{{project.name}}">
-                                                            {{project.name}}
-                                                        </span>
-                                                    </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="back">
-                                        <!-- back content -->
-                                        <div class="card stu-card">
-                                            <div class="avatar">
-                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                    <a style="text-decoration: none;" class="fa-2x" href="{{project.github}}" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
-                                                </p>
-                                                <br><hr>
-                                                <center class="fa-2x">
-                                                    <i class="fa fa-code"></i> <span id="{{project.user}}-{{project.repo}}-language">HTML</span><br>
-                                                    <a href="" id="{{project.user}}-{{project.repo}}-stars" style="text-decoration: none;"><i class="fa fa-star"></i> <span>0</span></a><br>
-                                                    <a href="" id="{{project.user}}-{{project.repo}}-forks" style="text-decoration: none;"><i class="fa fa-code-fork"></i> <span>0</span></a><br>
-                                                </center>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br><br>
-                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
+                         <article class="material-card Cyan">
+                             <h2>
+                                 <span>{{project.name}}</span>
+                                 <strong>
+                                     <i class="fa fa-fw fa-star"></i>
+                                     Project
+                                 </strong>
+                             </h2>
+                             <div class="mc-content">
+                                 <div class="img-container">
+                                   <img src="images/projects/{{project.image}}"
+                                   alt="{{project.name}}"
+                                   width="100%" height="100%">
+                                  </div>
+                                 <div class="mc-description">
+                                   <a style="text-decoration: none;" class="fa-2x" href="{{project.github}}" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
+                                   <br />
+                                  <i class="fa fa-code"></i> <span id="{{project.user}}-{{project.repo}}-language">HTML</span><br>
+                                 </div>
+                             </div>
+                             <a class="mc-btn-action">
+                                 <i class="fa fa-bars"></i>
+                             </a>
+                             <div class="mc-footer">
+                                 <h4>
+                                     Social
+                                 </h4>
+                                 <a href="" id="{{project.user}}-{{project.repo}}-stars" style="text-decoration: none;"><i class="fa fa-star" aria-hidden="true"></i> <span>0</span></a><br>
+                                 <a href="" id="{{project.user}}-{{project.repo}}-forks" style="text-decoration: none;"><i class="fa fa-code-fork" aria-hidden="true"></i> <span>0</span></a><br>
+                             </div>
+                         </article>
+                     </div>
                     {% endfor %}
                 </div>
             </section>
@@ -338,9 +359,7 @@
 <!-- End of Main Content -->
 
 <!-- Scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="javascripts/js-yaml.min.js"></script>
-    <script src="javascripts/main.js"></script>
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
     <script src="javascripts/issues-loader.js"></script>
