@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
     <link rel="stylesheet" href="stylesheets/footer-distributed.css">
-    <link rel="stylesheet" href="bower_components/material-cards/dist/material-cards.css" >
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/material-cards/js/jquery.material-cards.min.js"></script>
-    <link rel="bower_components/material-cards/less/material-cards.less" >
-    <link rel="bower_components/material-cards/less/gm-variables.less" >
-    <link rel="bower_components/material-cards/less/material-color.less" >
+    <link rel="stylesheet" href="stylesheets/material-cards.css" >
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery.material-cards.min.js"></script>
+    <link rel="stylesheets/material-cards.less" >
+    <link rel="stylesheets/less/gm-variables.less" >
+    <link rel="stylesheets/material-color.less" >
     <script type="text/javascript">
     $(document).ready(function(){
     /* Get iframe src attribute value i.e. YouTube video url
@@ -143,8 +143,8 @@ $(function() {
                     <h2>MENTORS</h2>
                     <!-- Stop ignoring -->
                     {% for mentor in site.data.mentors %}
-                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
-                         <article class="material-card Green">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3" style="margin-left:100px">
+                         <article class="material-card Amber">
                              <h2>
                                  <span>{{ mentor.name }}</span>
                                  <strong>
@@ -197,8 +197,8 @@ $(function() {
                     <h2>Participants</h2>
                     <!-- Stop ignoring -->
                     {% for student in site.data.students %}
-                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
-                         <article class="material-card Red">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3" style="margin-left:100px">
+                         <article class="material-card Light-Green">
                              <h2>
                                  <span>{{student.name}}</span>
                                  <strong>
@@ -261,7 +261,7 @@ $(function() {
                     <h2>Projects Currently in OpenCode</h2>
                     <!-- Stop ignoring -->
                     {% for project in site.data.projects %}
-                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-3" style="margin-left:100px">
                          <article class="material-card Cyan">
                              <h2>
                                  <span>{{project.name}}</span>
