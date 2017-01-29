@@ -136,7 +136,10 @@
     - name: Create more issues.(issue 3)
       link: https://github.com/fossiiita/humblefoolcup/issues/39
       score: 10
-  total: 250
+    - name: Fix Footer.
+      link: https://github.com/fossiiita/humblefoolcup/pull/47
+      score: 10
+  total: 260
 
 - github: mrsaicharan1
   
