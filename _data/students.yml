@@ -121,6 +121,7 @@
   twitter: anupam_dagar
   facebook: invincible.anupam
   bio: Getting started with open-sourcing.A new path.
+  blog: https://anupam-dagar.github.io/
 
 - name: Saicharan Reddy
   github: mrsaicharan1
@@ -189,3 +190,9 @@
   image: KBL.jpg
   facebook: SarathNandimandalam
   bio: AI maniac.
+  
+- name: Sunil Bansiwal  
+  github: Sunil-IIITA
+  facebook: sunil.banshal.71
+  image: Sunil.jpg
+  bio: Beginner and explorer..!!

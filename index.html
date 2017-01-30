@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="stylesheets/main.css" media="screen">
     <link rel="stylesheet" href="stylesheets/loader.css" media="screen">
     <link rel="stylesheet" href="stylesheets/footer-distributed.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
     <script type="text/javascript">
     $(document).ready(function(){
     /* Get iframe src attribute value i.e. YouTube video url
@@ -301,17 +302,27 @@
                     <h2>Issues</h2>
                     <!-- Stop ignoring -->
                     <br>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div id="issues-content">
+                    <div class="panel-group" id="issues-accordion" role="tablist" aria-multiselectable="true">
+                    {% for project in site.data.projects %}
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="{{project.user}}-{{project.repo}}-heading">
+                            <a class="collapsed" style="text-decoration: none; color: black;" role="button" data-toggle="collapse" data-parent="#issues-accordion" href="#{{project.user}}-{{project.repo}}" aria-expanded="false" aria-controls="{{project.user}}-{{project.repo}}">
+                                <h4 class="panel-title" style="text-align: left">{{project.name}} ({{project.stack}})</h4>
+                            </a>
+                        </div>
+                        <div id="{{project.user}}-{{project.repo}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{project.user}}-{{project.repo}}-heading">
+                            <div class="panel-body" style="padding: 15px 0px 15px 0px;">
+                                <div id="{{project.user}}-{{project.repo}}-issues">
+                                </div>
+                                <div class="col-xs-12" id="{{project.user}}-{{project.repo}}-load-more">
+                                    <center>
+                                        <button class="btn btn-primary" onclick="loadMoreIssues('{{project.user}}', '{{project.repo}}')">Load more</button>
+                                    </center>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-12">
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination" id="issues-pagination">
-                                </ul>
-                            </nav>
-                        </div>
+                    </div>
+                    {% endfor %}
                     </div>
                 </div>
             </section>
@@ -353,10 +364,19 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/main.js"></script>
+      <script src="javascripts/index.js"></script>       
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
     <script src="javascripts/issues-loader.js"></script>
     <script src="javascripts/repo-stats-loader.js"></script>
     <script src="javascripts/loader.js"></script>
+    <script>
+        $(document).ready(function() {
+            {% for project in site.data.projects %}
+            $('#{{project.user}}-{{project.repo}}-load-more button').click();
+            {% endfor %}
+            $('#issues-accordion div a').first().click();
+        });
+    </script>
 </body>
 </html>
