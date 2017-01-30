@@ -98,6 +98,7 @@
   facebook: ravi.charan.5680
   referral: aswanthkoleri
   bio: Optimist | Bibiliophile | TV series addict
+  blog: ravicharann.github.io
 
 - name: Gagan Ganapathy
   github: CodHeK
@@ -177,3 +178,14 @@
   facebook: anubhutiv1
   bio: Open source enthusiast
   
+- name: Anmol Singh Sethi
+  image: anmol.jpg
+  github: xanmolx
+  facebook: anmolsingh.sethi
+  bio: Beginner and explorer..!! 
+  
+- name: Sarath Chandra
+  github: KingBizzleLord
+  image: KBL.jpg
+  facebook: SarathNandimandalam
+  bio: AI maniac.
