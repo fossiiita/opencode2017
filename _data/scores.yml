@@ -139,7 +139,10 @@
     - name: Fix Footer.
       link: https://github.com/fossiiita/humblefoolcup/pull/47
       score: 10
-  total: 260
+    - name: Personal Page.
+      link: https://github.com/fossiiita/opencodecollab/issues/108
+      score: 10
+    total: 270
 
 - github: mrsaicharan1
   
