@@ -4,6 +4,9 @@
 
 - github: VamsiSangam
   contributions:
+    - name: Implemented separate issues for each project
+      link: https://github.com/fossiiita/opencodecollab/pull/150
+      score: 30  
     - name: Added fb like button
       link: https://github.com/fossiiita/opencodecollab/pull/135
       score: 10
@@ -58,7 +61,7 @@
     - name: Added profile to students
       link: https://github.com/fossiiita/opencodecollab/pull/7
       score: 30
-  total: 370
+  total: 400
   
 - github: vsvipul555
   
