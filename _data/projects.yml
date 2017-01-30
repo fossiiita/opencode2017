@@ -46,7 +46,7 @@
 - name: FaceMe
   user: trailblazerr1
   repo: FaceMe-test
-  image: http://www.duncanandsons.com/wp-content/themes/grapeland/images/facebook.png
+  image: facebook.png
   github: https://github.com/Trailblazerr1/FaceMe-test
   stack: python, django, d3.js
     
