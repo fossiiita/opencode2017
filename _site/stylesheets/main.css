@@ -53,7 +53,76 @@ display: block;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+.mentors .card, #contributors-list .card, .students-sec .card, .projects-sec .card, .blogs-sec .card {
+    width: 200px;
+    height: 250px;
+    margin: 20px auto;
+    background: #fff;
+    text-align: center;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.card-text{
+    overflow: scroll;
+    white-space: nowrap;
+    display: inline;
+}
 
+.blogs-sec .card {
+    width: 500px;
+    height: 400px;
+    margin: 0;
+}
+.stu-name{
+    margin-left:-7px;
+    font-size:16px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 140px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p {
+    margin-top: 4.5%;
+    font-size: 15px;
+}
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.mentors .card .avatar img, .students-sec .card .avatar .img, .projects-sec .card .avatar .img, .blogs-sec .card .avatar .img {
+    width: 100%;
+}
+
+.mentors .social, #contributors-list .contribs, .students-sec .social, .projects-sec .links, .blogs-sec .links {
+    position: absolute;
+    background: #fff;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding-top: 40%;
+}
+.mentors .card .avatar:hover .social, .students-sec .card .avatar:hover .social, .projects-sec .card .avatar:hover .links, .blogs-sec .card .avatar:hover .links {
+    opacity: 0.8;
+}
+.mentors .social i, .students-sec .social i, .projects-sec .links i, .blogs-sec .links i {
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+}
 .mentors .mentors-wrapper {
     background: #c0b283;
 
@@ -218,6 +287,46 @@ body {
   }
 }
 
+/* CSS for card flip */
+
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+/* Used for flip cards not normal card */
+.card-wrapper {
+    height:250px;
+    width: 200px;
+    margin:auto;
+}
 
 #issues-content .panel:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
