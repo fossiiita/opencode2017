@@ -145,7 +145,11 @@
     - name: Personal Page.
       link: https://github.com/fossiiita/opencodecollab/issues/108
       score: 10
-  total: 270
+    - name: Added login page.
+      link: https://github.com/Trailblazerr1/FaceMe-test/pull/6
+      score: 10
+  total: 280
+
 
 - github: mrsaicharan1
   
