@@ -42,3 +42,12 @@
   image: proxyman.png
   github: https://github.com/faheemzunjani/Cool-Practice-Programs
   stack: C, C++
+
+- name: FaceMe
+  user: trailblazerr1
+  repo: FaceMe-test
+  image: faceme.png
+  github: https://github.com/Trailblazerr1/FaceMe-test
+  stack: python, django, d3.js
+    
+    
