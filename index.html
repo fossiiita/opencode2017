@@ -103,7 +103,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                   <div style="text-align:right;"> <input type="button" value="close" onClick="window.location.reload()"></div>
                     <h4 class="modal-title">Trailer of OpenCode</h4>
                 </div>
                 <div class="video-container">
@@ -331,32 +331,8 @@
 
         </div> <!-- End of .container inside the main-wrapper section -->
 
-        <footer class="footer-distributed">
 
-            <div class="footer-right">
-
-                <a href="https://www.facebook.com/Opencode-1038106262984513"><i class="fa fa-facebook"></i></a>
-                <a href="https://fossiiita.github.io/opencode/"><i class="fa fa-github"></i></a>
-                <a href="https://geekhaven.iiita.ac.in"><img src = "images/logo.png" height="30px" width = "30px">
-<!--                 <a href="https://gitter.im/opencode2017/"><img src = "images/gitter.png" height="35px" width = "35px">
- -->            </div>
-
-            <div class="footer-left">
-
-                <p class="footer-links">
-                    <a href="https://fossiiita.github.io/opencode/">Home</a>
-                    ·
-                    <a href="https://fossiiita.github.io/opencode/faq">FAQ</a>
-                    ·
-                    <a href="https://gitter.im/opencode2017">Gitter!</a>
-                </p>
-
-                <p >OpenCode 2017</p>
-            </div>
-
-        </footer>
-
-
+{% include footer.html %}
 
 <!-- End of Main Content -->
 

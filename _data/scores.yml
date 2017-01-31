@@ -70,6 +70,42 @@
 - github: Symphoria
 
 - github: aswinzz
+  contributions:
+    - name: Make Navbar sticky
+      link: https://github.com/fossiiita/opencodecollab/pull/143
+      score: 10  
+    - name: Add humble fool in projects section
+      link: https://github.com/fossiiita/opencodecollab/pull/45
+      score: 20
+    - name: Make _includes folder; move header and footer to there
+      link: https://github.com/fossiiita/opencodecollab/pull/164
+      score: 10
+    - name: Added Loader 
+      link: https://github.com/fossiiita/opencodecollab/pull/131
+      score: 20
+    - name: Enable gh-pages on your fork
+      link: https://github.com/fossiiita/opencodecollab/issues/15
+      score: 30  
+    - name:  added about section 
+      link: https://github.com/fossiiita/opencodecollab/pull/80
+      score: 30  
+    - name: added blog details 
+      link: https://github.com/fossiiita/opencodecollab/pull/124
+      score: 30
+    - name: added student info
+      link: https://github.com/fossiiita/opencodecollab/issues/14
+      score: 30
+    - name: added header 
+      link: https://github.com/fossiiita/humblefoolcup/pull/50
+      score: 20
+    - name: add about 
+      link: https://github.com/fossiiita/humblefoolcup/pull/30
+      score: 30
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87#issuecomment-274195961
+      score: 20
+  total: 250
+    
 
 - github: Donny97
 
