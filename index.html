@@ -45,7 +45,6 @@
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <title>OpenCode</title>
 </head>
 <body>
@@ -185,15 +184,19 @@
                                                 </p>
                                                 {% endif %}
                                                 <br><hr>
+                                                <p>
+                                                    Contributions - <span id="contributions-{{student.github}}">0</span>
+                                                </p>
+                                                <br><hr>
                                                 <center>
                                                     {% if student.github %}
-                                                    <a href="https://github.com/{{student.github}}"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    <a href="https://github.com/{{student.github}}"><i class="fa fa-2x fa-github"></i></a> &nbsp;
                                                     {% endif %}
                                                     {% if student.facebook %}
-                                                    <a href="https://www.facebook.com/{{student.facebook}}"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    <a href="https://www.facebook.com/{{student.facebook}}"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
                                                     {% endif %}
                                                     {% if student.twitter %}
-                                                    <a href="https://twitter.com/{{student.twitter}}"><i class="fa fa-3x fa-twitter"></i></a> &nbsp;
+                                                    <a href="https://twitter.com/{{student.twitter}}"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
                                                     {% endif %}
                                                 </center>
                                             </div>
@@ -321,6 +324,32 @@
             $('#{{project.user}}-{{project.repo}}-load-more button').click();
             {% endfor %}
             $('#issues-accordion div a').first().click();
+        });
+    </script>
+    <script>
+        var contributors = {};  // dictionary -> contributors["user_id"] = contributions_made
+
+        function loadContributors(user, repo) {
+            $.getJSON("https://api.github.com/repos/" + user + "/" + repo + "/contributors", {}, loadContributorsCallback);
+        }
+
+        function loadContributorsCallback(data) {
+            $(data).each(function(index) {
+                if (contributors[data[index]["login"]]) {
+                    contributors[data[index]["login"]] += data[index]["contributions"];
+                } else {
+                    contributors[data[index]["login"]] = data[index]["contributions"];
+                }
+
+                $('#contributions-' + data[index]["login"]).html(contributors[data[index]["login"]]);
+            });
+        }
+
+        $(document).ready(function() {
+            // To load contributors
+            {% for project in site.data.projects %}
+            loadContributors("{{project.user}}", "{{project.repo}}");
+            {% endfor %}
         });
     </script>
 </body>
