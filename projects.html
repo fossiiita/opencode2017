@@ -83,89 +83,29 @@
                                                                  
 </div>
 
-    <section class="main-content">
-            <!-- Mentors Section -->
-            <section class="mentors" id="mentors" href="#mentors">
-                <div class="row mentors-wrapper">
+            <!-- Projects Section -->
+            <section class="projects-sec" id="projects" href="#projects">
+                <div class="row projects-wrapper">
                     <!-- Start ignoring BootLintBear -->
-                    <h2>MENTORS</h2>
+                    <h2>Projects Currently in OpenCode</h2>
                     <!-- Stop ignoring -->
-                    {% for mentor in site.data.mentors %}
+                    {% for project in site.data.projects %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card-wrapper">
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper">
-                                    <div class="front">
-                                        <div class="card">
-                                            <div class="avatar">
-                                                {% if mentor.image %}
-                                                <img src="images/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
-                                                {% else %}
-                                                <img src="images/mentors/member.png" alt="{{ mentor.name }}">
-                                                {% endif %}
-                                                <p style="display: inline-block;">{{mentor.name}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="back">
-                                        <div class="card">
-                                            <p style="padding:15px;">Connect with this mentor!</p>
-                                            <hr>
-                                            <center>
-                                                {% if mentor.github %}
-                                                <a href="https://github.com/{{ mentor.github }}"><i class="fa fa-2x fa-github"></i></a> &nbsp;
-                                                {% endif %}
-                                                {% if mentor.blog %}
-                                                <a href="{{ mentor.blog }}"><i class="fa fa-2x fa-rss-square"></i></a> &nbsp;
-                                                {% endif %}
-                                                {% if mentor.twitter %}
-                                                <a href="https://twitter.com/{{ mentor.twitter }}"><i class="fa fa-2x fa-twitter"></i></a> &nbsp;
-                                                {% endif %}
-                                                {% if mentor.facebook %}
-                                                <a href="https://www.facebook.com/{{ mentor.facebook }}"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;
-                                                {% endif %}
-                                            </center>
-                                        </div>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br><br>
-                    </div>
-                    {% endfor %}
-                </div>
-            </section>
-            <!-- End of Mentor Section -->
-
-            <!-- Student Section -->
-            <section class="students-sec" id="students" href="#students">
-                <div class="row students-wrapper">
-                    <!-- Start ignoring BootLintBear -->
-                    <h2>Participants</h2>
-                    <!-- Stop ignoring -->
-                    {% for student in site.data.students %}
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card-wrapper">
+                        <div class="card-wrapper github-project" data-user="{{project.user}}" data-repo="{{project.repo}}">
                             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                                 <div class="flipper">
                                     <div class="front">
                                         <!-- front content -->
                                         <div class="card stu-card">
                                             <div class="avatar">
-                                                {% if student.image %}
-                                                    <img src="images/students/{{student.image}}"
-                                                    alt="{{student.name}}"
+                                                    <img src="images/projects/{{project.image}}"
+                                                    alt="{{project.name}}"
                                                     width="200px" height="200px">
-                                                    {% else %}
-                                                    <img src="images/mentors/member.png"
-                                                    alt="{{student.name}}"
-                                                    width="200px" height="200px">
-                                                    {% endif %}
                                                     <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                        <i class="fa fa-code"></i>
+                                                        <i class="fa fa-file-text"></i>
                                                         &nbsp;
-                                                        <span class="stu-name card-text" title="{{student.name}}">
-                                                            {{student.name}}
+                                                        <span class="stu-name card-text" title="{{project.name}}">
+                                                            {{project.name}}
                                                         </span>
                                                     </p>
                                             </div>
@@ -175,26 +115,14 @@
                                         <!-- back content -->
                                         <div class="card stu-card">
                                             <div class="avatar">
-                                                {% if student.bio %}
                                                 <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                    {{student.bio}}
+                                                    <a style="text-decoration: none;" class="fa-2x" href="{{project.github}}" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
                                                 </p>
-                                                {% else %}
-                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                    Connect with this participant!
-                                                </p>
-                                                {% endif %}
                                                 <br><hr>
-                                                <center>
-                                                    {% if student.github %}
-                                                    <a href="https://github.com/{{student.github}}"><i class="fa fa-3x fa-github"></i></a> &nbsp;
-                                                    {% endif %}
-                                                    {% if student.facebook %}
-                                                    <a href="https://www.facebook.com/{{student.facebook}}"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
-                                                    {% endif %}
-                                                    {% if student.twitter %}
-                                                    <a href="https://twitter.com/{{student.twitter}}"><i class="fa fa-3x fa-twitter"></i></a> &nbsp;
-                                                    {% endif %}
+                                                <center class="fa-2x">
+                                                    <i class="fa fa-code"></i> <span id="{{project.user}}-{{project.repo}}-language">HTML</span><br>
+                                                    <a href="" id="{{project.user}}-{{project.repo}}-stars" style="text-decoration: none;"><i class="fa fa-star"></i> <span>0</span></a><br>
+                                                    <a href="" id="{{project.user}}-{{project.repo}}-forks" style="text-decoration: none;"><i class="fa fa-code-fork"></i> <span>0</span></a><br>
                                                 </center>
                                             </div>
                                         </div>
@@ -207,20 +135,67 @@
                     {% endfor %}
                 </div>
             </section>
-            <!-- End of Student Section -->
+            <!-- End of Projects Section -->
+
+            <!-- Issues Section -->
+            <section class="issues-sec" id="issues" href="#issues">
+                <div class="row issues-wrapper" style="height:auto;">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>Issues</h2>
+                    <!-- Stop ignoring -->
+                    <br>
+                    <div class="panel-group" id="issues-accordion" role="tablist" aria-multiselectable="true">
+                    {% for project in site.data.projects %}
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="{{project.user}}-{{project.repo}}-heading">
+                            <a class="collapsed" style="text-decoration: none; color: black;" role="button" data-toggle="collapse" data-parent="#issues-accordion" href="#{{project.user}}-{{project.repo}}" aria-expanded="false" aria-controls="{{project.user}}-{{project.repo}}">
+                                <h4 class="panel-title" style="text-align: left">{{project.name}} ({{project.stack}})</h4>
+                            </a>
+                        </div>
+                        <div id="{{project.user}}-{{project.repo}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{project.user}}-{{project.repo}}-heading">
+                            <div class="panel-body" style="padding: 15px 0px 15px 0px;">
+                                <div id="{{project.user}}-{{project.repo}}-issues">
+                                </div>
+                                <div class="col-xs-12" id="{{project.user}}-{{project.repo}}-load-more">
+                                    <center>
+                                        <button class="btn btn-primary" onclick="loadMoreIssues('{{project.user}}', '{{project.repo}}')">Load more</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </section>
+            <!-- End of Issues Section -->
+
+
         </div> <!-- End of .container inside the main-wrapper section -->
 
        {% include footer.html %}
 
+
+
 <!-- End of Main Content -->
 
-    <!-- Scripts -->
+<!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/main.js"></script>
     <script src="javascripts/index.js"></script>       
     <script src="//use.fontawesome.com/7f8b61349a.js" async></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" async></script>
+    <script src="javascripts/issues-loader.js"></script>
+    <script src="javascripts/repo-stats-loader.js"></script>
     <script src="javascripts/loader.js"></script>
+    <script>
+        $(document).ready(function() {
+            {% for project in site.data.projects %}
+            $('#{{project.user}}-{{project.repo}}-load-more button').click();
+            {% endfor %}
+            $('#issues-accordion div a').first().click();
+        });
+    </script>
 </body>
 </html>
