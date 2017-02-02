@@ -148,7 +148,10 @@
     - name: Added login page.
       link: https://github.com/Trailblazerr1/FaceMe-test/pull/6
       score: 10
-  total: 280
+    - name: Added 10 codechef programs.
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/9
+      score: 40
+  total: 320
 
 
 - github: mrsaicharan1
