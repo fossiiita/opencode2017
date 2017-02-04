@@ -50,4 +50,9 @@
   github: https://github.com/Trailblazerr1/FaceMe-test
   stack: python, django, d3.js
     
-    
+- name: Theory of Programming
+  user: VamsiSangam
+  repo: theoryofprogramming
+  image: theoryofprogramming.jpg
+  github: https://github.com/VamsiSangam/theoryofprogramming
+  stack: C, C++, Java, Python   
