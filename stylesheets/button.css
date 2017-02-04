@@ -1,92 +1,145 @@
-@import "compass/css3";
-
-$width:  220px;
-$height: 70px;
-$border: 4px;
-
-$violet: #6559ae;
-$orange: #ff7159;
-
-$deg:  120deg;
-$size: 400%;
-$dur:  3s;
-
-@mixin clip-frame($width, $height, $border) {
-  -webkit-clip-path: polygon(0% 100%, $border 100%, $border $border, $width - $border $border, $width - $border $height - $border, $border $height - $border, $border 100%, 100% 100%, 100% 0%, 0% 0%);
-}
-
-@import url(http://fonts.googleapis.com/css?family=Squada+One);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 body {
-  background: #344557 url(https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?fit=crop&fm=jpg&h=700&q=75&w=1050) 0 0 no-repeat;
-  background-size: cover;
-  &:after {
-    content: '';
-    @extend .absolute-centering;
-    background: rgba(#344557, .85);
-  }
+	font-family: 'Lato', sans-serif;
+	background: #353535;
+	color: #FFF;
 }
-
-a {
-  display: block;
-  @extend .absolute-centering;
-  width: $width;
-  height: $height;
-  @extend .text-formatting;
-  z-index: 1;
- 
-  &:after {
-    content: '';
-    @extend .absolute-centering;
-    background: linear-gradient($deg, $violet, $orange, $violet);
-    background-size: $size $size;
-    @include clip-frame($width, $height, $border);
-    @include animation(gradient $dur ease-in-out infinite, border 1s forwards ease-in-out reverse);
-  }
-  
-  & > span {
-    display: block;
-    background: linear-gradient($deg, $violet, $orange, $violet);
-    background-size: $size $size;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-     @include animation(gradient $dur ease-in-out infinite);
-  }
+.jumbotron h1 {
+	color: #353535;
 }
-
-/* helpers */
-
-.absolute-centering {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+footer {
+  margin-bottom: 0 !important;
+  margin-top: 80px;
 }
-
-.text-formatting {
+footer p {
+  margin: 0;
+  padding: 0;
+}
+span.icon {
+	margin: 0 5px;
+	color: #D64541;
+}
+h2 {
+	color: #BDC3C7;
   text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: 2px;
-  line-height: 70px;
-  font-family: 'Squada One', cursive;
-  font-size: 28px;
+  letter-spacing: 1px;
+}
+.mrng-60-top {
+	margin-top: 60px;
+}
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
 }
 
-/* motion */
+/* Victoria Buttons */
 
-@include keyframes(gradient) { 
-    0%   { background-position: 14% 0%; }
-    50%  { background-position: 87% 100%; }
-    100% { background-position: 14% 0%; }
+a.animated-button.victoria-one {
+	border: 2px solid #D24D57;
 }
-
-@include keyframes(border) {
-  0% { -webkit-clip-path: polygon(/*1*/ 0% 100%, /*2*/ $border 100%, /*3*/ $border $border, /*4*/ $width - $border $border, /*5*/ $width - $border $height - $border, /*6*/ $border $height - $border, /*7*/ $border 100%, /*8*/ 100% 100%, /*9*/ 100% 0%, /*10*/ 0% 0%); }
-  25% { -webkit-clip-path: polygon(/*1*/ 0% 100%, /*2*/ $border 100%, /*3*/ $border $border, /*4*/ $width - $border $border, /*5*/ $width - $border $height - $border, /*6*/ $width - $border $height - $border, /*7*/ $width - $border 100%, /*8*/ 100% 100%, /*9*/ 100% 0%, /*10*/ 0% 0%); }
-  50% { -webkit-clip-path: polygon(/*1*/ 0% 100%, /*2*/ $border 100%, /*3*/ $border $border, /*4*/ $width - $border $border, /*5*/ $width - $border $border, /*6*/ $width - $border $border, /*7*/ $width - $border $border, /*8*/ $width - $border $border, /*9*/ 100% 0%, /*10*/ 0% 0%); }
-  75% { -webkit-clip-path: polygon(/*1*/ 0% 100%, /*2*/ $border 100%, /*3*/ $border $border, /*4*/ $border $border, /*5*/ $border $border, /*6*/ $border $border, /*7*/ $border $border, /*8*/ $border $border, /*9*/ $border 0%, /*10*/ 0% 0%); }
-  100%  { -webkit-clip-path: polygon(/*1*/ 0% 100%, /*2*/ $border 100%, /*3*/ $border 100%, /*4*/ $border 100%, /*5*/ $border 100%, /*6*/ $border 100%, /*7*/ $border 100%, /*8*/ $border 100%, /*9*/ $border 100%, /*10*/ 0% 100%); }
+a.animated-button.victoria-one:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.victoria-two {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-two:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+a.animated-button.victoria-three {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-three:after {
+	background: #D24D57;
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+a.animated-button.victoria-three:hover:after {
+	height: 140%;
+	opacity: 1;
+}
+a.animated-button.victoria-four {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-four:after {
+	background: #D24D57;
+	opacity: .5;
+	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+a.animated-button.victoria-four:hover:after {
+	opacity: 1;
+	height: 600% !important;
 }
