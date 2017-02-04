@@ -3,20 +3,13 @@
 
 body {
 	font-family: 'Lato', sans-serif;
-	background: #353535;
+	background: #282C2F;
 	color: #FFF;
 }
 .jumbotron h1 {
 	color: #353535;
 }
-footer {
-  margin-bottom: 0 !important;
-  margin-top: 80px;
-}
-footer p {
-  margin: 0;
-  padding: 0;
-}
+
 span.icon {
 	margin: 0 5px;
 	color: #D64541;
