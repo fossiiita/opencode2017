@@ -1,11 +1,6 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-body {
-	font-family: 'Lato', sans-serif;
-	background: #282C2F;
-	color: #FFF;
-}
 .jumbotron h1 {
 	color: #353535;
 }
@@ -14,17 +9,14 @@ span.icon {
 	margin: 0 5px;
 	color: #D64541;
 }
-h2 {
-	color: #BDC3C7;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 .mrng-60-top {
 	margin-top: 60px;
 }
 /* Global Button Styles */
 a.animated-button:link, a.animated-button:visited {
-	position: relative;
+	position: absolute;
+	top:50%;
+	left:50%
 	display: block;
 	margin: 30px auto 0;
 	padding: 14px 15px;
@@ -64,7 +56,9 @@ a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 	height: 450%;
 }
 a.animated-button:link, a.animated-button:visited {
-	position: relative;
+	position:absolute;
+	top=50%;
+	left=50%;
 	display: block;
 	margin: 30px auto 0;
 	padding: 14px 15px;
