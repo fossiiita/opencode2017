@@ -47,25 +47,48 @@
 <!-- End of Navigation Bar -->
 <!--trailer-->
 <script type="text/javascript">
- function closepopup()
-   {
-      if(false == my_window.closed)
-      {
-         my_window.close ();
-      }
-      else
-      {
-         alert('Window already closed!');
-      }
-   }
+(function($) 
+    {
+               /*Popup for Details Button*/
+            $('#btndetails').bind('click', function(e)
+            {
+                // Prevents the default action to be triggered. 
+                    e.preventDefault();               
+                    $('#element_to_pop_up').bPopup();
+                    var html = $("#element_to_pop_up").html();
+                    $("#element_to_pop_up").html(html+ "Some text");
+            });  
+
+    })(jQuery);
 </script>
+<style>   
+ #element_to_pop_up
+    { 
+       background-color:#fff;
+       border-radius:15px;
+       color:#000;
+       display:none; 
+       padding:20px;
+       min-width:400px;
+       min-height: 180px;
+    }
+    span.button.b-close {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor:pointer;
+    }
+</style>
 <div class="bs-example">
     
     <div id="Trailer" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                 <button type="button" onclick="window.close()">×</button>
+                <input type="button" value="Details" id="btndetails" />
+<div id="element_to_pop_up">
+  <span class="button b-close"><span>X</span></span>
+</div>
                     <h4 class="modal-title">Trailer of OpenCode</h4>
                 </div>
                 <div class="video-container">
