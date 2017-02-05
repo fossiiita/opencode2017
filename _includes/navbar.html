@@ -46,6 +46,17 @@
     </nav>
 <!-- End of Navigation Bar -->
 <!--trailer-->
+<script>
+ function videoStop($wrapper) {
+  // if we're stopping all videos on page
+  if (!$wrapper) {
+    var $wrapper = $('.js-videoWrapper');
+    var $iframe = $('.js-videoIframe');
+  // if we're stopping a particular video
+  } else {
+    var $iframe = $wrapper.find('.js-videoIframe');
+  }
+</script>
 <div class="bs-example">
     
     <div id="Trailer" class="modal fade">
