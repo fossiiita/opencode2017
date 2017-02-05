@@ -45,20 +45,19 @@
       </div>
     </nav>
 <!-- End of Navigation Bar -->
-<div class="bs-example">
-    
-    <div id="Trailer" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Trailer of OpenCode</h4>
-                </div>
-                <div class="video-container">
-                    <iframe  id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/qkt9vMKYHAM?autoplay=100" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-                                                                 
-</div>
+<!--trailer-->
+
+  
+  <!-- the class "videoWrapper169" means a 16:9 aspect ration video. Another option is "videoWrapper43" for 4:3. -->
+  <div class="videoWrapper videoWrapper169 js-videoWrapper">
+    <!-- YouTube iframe. -->
+    <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+    <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/hgzzLIa-93c?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+    <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+    <button class="videoPoster js-videoPoster" style="background-image:url(images/youtubethumb.png);">Play video</button>
+  </div>
+  
+  <button onclick="videoStop()">external close button</button>
+  
+  
