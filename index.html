@@ -54,7 +54,15 @@
 
 
 {% include navbar.html %}
-    {% include chatbox.html %}
+ <button class="js-gitter-toggle-chat-button">Toggle Chat</button>
+  <button class="js-gitter-toggle-chat-button" data-gitter-toggle-chat-state="true">Open Chat</button>
+  <button class="js-gitter-toggle-chat-button" data-gitter-toggle-chat-state="false">Close Chat</button>
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'gitterHQ/sidecar-demo',
+      activationElement: false
+    };
+  </script>
 
 <!-- Main Content -->
 
