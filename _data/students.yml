@@ -55,7 +55,7 @@
 - name: Kadambari
   github: https://github.com/Aotoge
   image: kadambari.jpg
-  facebook: https://www.facebook.com/kadambari.kaveri
+  facebook: kadambari.kaveri
   bio: Apprentice to Doctor Schnabel
 
 - name: Nabeel
@@ -113,7 +113,6 @@
   facebook: 100007152586385
   referral: CodHeK
   bio: Can not talk. Gitter only.
-
 
 - name: Anupam Dagar
   github: Anupam-dagar
@@ -178,21 +177,27 @@
   image: anu.jpg
   facebook: anubhutiv1
   bio: Open source enthusiast
-  
+
 - name: Anmol Singh Sethi
   image: anmol.jpg
   github: xanmolx
   facebook: anmolsingh.sethi
-  bio: Beginner and explorer..!! 
-  
+  bio: Beginner and explorer..!!
+
 - name: Sarath Chandra
   github: KingBizzleLord
   image: KBL.jpg
   facebook: SarathNandimandalam
   bio: AI maniac.
-  
-- name: Sunil Bansiwal  
+
+- name: Sunil Bansiwal
   github: Sunil-IIITA
   facebook: sunil.banshal.71
   image: Sunil.jpg
   bio: Beginner and explorer..!!
+
+- name: Gauri Kesarwani
+  github: Gaurik936
+  image: Gauri.jpg
+  facebook: gauri.kesarwani.3
+  bio: A Novice.
