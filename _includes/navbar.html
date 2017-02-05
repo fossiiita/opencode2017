@@ -1,4 +1,7 @@
- <div id="fb-root"></div>
+<script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
+ <link href="http://vjs.zencdn.net/5.16.0/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<div id="fb-root"></div>
     <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -46,60 +49,27 @@
     </nav>
 <!-- End of Navigation Bar -->
 <!--trailer-->
-<script type="text/javascript">
-(function($) 
-    {
-               /*Popup for Details Button*/
-            $('#btndetails').bind('click', function(e)
-            {
-                // Prevents the default action to be triggered. 
-                    e.preventDefault();               
-                    $('#element_to_pop_up').bPopup();
-                    var html = $("#element_to_pop_up").html();
-                    $("#element_to_pop_up").html(html+ "Some text");
-            });  
-
-    })(jQuery);
-</script>
-<style>   
- #element_to_pop_up
-    { 
-       background-color:#fff;
-       border-radius:15px;
-       color:#000;
-       display:none; 
-       padding:20px;
-       min-width:400px;
-       min-height: 180px;
-    }
-    span.button.b-close {
-    position: absolute;
-    top: 5px;
-    right: 8px;
-    cursor:pointer;
-    }
-</style>
 <div class="bs-example">
     
     <div id="Trailer" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <input type="button" value="Details" id="btndetails" />
-<div id="element_to_pop_up">
-  <span class="button b-close"><span>X</span></span>
-</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h4 class="modal-title">Trailer of OpenCode</h4>
                 </div>
                 <div class="video-container">
-                    <iframe  id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/qkt9vMKYHAM?autoplay=100" frameborder="0" allowfullscreen></iframe>
+                     <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source src="images/OpenCode.mp4" type='video/mp4'>
+   
+   
+  </video>
+
+
                 </div>
             </div>
         </div>
     </div>
                                                                  
 </div>
-  
-  
-  
-  
