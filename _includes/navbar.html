@@ -1,6 +1,7 @@
-<script src="http://vjs.zencdn.net/5.16.0/video.js"></script>
- <link href="http://vjs.zencdn.net/5.16.0/video-js.css" rel="stylesheet">
-<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <div id="fb-root"></div>
     <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -37,7 +38,7 @@
             <li><a class="menu-item" href="projects.html#issues">Issues</a></li>
             <li><a class="menu-item" href="scoreboard.html">Event Scoreboard</a></li>
             <li><a class="menu-item" href="https://gitter.im/opencode2017">Chat With Us</a></li>
-            <li><a href="#Trailer" data-toggle="modal">Watch Trailer</a></li>
+            <li><a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Trailer</a></li>
             <li>
                 <a class="menu-item">
                     <div class="fb-like" data-href="https://www.facebook.com/Opencode-1038106262984513/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
@@ -49,6 +50,13 @@
     </nav>
 <!-- End of Navigation Bar -->
 <!--trailer-->
+   <div data-role="popup" id="myPopup" class="ui-content">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <div class="video-container">
+                    <iframe  id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/qkt9vMKYHAM?autoplay=100" frameborder="0" allowfullscreen></iframe>
+                </div>
+    </div>
+
 <div class="bs-example">
     
     <div id="Trailer" class="modal fade">
@@ -58,16 +66,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h4 class="modal-title">Trailer of OpenCode</h4>
                 </div>
-                <div class="video-container">
-                     <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
-  poster="images/opencode.png.jpg" data-setup="{}">
-    <source src="images/OpenCode.mp4" type='video/mp4'>
-   
-   
-  </video>
-
-
-                </div>
+               
             </div>
         </div>
     </div>
