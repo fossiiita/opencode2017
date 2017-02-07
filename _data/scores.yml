@@ -75,6 +75,59 @@
 - github: vsvipul555
   
 - github: aswanthkoleri
+  contributions:
+    - name: add student details
+      link: https://github.com/fossiiita/opencodecollab/pull/11
+      score: 30
+    - name: referred me
+      link: https://github.com/fossiiita/opencodecollab/pull/14
+      score: 20
+    - name: referred me
+      link: https://github.com/fossiiita/opencodecollab/pull/38
+      score: 20      
+    - name: install on your system
+      link: https://github.com/fossiiita/opencodecollab/issues/9
+      score: 30
+    - name: enable gh-pages on your fork
+      link: https://github.com/fossiiita/opencodecollab/issues/15
+      score: 30
+    - name: add django event platform
+      link: https://github.com/fossiiita/opencodecollab/pull/79
+      score: 10      
+    - name: add gitignore
+      link: https://github.com/fossiiita/opencodecollab/pull/112
+      score: 10        
+    - name: change background
+      link: https://github.com/fossiiita/opencodecollab/pull/122
+      score: 20
+    - name: general task
+      link: https://github.com/fossiiita/opencodecollab/issues/87
+      score: 20      
+    - name: make your own personal page
+      link: https://github.com/fossiiita/opencodecollab/issues/108
+      score: 10      
+    - name: add change in footer
+      link: https://github.com/fossiiita/humblefoolcup/pull/32
+      score: 20      
+    - name: add link
+      link: https://github.com/fossiiita/humblefoolcup/pull/43
+      score: 20      
+    - name: added issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/44
+      score: 10      
+    - name: added issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/48
+      score: 10      
+    - name: added issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/49
+      score: 10      
+    - name: added preloader
+      link: https://github.com/fossiiita/humblefoolcup/pull/52
+      score: 20     
+    - name: change background
+      link: https://github.com/fossiiita/humblefoolcup/pull/54
+      score: 20
+  total: 310
 
 - github: Symphoria
 
