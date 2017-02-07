@@ -160,7 +160,13 @@
     - name: Added 10 codechef programs.
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/9
       score: 40
-  total: 320
+    - name: Added 7 codechef programs.
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/10
+      score: 20
+    - name: Added 3 codechef programs.
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/11
+      score: 20
+  total: 360
 
 
 - github: mrsaicharan1
