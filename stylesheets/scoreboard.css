@@ -1,0 +1,16 @@
+.scoreboard {
+    margin-top:100px;
+    padding: 30px;
+    background-image: url(../images/greyzz.png);
+    background-repeat: repeat;
+}
+
+.scoreboard h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#scoreboard-accordion a {
+    text-decoration: none;
+}
