@@ -219,7 +219,10 @@
     - name: Added 3 codechef programs.
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/11
       score: 20
-  total: 360
+    - name: Added gitter chatbox.
+      link: https://github.com/fossiiita/opencodecollab/pull/189
+      score: 20
+  total: 380
 
 
 - github: mrsaicharan1
