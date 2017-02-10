@@ -247,6 +247,33 @@
   total: 140
   
 - github: agbilotia1998
+  contributions:
+    - name: Added profile to students
+        link: https://github.com/fossiiita/opencodecollab/pull/56
+        score: 30
+    - name: Enable gh-pages on your fork
+        link: https://github.com/fossiiita/opencodecollab/issues/15#issuecomment-273297718
+        score: 30
+    - name: General tasks
+        link: https://github.com/fossiiita/opencodecollab/issues/87#issuecomment-274348441
+        score: 20
+    - name: Refferal(Akshat Jain Reffered me)
+        link: https://github.com/fossiiita/opencodecollab/blob/master/_data/students.yml
+        score: 20
+    - name: Linked project
+        link: https://github.com/fossiiita/opencodecollab/pull/59
+        score: 10
+    - name: Fixed mobile view
+        link: https://github.com/fossiiita/opencodecollab/pull/95
+        score: 10
+    - name: Made title appealing
+        link: https://github.com/fossiiita/opencodecollab/pull/145
+        score: 10
+    - name: Raised Issue
+        link: https://github.com/fossiiita/opencodecollab/issues/111
+        score: 10
+  total: 140
+
   
 - github: sashank27
   
