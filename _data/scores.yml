@@ -202,7 +202,13 @@
     - name: referral
       link: https://github.com/fossiiita/opencodecollab/pull/183
       score: 20
-  total: 410
+    - name: chat with us option not working when we are using the issues and projects page 
+      link: https://github.com/fossiiita/opencodecollab/pull/199
+      score: 30
+    - name: Add more solutions to Codechef problems(*2)
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/12
+      score: 40
+  total: 480
 
 - github: Donny97
 
