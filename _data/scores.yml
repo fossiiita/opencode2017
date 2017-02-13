@@ -154,6 +154,9 @@
     - name: Make _includes folder; move header and footer to there
       link: https://github.com/fossiiita/opencodecollab/pull/166
       score: 10 
+    - name: Install On Your System (django)
+      link: https://cloud.githubusercontent.com/assets/25057819/22864434/67a7b422-f177-11e6-84fb-4802ee8ec2ae.png
+      score: 30    
     - name: Move all relevant code to navbar.html
       link: https://github.com/fossiiita/opencodecollab/pull/179
       score: 10
@@ -208,7 +211,7 @@
     - name: Add more solutions to Codechef problems(*2)
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/12
       score: 40
-  total: 480
+  total: 510
 
 - github: Donny97
 
