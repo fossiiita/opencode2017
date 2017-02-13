@@ -132,6 +132,86 @@
 - github: Symphoria
 
 - github: aswinzz
+  contributions:
+    - name: Add humble fool in projects section
+      link: https://github.com/fossiiita/opencodecollab/pull/45
+      score: 20
+    - name: refferal
+      link: https://github.com/fossiiita/opencodecollab/pull/13
+      score: 20
+    - name: Add A Facebook like bar (made an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/101
+      score: 10    
+    - name: Loader
+      link: https://github.com/fossiiita/opencodecollab/pull/131
+      score: 20  
+    - name: Make Navbar Sticky(made an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/144
+      score: 10  
+    - name: Make Navbar Sticky
+      link: https://github.com/fossiiita/opencodecollab/pull/143
+      score: 20  
+    - name: Make _includes folder; move header and footer to there
+      link: https://github.com/fossiiita/opencodecollab/pull/166
+      score: 10 
+    - name: Install On Your System (django)
+      link: https://cloud.githubusercontent.com/assets/25057819/22864434/67a7b422-f177-11e6-84fb-4802ee8ec2ae.png
+      score: 30    
+    - name: Move all relevant code to navbar.html
+      link: https://github.com/fossiiita/opencodecollab/pull/179
+      score: 10
+    - name: Add your name in the students section 
+      link: https://github.com/fossiiita/opencodecollab/pull/14
+      score: 30
+    - name: Install on your system
+      link: https://cloud.githubusercontent.com/assets/25057819/22172471/aaec884a-dfcd-11e6-87b8-b5176c3aa368.png
+      score: 30
+    - name: Enable gh-pages
+      link: https://aswinzz.github.io/opencodecollab/
+      score: 30
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87
+      score: 20
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/185
+      score: 20  
+    - name: Make your own personal page- For Everyone
+      link: https://aswinzz.github.io/
+      score: 10
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/184
+      score: 20    
+    - name: add gitter chatbox(made an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/165
+      score: 10
+    - name: add close button for gitter chatbox(made an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/191
+      score: 10    
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/188
+      score: 20  
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/187
+      score: 20 
+    - name: Add a Header to the page
+      link: https://github.com/fossiiita/humblefoolcup/pull/50
+      score: 20  
+    - name: Add about section
+      link: https://github.com/fossiiita/humblefoolcup/pull/30
+      score: 20  
+    - name: Merge Opencode website with opencodecollab website
+      link: https://github.com/fossiiita/humblefoolcup/pull/30
+      score: 10  
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/183
+      score: 20
+    - name: chat with us option not working when we are using the issues and projects page 
+      link: https://github.com/fossiiita/opencodecollab/pull/199
+      score: 30
+    - name: Add more solutions to Codechef problems(*2)
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/12
+      score: 40
+  total: 510
 
 - github: Donny97
 
@@ -224,7 +304,6 @@
       score: 20
   total: 380
 
-
 - github: mrsaicharan1
   
 - github: pradeepgangwar
@@ -247,6 +326,32 @@
   total: 140
   
 - github: agbilotia1998
+  contributions:
+    - name: Added profile to students
+      link: https://github.com/fossiiita/opencodecollab/pull/56
+      score: 30
+    - name: Enable gh-pages on your fork
+      link: https://github.com/fossiiita/opencodecollab/issues/15#issuecomment-273297718
+      score: 30
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87#issuecomment-274348441
+      score: 20
+    - name: Refferal(Akshat Jain Reffered me)
+      link: https://github.com/fossiiita/opencodecollab/blob/master/_data/students.yml
+      score: 20
+    - name: Linked project
+      link: https://github.com/fossiiita/opencodecollab/pull/59
+      score: 10
+    - name: Fixed mobile view
+      link: https://github.com/fossiiita/opencodecollab/pull/95
+      score: 10
+    - name: Made title appealing
+      link: https://github.com/fossiiita/opencodecollab/pull/145
+      score: 10
+    - name: Raised Issue
+      link: https://github.com/fossiiita/opencodecollab/issues/111
+      score: 10
+  total: 140
   
 - github: sashank27
   
