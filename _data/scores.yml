@@ -211,6 +211,9 @@
     - name: Add more solutions to Codechef problems(*2)
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/12
       score: 40
+    - name: Alignment correction in mobile view of scoreboard(made an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/214
+      score: 10    
   total: 510
 
 - github: Donny97
