@@ -305,7 +305,25 @@
     - name: Added gitter chatbox.
       link: https://github.com/fossiiita/opencodecollab/pull/189
       score: 20
-  total: 380
+    - name: Create an issue.
+      link: https://github.com/fossiiita/humblefoolcup/issues/59
+      score: 10
+    - name: Create an issue.
+      link: https://github.com/fossiiita/opencodecollab/issues/212
+      score: 10
+    - name: Create an issue.
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/issues/16
+      score: 10
+    - name: Added chatbox in event scorecard.
+      link: https://github.com/fossiiita/opencodecollab/pull/216
+      score: 20
+    - name: Added team page.
+      link: https://github.com/fossiiita/humblefoolcup/pull/53
+      score: 30
+    - name: Added 15 codebuddy and 15 hackerearth programs.
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/17
+      score: 120
+  total: 580
 
 - github: mrsaicharan1
   
