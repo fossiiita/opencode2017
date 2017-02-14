@@ -14,3 +14,7 @@
 #scoreboard-accordion a {
     text-decoration: none;
 }
+
+.pull-right{
+    margin-right: -14px;
+}
