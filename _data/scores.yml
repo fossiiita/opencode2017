@@ -127,7 +127,67 @@
     - name: change background
       link: https://github.com/fossiiita/humblefoolcup/pull/54
       score: 20
-  total: 310
+    - name: add referral
+      link: https://github.com/fossiiita/opencodecollab/pull/208
+      score: 20      
+    - name: add referral
+      link: https://github.com/fossiiita/opencodecollab/pull/209
+      score: 20 
+    - name: add referral
+      link: https://github.com/fossiiita/opencodecollab/pull/210
+      score: 20 
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/197
+      score: 10  
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/198
+      score: 10
+    - name: add 10 codechef problems
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/14
+      score: 20  
+    - name: install django platform
+      link: https://github.com/gauthamzz/Django-EventPlatform/issues/17
+      score: 30 
+    - name: create issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/62
+      score: 10   
+    - name: create issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/61
+      score: 10
+    - name: last update
+      link: https://github.com/fossiiita/humblefoolcup/pull/63
+      score: 30  
+    - name: change color variations
+      link: https://github.com/fossiiita/humblefoolcup/pull/60
+      score: 30 
+    - name: create issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/57
+      score: 10  
+    - name: create issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/57
+      score: 10     
+    - name: add referral
+      link: https://github.com/fossiiita/opencodecollab/pull/221
+      score: 20 
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/228
+      score: 10
+    - name: added working openchat 
+      link: https://github.com/fossiiita/opencodecollab/pull/229
+      score: 10     
+    - name: added 10 hackerearth programs 
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/20
+      score: 20 
+    - name: add experience in opencode
+      link: https://github.com/fossiiita/opencodecollab/issues/226
+      score: 30
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/243
+      score: 10
+    - name: add 10 codechef problems
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/22
+      score: 10
+  total: 670          
 
 - github: Symphoria
 
@@ -214,7 +274,31 @@
     - name: Alignment correction in mobile view of scoreboard(made an issue)
       link: https://github.com/fossiiita/opencodecollab/issues/214
       score: 10    
-  total: 510
+    - name: added 35 Codebuddy and HackerEarth programs
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/19
+      score: 60  
+    - name: remove programs that are repeated(created an issue)
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/issues/21
+      score: 10 
+    - name: make everything respsonsive(created an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/227
+      score: 10 
+    - name: Dropdown is not going when chat with us is clicked(mobile view)(created an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/224
+      score: 10 
+    - name: Add a countdown for opencode
+      link: https://github.com/fossiiita/opencodecollab/issues/223
+      score: 10 
+    - name: Add Blog section
+      link: https://github.com/fossiiita/opencodecollab/pull/238
+      score: 30
+    - name: Write your experience in blog
+      link: https://github.com/fossiiita/opencodecollab/pull/238
+      score: 30  
+    - name: Add background for blog section(created an issue)
+      link: https://github.com/fossiiita/opencodecollab/pull/238
+      score: 10
+  total: 690
 
 - github: Donny97
 
@@ -322,8 +406,8 @@
       score: 30
     - name: Added 15 codebuddy and 15 hackerearth programs.
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/17
-      score: 120
-  total: 580
+      score: 60
+  total: 520
 
 - github: mrsaicharan1
   
@@ -378,7 +462,13 @@
     - name: Alignment of score in mobile view
       link: https://github.com/fossiiita/opencodecollab/pull/218
       score: 30
-  total: 180
+    - name: Make webpage responsive
+      link: https://github.com/fossiiita/opencodecollab/pull/232
+      score: 30
+    - name: Dropdown is not going when chat with us is clicked
+      link: https://github.com/fossiiita/opencodecollab/pull/244
+      score: 20 
+  total: 230
   
 - github: sashank27
   

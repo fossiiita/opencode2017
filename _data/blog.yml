@@ -1,0 +1,13 @@
+#add as per the following order
+#add the image in images/blog
+- name: AswinVB
+  github: aswinzz
+  blogname: MyBlog
+  image: aswin.jpg
+  link: https://medium.com/@aswinvb/opencode-cc7c3a3c5591#.hn0a3mj40
+  personalweb: https://aswinzz.github.io
+- name: Aswanth.K
+  github: aswanthkoleri
+  blogname: MyBlog
+  image: aswanth.jpg
+  link: https://medium.com/@aswanthkanil/opencode-bba684bf68cf#.duacwi6uh
