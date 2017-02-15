@@ -59,6 +59,7 @@ To add your blog details open the file `blog.yml` in `_data` folder and please m
   blogname: Your Blog name
   image: image_name.jpg
   link: <blog_url>
+  personalweb: <url>
 ```
 
 **IMPORTANT:**
