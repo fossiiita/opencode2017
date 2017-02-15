@@ -9,6 +9,13 @@
   referral: aswinzz
   bio: Still learning...
 
+- name: Ankit Jain
+  github: ankitjain28may
+  image: ankitjain.jpg
+  facebook: jain.ankit28
+  twitter: ankitjain28may
+  bio: Web Developer and a open source contributor
+
 - name: Vamsi Sangam
   image: vamsisangam.jpg
   github: VamsiSangam
@@ -79,7 +86,7 @@
   twitter: utpal007
   facebook: utpal007
   referral: aswinzz
-  bio: Still learning... 
+  bio: Still learning...
 
 - name: Utkarsh Chaurasia
   image: utkarsh.jpg
@@ -99,7 +106,7 @@
   image: aditya710.jpg
   facebook: aditya.goel.311
   bio: I come here to build.
-  
+
 - name: Sourav Mitra
   github: snipecoder1
   image: sourav.jpg
@@ -107,7 +114,7 @@
   facebook: sourav.mitra.iiita
   referral: aswinzz
   bio: beginner
-  
+
 - name: Aashutosh Mundra
   github: QWERTY2101997
   image: aashutosh.jpg
@@ -248,11 +255,13 @@
   facebook: bhuvanesh gouda
   referral: aswanthkoleri
   bio: A beginner
-  
+
 - name: nidhish
   github: pashanidhish
   image: nidhish.jpg
   facebook: Nidhish Kumar Reddy
   referral: aswanthkoleri
   bio: A Newbie
-  
+
+
+
