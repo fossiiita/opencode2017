@@ -423,7 +423,7 @@
     - name: Make webpage responsive
       link: https://github.com/fossiiita/opencodecollab/pull/232
       score: 30
-  total: 180
+  total: 210
 
 - github: sashank27
   
