@@ -286,7 +286,7 @@
     - name: Write your experience in blog
       link: https://github.com/fossiiita/opencodecollab/pull/238
       score: 30  
-     - name: Add background for blog section(created an issue)
+    - name: Add background for blog section(created an issue)
       link: https://github.com/fossiiita/opencodecollab/pull/238
       score: 10
   total: 690
