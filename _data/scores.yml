@@ -420,7 +420,11 @@
     - name: Alignment of score in mobile view
       link: https://github.com/fossiiita/opencodecollab/pull/218
       score: 30
-  total: 180
+    - name: Make webpage responsive
+      link: https://github.com/fossiiita/opencodecollab/pull/232
+      score: 30
+  total: 210
+
 
 - github: sashank27
   
