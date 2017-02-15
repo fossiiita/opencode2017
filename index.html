@@ -187,7 +187,7 @@
                     <!-- Start ignoring BootLintBear -->
                     <h2>Blog</h2>
                     <!-- Stop ignoring -->
-                    {% for student in site.data.students %}
+                    {% for blog in site.data.blog %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card-wrapper">
                             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
@@ -196,7 +196,7 @@
                                         <!-- front content -->
                                         <div class="card stu-card">
                                             <div class="avatar">
-                                                {% if student.image %}
+                                                {% if blog.image %}
                                                     <img src="images/blog/{{blog.image}}"
                                                      width="200px" height="200px">
                                                     {% else %}
@@ -206,8 +206,8 @@
                                                     <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
                                                         <i class="fa fa-code"></i>
                                                         &nbsp;
-                                                        <span class="stu-name card-text" title="{{student.name}}">
-                                                            {{student.name}}
+                                                        <span class="stu-name card-text" title="{{blog.name}}">
+                                                            {{blog.name}}
                                                         </span>
                                                     </p>
                                             </div>
