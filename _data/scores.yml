@@ -144,7 +144,7 @@
       score: 10
     - name: add 10 codechef problems
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/14
-      score: 40  
+      score: 20  
     - name: install django platform
       link: https://github.com/gauthamzz/Django-EventPlatform/issues/17
       score: 30 
@@ -175,10 +175,19 @@
     - name: added working openchat 
       link: https://github.com/fossiiita/opencodecollab/pull/229
       score: 10     
-    - name: added referral 
-      link: https://github.com/fossiiita/opencodecollab/pull/236
-      score: 20     
-  total: 620           
+    - name: added 10 hackerearth programs 
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/20
+      score: 20 
+    - name: add experience in opencode
+      link: https://github.com/fossiiita/opencodecollab/issues/226
+      score: 30
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/243
+      score: 10
+    - name: add 10 codechef problems
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/22
+      score: 10
+  total: 670          
 
 - github: Symphoria
 
