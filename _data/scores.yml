@@ -280,7 +280,16 @@
     - name: Add a countdown for opencode
       link: https://github.com/fossiiita/opencodecollab/issues/223
       score: 10 
-  total: 620
+    - name: Add Blog section
+      link: https://github.com/fossiiita/opencodecollab/pull/238
+      score: 30
+    - name: Write your experience in blog
+      link: https://github.com/fossiiita/opencodecollab/pull/238
+      score: 30  
+     - name: Add background for blog section(created an issue)
+      link: https://github.com/fossiiita/opencodecollab/pull/238
+      score: 10
+  total: 690
 
 - github: Donny97
 
