@@ -127,7 +127,49 @@
     - name: change background
       link: https://github.com/fossiiita/humblefoolcup/pull/54
       score: 20
-  total: 310
+    - name: add referral
+      link: https://github.com/fossiiita/opencodecollab/pull/208
+      score: 20      
+    - name: add referral
+      link: https://github.com/fossiiita/opencodecollab/pull/209
+      score: 20 
+    - name: add referral
+      link: https://github.com/fossiiita/opencodecollab/pull/210
+      score: 20 
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/197
+      score: 10  
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/198
+      score: 10
+    - name: add 10 codechef problems
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/14
+      score: 40  
+    - name: install django platform
+      link: https://github.com/gauthamzz/Django-EventPlatform/issues/17
+      score: 30 
+    - name: create issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/62
+      score: 10   
+    - name: create issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/61
+      score: 10
+    - name: last update
+      link: https://github.com/fossiiita/humblefoolcup/pull/63
+      score: 30  
+    - name: change color variations
+      link: https://github.com/fossiiita/humblefoolcup/pull/60
+      score: 30 
+    - name: create issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/57
+      score: 10  
+    - name: create issue
+      link: https://github.com/fossiiita/humblefoolcup/issues/57
+      score: 10     
+    - name: add referral
+      link: https://github.com/fossiiita/opencodecollab/pull/221
+      score: 20   
+  total: 580           
 
 - github: Symphoria
 
