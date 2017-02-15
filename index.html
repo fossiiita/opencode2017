@@ -182,6 +182,78 @@
             </section>
             <!-- End of Student Section -->
         </div> <!-- End of .container inside the main-wrapper section -->
+    
+    <!----- Student blog section ------>
+     <section class="blog" id="blog" href="#blog">
+                <div class="row students-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2 align="center">Participant Blogs</h2>
+                    <!-- Stop ignoring -->
+                    {% for blog in site.data.blog %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                {% if blog.image %}
+                                                    <img src="images/blog/{{blog.image}}"
+                                                     width="200px" height="200px">
+                                                    {% else %}
+                                                    
+                                                    width="200px" height="200px">
+                                                    {% endif %}
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="{{blog.name}}">
+                                                            {{blog.name}}
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                {% if blog.link %}
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    {{blog.blogname}}
+                                                </p>
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a href="{{blog.link}}">Click To See Blog</a>
+                                                </p>
+                                                {% else %}
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    No Working Link!
+                                                </p>
+                                                {% endif %}
+                                                <br><hr>
+                                                <center>
+                                                    {% if student.github %}
+                                                    <a href="https://github.com/{{student.github}}"><i class="fa fa-3x fa-github"></i></a> &nbsp;
+                                                    {% endif %}
+                                                    {% if student.facebook %}
+                                                    <a href="https://www.facebook.com/{{student.facebook}}"><i class="fa fa-3x fa-facebook-square"></i></a> &nbsp;
+                                                    {% endif %}
+                                                    {% if student.twitter %}
+                                                    <a href="https://twitter.com/{{student.twitter}}"><i class="fa fa-3x fa-twitter"></i></a> &nbsp;
+                                                    {% endif %}
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
 
        {% include footer.html %}
 

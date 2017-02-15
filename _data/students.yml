@@ -9,6 +9,12 @@
   referral: aswinzz
   bio: Still learning...
 
+- name: Aditya Agarwal
+  github: itaditya
+  image: itaditya.jpg
+  facebook: aditya.agarwal.9400
+  bio: MEAN stack dev with passion to learn.
+
 - name: Ankit Jain
   github: ankitjain28may
   image: ankitjain.jpg
@@ -63,6 +69,7 @@
   github: https://github.com/Aotoge
   image: kadambari.jpg
   facebook: kadambari.kaveri
+  referral: Anupam-dagar
   bio: Apprentice to Doctor Schnabel
 
 - name: Nabeel
@@ -263,5 +270,10 @@
   referral: aswanthkoleri
   bio: A Newbie
 
-
+- name: prakhar chaturvedi
+  github: prakharcoder1
+  image: prakhar.jpg
+  facebook: prakhar9453
+  referral: Anupam-dagar
+  bio: noobie to opencode
 

@@ -168,8 +168,17 @@
       score: 10     
     - name: add referral
       link: https://github.com/fossiiita/opencodecollab/pull/221
-      score: 20   
-  total: 580           
+      score: 20 
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/228
+      score: 10
+    - name: added working openchat 
+      link: https://github.com/fossiiita/opencodecollab/pull/229
+      score: 10     
+    - name: added referral 
+      link: https://github.com/fossiiita/opencodecollab/pull/236
+      score: 20     
+  total: 620           
 
 - github: Symphoria
 
@@ -256,7 +265,31 @@
     - name: Alignment correction in mobile view of scoreboard(made an issue)
       link: https://github.com/fossiiita/opencodecollab/issues/214
       score: 10    
-  total: 510
+    - name: added 35 Codebuddy and HackerEarth programs
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/19
+      score: 60  
+    - name: remove programs that are repeated(created an issue)
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/issues/21
+      score: 10 
+    - name: make everything respsonsive(created an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/227
+      score: 10 
+    - name: Dropdown is not going when chat with us is clicked(mobile view)(created an issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/224
+      score: 10 
+    - name: Add a countdown for opencode
+      link: https://github.com/fossiiita/opencodecollab/issues/223
+      score: 10 
+    - name: Add Blog section
+      link: https://github.com/fossiiita/opencodecollab/pull/238
+      score: 30
+    - name: Write your experience in blog
+      link: https://github.com/fossiiita/opencodecollab/pull/238
+      score: 30  
+    - name: Add background for blog section(created an issue)
+      link: https://github.com/fossiiita/opencodecollab/pull/238
+      score: 10
+  total: 690
 
 - github: Donny97
 
