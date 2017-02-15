@@ -6,3 +6,9 @@ if ($(this).scrollTop() > 1){
     $('header').removeClass("sticky");
   }
 });
+
+$("#chatwithus").click(function(){
+            $('#sidebar').addClass('collapsed');
+            $('#sidebar').attr('aria-expanded','false');
+});
+             
