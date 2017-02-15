@@ -168,8 +168,14 @@
       score: 10     
     - name: add referral
       link: https://github.com/fossiiita/opencodecollab/pull/221
-      score: 20   
-  total: 580           
+      score: 20 
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/228
+      score: 10
+    - name: added working openchat 
+      link: https://github.com/fossiiita/opencodecollab/pull/229
+      score: 10     
+  total: 600           
 
 - github: Symphoria
 
