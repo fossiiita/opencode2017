@@ -18,7 +18,7 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 ```
 
 **IMPORTANT:**
-3
+
 - All images must be optimized before uploaded to the repo via commit or PR. You may use any image optimizer of your choice.
 - The images should be 240 x 240 pixels.
 - Adding Facebook, Twitter, Github, etc. is not obliged. But if you do not want to include social media accounts, please do not provide empty fields like `facebook:`. Ask the mentors if you do not know their accounts.
@@ -47,6 +47,28 @@ To add yourself to student section you need to open the file `students.yml` in `
 - Avoid changing the whole file just to add yourself. Line endings should not change.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. your name has single quote mark) put double quotes (`"`) around that part.
 - Try to use abbreviations in your name wherever possible, i.e. restrict your name in 13 letters (including spaces), otherwise your name might be truncated automatically. However, your name will be displayed completely when you hover on it on the website.
+
+
+# Adding your Blog details.
+
+To add your blog details open the file `blog.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+
+```yaml
+- name: Your name
+  github: github ID
+  blogname: Your Blog name
+  image: image_name.jpg
+  link: <blog_url>
+```
+
+**IMPORTANT:**
+
+-The images have to be uploaded into the folder called blog inside the images folder.
+- All images must be optimized before uploaded to the repo via commit or PR. You may use any image optimizer of your choice.
+- The images should be 240 x 240 pixels.
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+- Try to use abbreviations in your name wherever possible, i.e. restrict it to 13 letters (including spaces), otherwise it might be truncated automatically. However, the name will be displayed completely when you hover on it on the website.
+-The images have to be uploaded into the folder called blog inside the images folder.
 
 
 # Contributing
