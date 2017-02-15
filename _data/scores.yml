@@ -456,7 +456,10 @@
     - name: Make webpage responsive
       link: https://github.com/fossiiita/opencodecollab/pull/232
       score: 30
-  total: 210
+    - name: Dropdown is not going when chat with us is clicked
+      link: https://github.com/fossiiita/opencodecollab/pull/244
+      score: 20 
+  total: 230
 
 - github: sashank27
   
