@@ -10,5 +10,9 @@ if ($(this).scrollTop() > 1){
 $("#chatwithus").click(function(){
             $('#sidebar').addClass('collapsed');
             $('#sidebar').attr('aria-expanded','false');
+            $('#collapse').removeClass('in');
+            $('#collapse').attr('aria-expanded', 'false').attr('height','0.8px');
+            
 });
+
              
