@@ -186,8 +186,11 @@
       score: 10
     - name: add 10 codechef problems
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/22
+      score: 20
+    - name: update readme.md
+      link: https://github.com/fossiiita/opencodecollab/pull/247
       score: 10
-  total: 670          
+  total: 680          
 
 - github: Symphoria
 
