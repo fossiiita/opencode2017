@@ -1,8 +1,12 @@
 .timecontain {
   text-align: center;
-  padding: 5% 5%;
+  padding: 10% 5%;
   background: #0D1A29;
   font-family: "Helvetica Neue", "Open Sans", helvetica, arial, sans-serif;  
+  width: 100%;
+
+  margin-bottom: -100%;
+
 }
 
 #timer {  
@@ -21,5 +25,8 @@
       font-size: .35em;
       font-weight: 400;
     }
-  
+  div {
+    display: inline-block;
+    min-width: 90px;
+  }
 
