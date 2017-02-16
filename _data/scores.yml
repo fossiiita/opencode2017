@@ -307,7 +307,10 @@
     - name: Add background for blog section(created an issue)
       link: https://github.com/fossiiita/opencodecollab/pull/238
       score: 10
-  total: 690
+    - name: fix dropdown in mobile view
+      link: https://github.com/fossiiita/opencodecollab/pull/265
+      score: 30
+  total: 720
 
 - github: Donny97
 
