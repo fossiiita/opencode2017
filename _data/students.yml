@@ -171,6 +171,7 @@
 - name: Saicharan Reddy
   github: mrsaicharan1
   image: Saic.jpg
+  referral: Anupam-dagar
   facebook: saicharan.reddy.927
   bio: New to github!
 
@@ -297,6 +298,13 @@
   facebook: rahul.sunny.5817
   referral: VamsiSangam
   bio: Determined noob!
+  
+- name: Rohit
+  github: rohit659
+  image: rohit.jpg
+  facebook: rohit.panchal.3781995
+  referral: Anupam-dagar
+  bio: Committed to coding
 
 - name: Shivam Fialok
   image: shivam.jpg
@@ -311,3 +319,18 @@
   facebook: aditi.bansal.007
   referral: Anupam-dagar
   bio: Jzt a newbie...
+
+- name: Rakshit
+  image: rakshit.jpg
+  github: mrakshit
+  facebook: rakshit.sai.5
+  referral: Anupam-dagar
+  bio: github=social coding
+  
+- name: Sanam
+  github: SanamBahadur
+  image: sanam.jpg 
+  facebook: sanam.padhra
+  referral: Anupam-dagar
+  bio: stupididiot
+
