@@ -110,6 +110,54 @@
                 </div>
             </section>
             <!-- End of Projects Section -->
+     <!-- Students Projects Section -->
+            <section class="stprojects-sec" id="stprojects" href="#stprojects">
+                <div class="row stprojects-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>Participant Projects</h2>
+                    <!-- Stop ignoring -->
+                    {% for stproject in site.data.stprojects %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper github-project" data-user="{{stproject.user}}" data-repo="{{stproject.repo}}">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                    <img src="images/stprojects/{{stproject.image}}"
+                                                    alt="{{stproject.name}}"
+                                                    width="200px" height="200px">
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-file-text"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="{{stproject.name}}">
+                                                            {{stproject.name}}
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a style="text-decoration: none;" class="fa-2x" href="{{stproject.gh}}" target="_tab">To view <i class="fa fa-external-link"></i></a>
+                                                </p>
+                                              
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <!-- End of Projects Section -->
 
             <!-- Issues Section -->
             <section class="issues-sec" id="issues" href="#issues">
@@ -177,5 +225,6 @@
             $('#issues-accordion div a').first().click();
         });
     </script>
+     
 </body>
 </html>
