@@ -108,7 +108,8 @@
                     {% endfor %}
                 </div>
             </section>
-            <!-- End of students Projects Section -->
+            <!-- End of Projects Section -->
+     <!--  start Participant Projects Section -->
               <section class="partproj-sec" id="partproj" href="#partproj">
                 <div class="row partproj-wrapper">
                     <!-- Start ignoring BootLintBear -->
@@ -235,7 +236,7 @@
             {% for partproj in site.data.partproj %}
             $('#{{partproj.user}}-{{partproj.repo}}-load-more button').click();
             {% endfor %}
-            $('#issues-accordion div a').first().click();
+     
         });
     </script>
 </body>
