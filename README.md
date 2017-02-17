@@ -64,12 +64,29 @@ To add your blog details open the file `blog.yml` in `_data` folder and please m
 
 **IMPORTANT:**
 
--The images have to be uploaded into the folder called blog inside the images folder.
 - All images must be optimized before uploaded to the repo via commit or PR. You may use any image optimizer of your choice.
 - The images should be 240 x 240 pixels.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 - Try to use abbreviations in your name wherever possible, i.e. restrict it to 13 letters (including spaces), otherwise it might be truncated automatically. However, the name will be displayed completely when you hover on it on the website.
 -The images have to be uploaded into the folder called blog inside the images folder.
+
+# Adding your Project.
+
+To add your blog details open the file `stprojects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+
+```yaml
+- name: Your name
+  image: image_name.jpg
+  gh: ghpage <url>
+```
+
+**IMPORTANT:**
+
+-The images have to be uploaded into the folder called stprojects inside the images folder.
+- All images must be optimized before uploaded to the repo via commit or PR. You may use any image optimizer of your choice.
+- The images should be 240 x 240 pixels.
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+- Try to use abbreviations in your name wherever possible, i.e. restrict it to 13 letters (including spaces), otherwise it might be truncated automatically. However, the name will be displayed completely when you hover on it on the website.
 
 
 # Contributing
