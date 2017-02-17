@@ -629,7 +629,10 @@
     - name: Created issue
       link: https://github.com/fossiiita/opencodecollab/issues/320
       score: 10
-  total: 990
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/340
+      score: 20
+  total: 1010
 
 - github: mrsaicharan1
   
