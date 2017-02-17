@@ -89,7 +89,10 @@
     - name: Added 30 new programs to Cool Practice Programs
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/23
       score: 60
-  total:  160 
+    - name: Personal Page.
+      link: https://vsvipul555.github.io/
+      score: 10
+  total:  170 
   
 - github: aswanthkoleri
   contributions:
