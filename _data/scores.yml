@@ -73,7 +73,6 @@
   total: 440
   
 - github: vsvipul555
-  contributions:
     - name: add student details
       link: https://github.com/fossiiita/opencodecollab/pull/61
       score: 30
@@ -83,7 +82,13 @@
     - name: Fixed typo in params.json
       link: https://github.com/fossiiita/opencodecollab/pull/72
       score: 10
-  total: 70
+    - name: Added blogpost
+      link: https://github.com/fossiiita/opencodecollab/pull/304
+      score: 30
+    - name: Added 30 new programs to Cool Practice Programs
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/23
+      score: 60
+  total:  160 
   
 - github: aswanthkoleri
   contributions:
