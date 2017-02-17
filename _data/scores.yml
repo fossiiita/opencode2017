@@ -95,7 +95,16 @@
     - name: Fixed typo in params.json
       link: https://github.com/fossiiita/opencodecollab/pull/72
       score: 10
-  total: 70
+    - name: Added blogpost
+      link: https://github.com/fossiiita/opencodecollab/pull/304
+      score: 30
+    - name: Added 30 new programs to Cool Practice Programs
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/23
+      score: 60
+    - name: Personal Page.
+      link: https://vsvipul555.github.io/
+      score: 10
+  total:  170 
   
 - github: aswanthkoleri
   contributions:
