@@ -228,9 +228,56 @@
     - name: change the background via css 
       link: https://github.com/fossiiita/opencodecollab/pull/254
       score: 30
-  total: 740          
+    - name: add issue
+      link: https://github.com/fossiiita/opencodecollab/issues/309
+      score: 10
+    - name: added participant part
+      link: https://github.com/fossiiita/opencodecollab/pull/322
+      score: 30
+    - name: added readme and fixed broken image 
+      link: https://github.com/fossiiita/opencodecollab/pull/325
+      score: 20
+    - name: referral 
+      link: https://github.com/fossiiita/opencodecollab/pull/289
+      score: 20      
+    - name: referral 
+      link: https://github.com/fossiiita/opencodecollab/pull/288
+      score: 20  
+    - name: referral 
+      link: https://github.com/fossiiita/opencodecollab/pull/319
+      score: 20 
+    - name: made javascript game 
+      link: https://github.com/fossiiita/opencodecollab/issues/278
+      score: 30       
+    - name: add 10 codechef problems
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/24
+      score: 20      
+  total: 910          
 
 - github: Symphoria
+  contributions:
+    - name: Added details in students section
+      link: https://github.com/fossiiita/opencodecollab/pull/17
+      score: 30
+    - name: Wrote Tests
+      link: https://github.com/gauthamzz/Django-EventPlatform/pull/24
+      score: 30
+    - name: Enabled gh-pages
+      link: https://github.com/fossiiita/opencodecollab/issues/15
+      score: 30
+    - name: Installed Django-Event Platform on my system
+      link: https://github.com/gauthamzz/Django-EventPlatform/issues/17
+      score: 30
+    - name: Fixed issue#14 - move content header to middle
+      link: https://github.com/gauthamzz/Django-EventPlatform/pull/23
+      score 10
+    - name: Fixed the  github link in index.html
+      link: https://github.com/fossiiita/opencodecollab/pull/20
+      score: 20
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87#issuecomment-274342689
+      score: 20
+  total: 170
 
 - github: aswinzz
   contributions:
@@ -630,3 +677,12 @@
   
 - github: anu-007
   
+- github: rahulsunny
+  contributions:
+    - name: Added profile to students
+      link: https://github.com/fossiiita/opencodecollab/pull/255
+      score: 30
+    - name: Enable gh-pages on your fork
+      link: https://github.com/fossiiita/opencodecollab/issues/15#issuecomment-280225178
+      score: 30
+  total: 60
