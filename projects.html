@@ -1,5 +1,4 @@
 ---
----
 <!DOCTYPE html>
 <html>
 <head>
@@ -110,6 +109,56 @@
                 </div>
             </section>
             <!-- End of Projects Section -->
+     <!--  start Participant Projects Section -->
+              <section class="partproj-sec" id="partproj" href="#partproj">
+                <div class="row partproj-wrapper">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2>Projects done by participants</h2>
+                    <!-- Stop ignoring -->
+                    {% for partproj in site.data.partproj %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper github-project" data-user="{{partproj.user}}" data-repo="{{partproj.repo}}">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                    <img src="images/partproj/{{partproj.image}}"
+                                                    alt="{{partproj.name}}"
+                                                    width="200px" height="200px">
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-file-text"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="{{partproj.name}}">
+                                                            {{partproj.name}}
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a style="text-decoration: none;" class="fa-2x" href="{{partproj.ghpage}}" target="_tab">TO VIEW<i class="fa fa-external-link"></i></a>
+                                                </p>
+                                            
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+ 
+            <!-- End of students Projects Section -->
 
             <!-- Issues Section -->
             <section class="issues-sec" id="issues" href="#issues">
@@ -174,7 +223,15 @@
             {% for project in site.data.projects %}
             $('#{{project.user}}-{{project.repo}}-load-more button').click();
             {% endfor %}
-            $('#issues-accordion div a').first().click();
+               $('#issues-accordion div a').first().click();
+       
+        });
+    </script>
+        <script>
+        $(document).ready(function() {
+            {% for partproj in site.data.partproj %}
+            $('#{{partproj.user}}-{{partproj.repo}}-load-more button').click();
+            {% endfor %}
         });
     </script>
 </body>
