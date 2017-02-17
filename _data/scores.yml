@@ -449,7 +449,19 @@
     - name: Added referral
       link: https://github.com/fossiiita/opencodecollab/pull/279 
       score: 20
-  total: 720
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/285
+      score: 20
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/286
+      score: 20
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/287
+      score: 20
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/271
+      score: 20
+  total: 800
 
 - github: mrsaicharan1
   
