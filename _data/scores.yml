@@ -418,7 +418,7 @@
       score: 30
     - name: Added 15 codebuddy and 15 hackerearth programs.
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/17
-      score: 60
+      score: 0
     - name: Added referral
       link: https://github.com/fossiiita/opencodecollab/pull/272
       score: 20
@@ -449,7 +449,7 @@
     - name: Added referral
       link: https://github.com/fossiiita/opencodecollab/pull/279 
       score: 20
-  total: 720
+  total: 660
 
 - github: mrsaicharan1
   
