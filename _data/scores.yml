@@ -322,7 +322,10 @@
     - name: referral
       link: https://github.com/fossiiita/opencodecollab/pull/185
       score: 20 
-  total: 790
+    - name: added github fork me link
+      link: https://github.com/fossiiita/opencodecollab/pull/314
+      score: 20 
+  total: 800
 
 - github: Donny97
 
