@@ -73,6 +73,17 @@
   total: 440
   
 - github: vsvipul555
+  contributions:
+    - name: add student details
+      link: https://github.com/fossiiita/opencodecollab/pull/61
+      score: 30
+    - name: Enable gh-pages on your fork
+      link: https://github.com/fossiiita/opencodecollab/issues/15#issuecomment-273786165
+      score: 30
+    - name: Fixed typo in params.json
+      link: https://github.com/fossiiita/opencodecollab/pull/72
+      score: 10
+  total: 70
   
 - github: aswanthkoleri
   contributions:
