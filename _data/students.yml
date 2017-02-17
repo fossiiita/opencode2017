@@ -413,7 +413,7 @@
   
 - name: Utkarsh Agarwal
   github: utkarshag
-  image: utkarshag.jpg
+  image: utkarsh.jpg
   facebook: utkarsh.agarwal.7737
   referral: Anupam-dagar
   bio: sust geek 
@@ -439,3 +439,9 @@
   referral: aswanthkoleri
   bio: Still learning...
 
+- name: Niyas Abbas
+  github: niyasabbas
+  image: niyas.jpg
+  facebook: niyasabbas
+  referral: aswinzz
+  bio: eff off :) _|_
