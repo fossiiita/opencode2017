@@ -5,3 +5,8 @@
 - name: Aswin_VB
   image: pong.png
   gh: https://aswinzz.github.io/pong/
+
+- name: Anupam Dagar
+  image: anupam.png
+  gh: https://anupam-dagar.github.io/javascript-game/
+
