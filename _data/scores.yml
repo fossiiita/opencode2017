@@ -270,7 +270,7 @@
       score: 30
     - name: Fixed issue#14 - move content header to middle
       link: https://github.com/gauthamzz/Django-EventPlatform/pull/23
-      score 10
+      score: 10
     - name: Fixed the  github link in index.html
       link: https://github.com/fossiiita/opencodecollab/pull/20
       score: 20
