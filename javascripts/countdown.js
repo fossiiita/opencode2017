@@ -1,3 +1,4 @@
+//Javascript to execute countdown.
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
