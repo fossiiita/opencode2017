@@ -40,3 +40,4 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date(2017, 01, 18, 00, 00, 00, 00);
 initializeClock('clockdiv', deadline);
+
