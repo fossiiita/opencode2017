@@ -60,7 +60,7 @@ display: block;
     height: 80px;
 }
 
-.mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .issues-sec .issues-wrapper, .designs-sec .designs-wrapper, .contributors, #contributors-thanks{
+.mentors .mentors-wrapper, .blogs-sec .blogs-wrapper, .students-sec .students-wrapper, .projects-sec .projects-wrapper, .partproj-sec .partproj-wrapper, .issues-sec .issues-wrapper, .designs-sec .designs-wrapper, .contributors, #contributors-thanks{
     width: 100%;
     height: 100%;
     margin: auto;
@@ -104,14 +104,14 @@ display: block;
     white-space: nowrap;
     vertical-align: middle;
 }
-.mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .blogs-sec .card:hover {
+.mentors .card:hover, #contributors-list .card:hover, .students-sec .card:hover, .projects-sec .card:hover, .partproj-sec .card:hover, .blogs-sec .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.mentors .card p, .students-sec .card p, .projects-sec .card p, .blogs-sec .card p {
+.mentors .card p, .students-sec .card p, .projects-sec .card p, .partproj-sec .card p, .blogs-sec .card p {
     margin-top: 4.5%;
     font-size: 15px;
 }
-.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar {
+.mentors .avatar, #contributors-list .avatar, .students-sec .avatar, .projects-sec .avatar, .partproj-sec .avatar  {
     position: relative;
     width: 200px;
     height: 200px;
