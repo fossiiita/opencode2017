@@ -4,6 +4,12 @@
 
 - github: VamsiSangam
   contributions:
+    - name: Timer not showing in projects and scoreboard page (issue)
+      link: https://github.com/fossiiita/opencodecollab/issues/331
+      score: 10  
+    - name: Fixed countdown
+      link: https://github.com/fossiiita/opencodecollab/pull/326
+      score: 30    
     - name: Installed Django event platform
       link: https://github.com/gauthamzz/Django-EventPlatform/issues/17#issuecomment-280391427
       score: 30  
@@ -82,7 +88,7 @@
     - name: Added profile to students
       link: https://github.com/fossiiita/opencodecollab/pull/7
       score: 30
-  total: 550
+  total: 590
   
 - github: vsvipul555
   contributions:
