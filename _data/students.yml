@@ -179,7 +179,6 @@
   github: pradeepgangwar
   image: pradeep.jpg
   facebook: pradeep.gangwar.391
-  referral: Anupam-dagar
   bio: Exploring and loving computer science.
 
 - name: Ayush Gupta
@@ -370,9 +369,17 @@
   referral: aswanthkoleri
   bio: coder..!!
 
+- name: Bhargav Satya
+  github: stupidfool
+  image: bhargav.jpg
+  facebook: itzurbhargav
+  referral: aswinzz
+  bio: A Loner..!!
+  
 - name: Neil Leeson Syiemlieh
   github: mebble
   image: neil.jpg
   facebook: neil.syiemlieh.5
   referral: Anupam-dagar
   bio: i like building things
+  
