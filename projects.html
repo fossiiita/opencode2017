@@ -109,7 +109,7 @@
                 </div>
             </section>
             <!-- End of students Projects Section -->
-              <<section class="partproj-sec" id="partproj" href="#partproj">
+              <section class="partproj-sec" id="partproj" href="#partproj">
                 <div class="row partproj-wrapper">
                     <!-- Start ignoring BootLintBear -->
                     <h2>Projects Currently in OpenCode</h2>
@@ -233,7 +233,7 @@
         <script>
         $(document).ready(function() {
             {% for partproj in site.data.partproj %}
-            $('#{{project.user}}-{{partproj.repo}}-load-more button').click();
+            $('#{{partproj.user}}-{{partproj.repo}}-load-more button').click();
             {% endfor %}
             $('#issues-accordion div a').first().click();
         });
