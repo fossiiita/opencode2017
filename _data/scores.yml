@@ -231,6 +231,29 @@
   total: 740          
 
 - github: Symphoria
+  contributions:
+    - name: Added details in students section
+      link: https://github.com/fossiiita/opencodecollab/pull/17
+      score: 30
+    - name: Wrote Tests
+      link: https://github.com/gauthamzz/Django-EventPlatform/pull/24
+      score: 30
+    - name: Enabled gh-pages
+      link: https://github.com/fossiiita/opencodecollab/issues/15
+      score: 30
+    - name: Installed Django-Event Platform on my system
+      link: https://github.com/gauthamzz/Django-EventPlatform/issues/17
+      score: 30
+    - name: Fixed issue#14 - move content header to middle
+      link: https://github.com/gauthamzz/Django-EventPlatform/pull/23
+      score 10
+    - name: Fixed the  github link in index.html
+      link: https://github.com/fossiiita/opencodecollab/pull/20
+      score: 20
+    - name: General tasks
+      link: https://github.com/fossiiita/opencodecollab/issues/87#issuecomment-274342689
+      score: 20
+  total: 170
 
 - github: aswinzz
   contributions:
