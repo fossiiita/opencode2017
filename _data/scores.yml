@@ -73,6 +73,7 @@
   total: 440
   
 - github: vsvipul555
+  contributions:
     - name: add student details
       link: https://github.com/fossiiita/opencodecollab/pull/61
       score: 30
