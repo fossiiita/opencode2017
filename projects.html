@@ -110,6 +110,65 @@
                 </div>
             </section>
             <!-- End of Projects Section -->
+                  <!----- Student blog section ------>
+     <section class="partproj-sec" id="partproj" href="#parproj">
+                <div class="partproj" id="partproj">
+                    <!-- Start ignoring BootLintBear -->
+                    <h2 align="center">Participant projects</h2>
+                    <!-- Stop ignoring -->
+                    {% for partproj in site.data.partproj %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <!-- front content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                {% if partproj.image %}
+                                                    <img src="images/partproj/{{partproj.image}}"
+                                                     width="200px" height="200px">
+                                                    {% else %}
+                                                    
+                                                    width="200px" height="200px">
+                                                    {% endif %}
+                                                    <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                        <i class="fa fa-code"></i>
+                                                        &nbsp;
+                                                        <span class="stu-name card-text" title="{{partproj.name}}">
+                                                            {{partproj.name}}
+                                                        </span>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- back content -->
+                                        <div class="card stu-card">
+                                            <div class="avatar">
+                                                {% if partproj.link %}
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    {{partproj.repo}}
+                                                </p>
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    <a href="{{blog.link}}">Click To See repository</a>
+                                                </p>
+                                                {% else %}
+                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
+                                                    No Working Link!
+                                                </p>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <!---end Student blog section-->
 
             <!-- Issues Section -->
             <section class="issues-sec" id="issues" href="#issues">
