@@ -252,8 +252,8 @@
     - name: add 10 codechef problems
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/24
       score: 20      
-  total: 910          
-
+  total: 910
+  
 - github: Symphoria
   contributions:
     - name: Added details in students section
