@@ -312,6 +312,20 @@
   facebook: shivam.fialok.1
   referral: Anupam-dagar
   bio: Confident coder.
+  
+- name: Aditi
+  github: bellatrix007
+  image: aditi.jpg
+  facebook: aditi.bansal.007
+  referral: Anupam-dagar
+  bio: Jzt a newbie...
+
+- name: Anjali Kumari
+  github: Anjali2901
+  image: Anjali.jpg
+  facebook: anjalipandey2901
+  referral: Anupam Dagar
+  bio: Willing to learn!!!
 
 - name: Rakshit
   image: rakshit.jpg
@@ -333,4 +347,25 @@
   facebook: akhil.reddy.5245961
   referral: Anupam-dagar
   bio: ECE coder
+  
+- name: Ridam Arora
+  github: ridamarora03
+  image: ridam.jpg
+  facebook: ridam.arora.79
+  referral: Anupam-dagar
+  bio: dream
+ 
+- name: pravin rathore
+  github: pravin1406
+  image: pravin.jpg
+  facebook: deepak.rathor.1884
+  referral: aswanthkoleri
+  bio: Still learning...
+  
+- name: Amit K S
+  github: Born-Coder
+  image: amit.jpg
+  facebook: theamitks
+  referral: aswanthkoleri
+  bio: coder..!!
 
