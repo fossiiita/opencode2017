@@ -593,7 +593,37 @@
     - name: Added referral
       link: https://github.com/fossiiita/opencodecollab/pull/271
       score: 20
-  total: 800
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/294
+      score: 20
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/296
+      score: 20
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/297
+      score: 20
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/303
+      score: 20
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/306
+      score: 20
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/316
+      score: 20
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/317
+      score: 20
+    - name: Added countdown
+      link: https://github.com/fossiiita/opencodecollab/pull/315
+      score: 30
+    - name: Added countdown to other pages
+      link: https://github.com/fossiiita/opencodecollab/pull/334
+      score: 10
+    - name: Created issue
+      link: https://github.com/fossiiita/opencodecollab/issues/320
+      score: 10
+  total: 990
 
 - github: mrsaicharan1
   
