@@ -1,6 +1,6 @@
-- name: OpenCodeCollab
-  user: fossiiita
-  repo: opencodecollab
+- name: Brick-pop
+  user: aswanthkoleri
+  repo: Brick-Pop
   image: opencodecollab.jpg
-  github: https://github.com/fossiiita/opencodecollab
-  stack: html, css, js, jeykll
+  github: https://github.com/aswanthkoleri/Brick-Pop/
+  stack: html,css,js
