@@ -6,26 +6,37 @@
   image: aswin.jpg
   link: https://medium.com/@aswinvb/opencode-cc7c3a3c5591#.hn0a3mj40
   personalweb: https://aswinzz.github.io
+  
 - name: Aswanth.K
   github: aswanthkoleri
   blogname: MyBlog
   image: aswanth.jpg
   link: https://medium.com/@aswanthkanil/opencode-bba684bf68cf#.duacwi6uh
+  
 - name: Ayush Gupta
   github: agbilotia1998
   blogname: MyBlog
   image: ayush.jpg
   link: https://medium.com/@iec2016039/opencode-experience-and-learn-c7cec1c24c23#.bro5s4hcl
   personalweb: https://agbilotia1998.github.io
+  
 - name: Anupam Dagar
   github: Anupam-dagar
   blogname: My experience with OpenCode
-  image: image_name.jpg
+  image: anupam.jpeg
   link: https://medium.com/@anupam_dagar/my-experience-with-opencode-the-mini-gsoc-62666e1c827d#.s34czsev3
   personalweb: Anupam-dagar.github.io
+  
 - name: Ravicharan
   github: RavicharanN
   blogname: My experience during OpenCode
   image: RavicharanN.jpg
   link: https://niume.com/post/258863
   personalweb: ravicharann.github.io
+  
+- name: Vamsi Sangam
+  github: vamsisangam
+  blogname: OpenCode 2017
+  image: vamsisangam.jpg
+  link: https://medium.com/@vamsisangam/opencode-2017-d91ab65dc6e4#.xjyo8si2p
+  personalweb: vamsisangam.github.io
