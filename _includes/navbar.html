@@ -1,4 +1,149 @@
- <div id="fb-root"></div>
+<style type="text/css">
+ /* SideNav.css by Mohamed Abo El-Ghranek */
+
+/* font awesome icons */
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+/* open sans font */
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
+
+/* For Demo only */
+body {
+  background-color: #333;
+}
+
+/* LTR CSS */
+#snav.en {
+  left: 0;
+  text-align: left;
+}
+#snav.en  li span {
+  left: -100px;
+}
+#snav.en li a:hover span {
+  left: 35px;
+}
+
+/* RTL CSS */
+#snav.ar {
+  right: 0;
+  text-align: right;
+}
+#snav.ar  li span {
+  right: -100px;
+}
+#snav.ar li a:hover span {
+  right: 35px;
+}
+
+/* main SideNav.css styles */
+#snav {
+  position: fixed;
+  top:20%;
+  z-index: 9999;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+#snav ul {
+  list-style: none;
+}
+#snav * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#snav li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+#snav .fa {
+  vertical-align: middle;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+#snav li span {
+  font-size: 15px;
+  vertical-align: middle;
+  height: 35px;
+  line-height: 35px;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  z-index: 3;
+}
+#snav li a:hover .fa {
+  transform: rotate(720deg);
+}
+#snav li a:hover span {
+  visibility: visible;
+}
+
+/* colors styles */
+
+/* menu items title background used for browsers not supporting :nth-child */
+#snav li span {
+  background-color: #555;
+}
+/* icons color and background before hover  */
+#snav li .fa {
+  background-color: #EEE;
+  color: #555
+}
+/* icons hover color */
+#snav li a:hover .fa {
+  color: #fff;
+}
+/* repeated colors from 1 to 10 each hover color repeated after 10 menu items */
+#snav li:nth-child(10n+1) span, #snav li:nth-child(10n+1) a:hover .fa {
+  background-color: #8350DD;
+}
+#snav li:nth-child(10n+2) span, #snav li:nth-child(10n+2) a:hover .fa {
+  background-color: #4EC5DB;
+}
+#snav li:nth-child(10n+3) span, #snav li:nth-child(10n+3) a:hover .fa {
+  background-color: #3DC25D;
+}
+#snav li:nth-child(10n+4) span, #snav li:nth-child(10n+4) a:hover .fa {
+  background-color: #99BE24;
+}
+#snav li:nth-child(10n+5) span, #snav li:nth-child(10n+5) a:hover .fa {
+  background-color: #38c;
+}
+#snav li:nth-child(10n+6) span, #snav li:nth-child(10n+6) a:hover .fa {
+  background-color: #ff0000;
+}
+#snav li:nth-child(10n+7) span, #snav li:nth-child(10n+7) a:hover .fa {
+  background-color: #000;
+}
+#snav li:nth-child(10n+8) span, #snav li:nth-child(10n+8) a:hover .fa {
+  background-color: #F1A111;
+}
+#snav li:nth-child(10n+9) span, #snav li:nth-child(10n+9) a:hover .fa {
+  background-color: #777;
+}
+#snav li:nth-child(10n+10) span, #snav li:nth-child(10n+10) a:hover .fa {
+  background-color: #30555C;
+ }</style>
+<div id="fb-root"></div>
     <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
