@@ -310,7 +310,19 @@
     - name: changed navbar
       link: https://github.com/fossiiita/opencodecollab/pull/292
       score: 30
-  total: 710
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/302
+      score: 20 
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/298
+      score: 20 
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/295
+      score: 20 
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/185
+      score: 20 
+  total: 790
 
 - github: Donny97
 
