@@ -446,7 +446,10 @@
     - name: Installed Django Event Platform
       link: https://github.com/gauthamzz/Django-EventPlatform/issues/17
       score: 30
-  total: 700
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/279 
+      score: 20
+  total: 720
 
 - github: mrsaicharan1
   
