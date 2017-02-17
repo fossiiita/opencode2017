@@ -5,6 +5,12 @@
 
 [Facebook Group](https://www.facebook.com/Opencode-1038106262984513)
 
+# This event is over as of 17 Feb 2017, No new pr's will be merged. Thank you for participating and showing interest in OpenCode and OpenSource.
+
+For any further details and queries contact [Gautham](https://www.facebook.com/gauthamzz) .
+
+This webpage was made with the help of 66 opencode participants and 6 mentors. Please visit the website for more deatils.
+
 # Adding a mentor
 
 To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
