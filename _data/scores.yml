@@ -331,41 +331,39 @@
 - github: Ellusionists
     
 - github: RavicharanN
-    contributions:
-      - name: Add students profile
-      - link: https://github.com/fossiiita/opencodecollab/pull/38
-      - score: 30
-      - name: Update events timeline (HFC)
-      - link: https://github.com/fossiiita/humblefoolcup/pull/31
-      - score: 20
-      - name: Install in your system
-      - link: Commneted on the issue with a screenshot.
-      - score: 30
-      - name: Enable gh-pages on your fork.
-      - link: https://ravicharann.github.io/opencodecollab/
-      - score: 30
-      - name: Genral Tasks
-      - link: commneted on the issue
-      - score: 20
-      - name: Issue Opened
-      - link: https://github.com/fossiiita/opencodecollab/issues/152
-      - score: 10
-      - name: make your personal page
-      - link: http://ravicharann.github.io
-      - score: 10
-      - name: Make a blog post
-      - link: http://niume.com/post/258863
-      - score: 30
-      - name: Add Stats page
-      - link: https://github.com/fossiiita/humblefoolcup/pull/64
-      - score: 20
-      - name: Add more codechef solutions(8+3)(sent 2 PRs)
-      - link: https://github.com/faheemzunjani/Cool-Practice-Programs
-              https://github.com/faheemzunjani/Cool-Practice-Programs
-      - score: 20
+  contributions:
+    - name: Add students profile
+      link: https://github.com/fossiiita/opencodecollab/pull/38
+      score: 30
+    - name: Update events timeline (HFC)
+      link: https://github.com/fossiiita/humblefoolcup/pull/31
+      score: 20
+    - name: Install in your system
+      link: Commneted on the issue with a screenshot.
+      score: 30
+    - name: Enable gh-pages on your fork.
+      link: https://ravicharann.github.io/opencodecollab/
+      score: 30
+    - name: Genral Tasks
+      link: commneted on the issue
+      score: 20
+    - name: Issue Opened
+      link: https://github.com/fossiiita/opencodecollab/issues/152
+      score: 10
+    - name: make your personal page
+      link: http://ravicharann.github.io
+      score: 10
+    - name: Make a blog post
+      link: http://niume.com/post/258863
+      score: 30
+    - name: Add Stats page
+      link: https://github.com/fossiiita/humblefoolcup/pull/64
+      score: 20
+    - name: Add more codechef solutions(8+3)(sent 2 PRs)
+      link: https://github.com/faheemzunjani/Cool-Practice-Programs
+      score: 20
     TOTAL: 220
 
-  
 - github: CodHeK
   
 - github: agam98
