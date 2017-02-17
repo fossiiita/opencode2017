@@ -1,5 +1,4 @@
 - name: Brick-pop
-  repo: Brick-Pop
   image: brick.jpg
-  github: https://github.com/aswanthkoleri/Brick-Pop/
+  ghpage: https://aswanthkoleri.github.io/Brick-Pop/
 
