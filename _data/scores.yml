@@ -277,9 +277,9 @@
     - name: chat with us option not working when we are using the issues and projects page 
       link: https://github.com/fossiiita/opencodecollab/pull/199
       score: 30
-    - name: Add more solutions to Codechef problems(*2)
+    - name: Add more solutions to Codechef problems(10 questions)
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/12
-      score: 40
+      score: 20
     - name: Alignment correction in mobile view of scoreboard(made an issue)
       link: https://github.com/fossiiita/opencodecollab/issues/214
       score: 10    
@@ -307,7 +307,10 @@
     - name: Add background for blog section(created an issue)
       link: https://github.com/fossiiita/opencodecollab/pull/238
       score: 10
-  total: 690
+    - name: fix dropdown in mobile view
+      link: https://github.com/fossiiita/opencodecollab/pull/265
+      score: 30
+  total: 700
 
 - github: Donny97
 
@@ -394,7 +397,7 @@
       score: 20
     - name: Added 3 codechef programs.
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/11
-      score: 20
+      score: 0
     - name: Added gitter chatbox.
       link: https://github.com/fossiiita/opencodecollab/pull/189
       score: 20
@@ -416,7 +419,34 @@
     - name: Added 15 codebuddy and 15 hackerearth programs.
       link: https://github.com/faheemzunjani/Cool-Practice-Programs/pull/17
       score: 60
-  total: 520
+    - name: Added referral
+      link: https://github.com/fossiiita/opencodecollab/pull/272
+      score: 20
+    - name: Added referral.
+      link: https://github.com/fossiiita/opencodecollab/pull/270
+      score: 20
+    - name: Added referral.
+      link: https://github.com/fossiiita/opencodecollab/pull/264
+      score: 20
+    - name: Added referral.
+      link: https://github.com/fossiiita/opencodecollab/pull/260
+      score: 20
+    - name: Added referral.
+      link: https://github.com/fossiiita/opencodecollab/pull/257
+      score: 20
+    - name: Added referral.
+      link: https://github.com/fossiiita/opencodecollab/pull/256
+      score: 20
+    - name: Added referral.
+      link: https://github.com/fossiiita/opencodecollab/pull/242
+      score: 20
+    - name: Added blog.
+      link: https://github.com/fossiiita/opencodecollab/pull/280
+      score: 30
+    - name: Installed Django Event Platform
+      link: https://github.com/gauthamzz/Django-EventPlatform/issues/17
+      score: 30
+  total: 700
 
 - github: mrsaicharan1
   
@@ -477,7 +507,16 @@
     - name: Dropdown is not going when chat with us is clicked
       link: https://github.com/fossiiita/opencodecollab/pull/244
       score: 20 
-  total: 230
+    - name: Raised issue
+      link: https://github.com/fossiiita/opencodecollab/issues/259
+      score: 10
+    - name: Added blog
+      link: https://github.com/fossiiita/opencodecollab/pull/267
+      score: 30
+    - name: Separated divs.
+      link: https://github.com/fossiiita/opencodecollab/pull/262
+      score: 30 
+  total: 300
   
 - github: sashank27
   
