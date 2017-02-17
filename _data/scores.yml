@@ -357,7 +357,13 @@
     - name: added github fork me link
       link: https://github.com/fossiiita/opencodecollab/pull/314
       score: 20 
-  total: 800
+    - name: added javascript game
+      link: https://github.com/fossiiita/opencodecollab/pull/327
+      score: 30 
+    - name: referral
+      link: https://github.com/fossiiita/opencodecollab/pull/324
+      score: 20 
+  total: 850
 
 - github: Donny97
 
