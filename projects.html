@@ -1,5 +1,4 @@
 ---
----
 <!DOCTYPE html>
 <html>
 <head>
@@ -109,31 +108,26 @@
                     {% endfor %}
                 </div>
             </section>
-            <!-- End of Projects Section -->
-                  <!----- Student blog section ------>
-     <section class="partproj-sec" id="partproj" href="#parproj">
-                <div class="partproj" id="partproj">
+            <!-- End of students Projects Section -->
+              <<section class="partproj-sec" id="partproj" href="#partproj">
+                <div class="row partproj-wrapper">
                     <!-- Start ignoring BootLintBear -->
-                    <h2 align="center">Participant projects</h2>
+                    <h2>Projects Currently in OpenCode</h2>
                     <!-- Stop ignoring -->
-                    {% for partproj in site.data.partproj %}
+                    {% for partproj in site.data.project %}
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card-wrapper">
+                        <div class="card-wrapper github-project" data-user="{{partproj.user}}" data-repo="{{partproj.repo}}">
                             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                                 <div class="flipper">
                                     <div class="front">
                                         <!-- front content -->
                                         <div class="card stu-card">
                                             <div class="avatar">
-                                                {% if partproj.image %}
                                                     <img src="images/partproj/{{partproj.image}}"
-                                                     width="200px" height="200px">
-                                                    {% else %}
-                                                    
+                                                    alt="{{partproj.name}}"
                                                     width="200px" height="200px">
-                                                    {% endif %}
                                                     <p style="padding-top:3px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                        <i class="fa fa-code"></i>
+                                                        <i class="fa fa-file-text"></i>
                                                         &nbsp;
                                                         <span class="stu-name card-text" title="{{partproj.name}}">
                                                             {{partproj.name}}
@@ -146,29 +140,28 @@
                                         <!-- back content -->
                                         <div class="card stu-card">
                                             <div class="avatar">
-                                                {% if partproj.link %}
                                                 <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                    {{partproj.repo}}
+                                                    <a style="text-decoration: none;" class="fa-2x" href="{{partproj.github}}" target="_tab">GitHub <i class="fa fa-external-link"></i></a>
                                                 </p>
-                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                    <a href="{{blog.link}}">Click To See repository</a>
-                                                </p>
-                                                {% else %}
-                                                <p style="padding:10px;width: 200px;display: inline-block;margin-top: 9px;">
-                                                    No Working Link!
-                                                </p>
-                                                {% endif %}
+                                                <br><hr>
+                                                <center class="fa-2x">
+                                                    <i class="fa fa-code"></i> <span id="{{partproj.user}}-{{partproj.repo}}-language">HTML</span><br>
+                                                    <a href="" id="{{partproj.user}}-{{partproj.repo}}-stars" style="text-decoration: none;"><i class="fa fa-star"></i> <span>0</span></a><br>
+                                                    <a href="" id="{{partproj.user}}-{{partproj.repo}}-forks" style="text-decoration: none;"><i class="fa fa-code-fork"></i> <span>0</span></a><br>
+                                                </center>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <br><br>
                     </div>
                     {% endfor %}
                 </div>
             </section>
-            <!---end Student blog section-->
+ 
+            <!-- End of students Projects Section -->
 
             <!-- Issues Section -->
             <section class="issues-sec" id="issues" href="#issues">
@@ -232,6 +225,15 @@
         $(document).ready(function() {
             {% for project in site.data.projects %}
             $('#{{project.user}}-{{project.repo}}-load-more button').click();
+            {% endfor %}
+               $('#issues-accordion div a').first().click();
+       
+        });
+    </script>
+        <script>
+        $(document).ready(function() {
+            {% for partproj in site.data.partproj %}
+            $('#{{project.user}}-{{partproj.repo}}-load-more button').click();
             {% endfor %}
             $('#issues-accordion div a').first().click();
         });
