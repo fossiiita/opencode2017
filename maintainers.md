@@ -1,8 +1,8 @@
-# Maintainers
+Maintainers
 
 You can view a [team of maintainers for repository](https://github.com/orgs/fossasia/teams/gci16-maintainers).
 
-## Responsibilities of Maintainers
+Responsibilities of Maintainers
 
 - Do not frustrate contributors: Find out what they need, help them help themselves.
 - Guide new contributors. They usually do not comply to the rules and forcing them onto them can be frustrating.
@@ -10,7 +10,7 @@ You can view a [team of maintainers for repository](https://github.com/orgs/foss
 - Merge pull-requests.
 - Make sure people understand that you can not accept their GCI task.
 
-## Not a responsibilty of a maintainer
+Not a responsibilty of a maintainer
 
 - review pull-requests: Anyone can do this, it does not need a maintainer.
 - reject pull-requests:
